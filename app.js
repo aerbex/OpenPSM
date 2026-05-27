@@ -121,6 +121,7 @@ function saveFormCache() {
       plotSizeInvekos: document.getElementById("plot-size-invekos")?.value || "",
       location: document.getElementById("location")?.value || "",
       treatedArea: document.getElementById("treated-area")?.value || "",
+      notes: document.getElementById("notes")?.value || "",
       cropName: document.getElementById("crop-name")?.value || "",
       eppoCode: document.getElementById("eppo-code")?.value || "",
       eppoSelectedText: document.getElementById("eppo-selected")?.textContent || "",
@@ -148,6 +149,7 @@ function loadFormCache() {
     if (cache.plotSizeInvekos) document.getElementById("plot-size-invekos").value = cache.plotSizeInvekos;
     if (cache.location) document.getElementById("location").value = cache.location;
     if (cache.treatedArea) document.getElementById("treated-area").value = cache.treatedArea;
+    if (cache.notes) document.getElementById("notes").value = cache.notes;
     if (cache.cropName) document.getElementById("crop-name").value = cache.cropName;
 
     // EPPO code
@@ -270,7 +272,10 @@ function renderEppoDropdown(matches) {
 
 function selectEppoOption(entry) {
   document.getElementById("eppo-code").value = entry.eppoCode || "";
-  document.getElementById("eppo-search").value = "";
+  const searchInput = document.getElementById("eppo-search");
+  if (searchInput) {
+    searchInput.value = `${entry.germanName} — ${entry.eppoCode}`;
+  }
   const selected = document.getElementById("eppo-selected");
   if (selected) {
     selected.textContent = `${entry.germanName} — ${entry.eppoCode}`;
@@ -341,6 +346,10 @@ function initEppoSearch() {
 
   searchInput.addEventListener("input", (e) => {
     debouncedFilter(e.target.value);
+  });
+
+  searchInput.addEventListener("focus", () => {
+    searchInput.select();
   });
 
   searchInput.addEventListener("keydown", (e) => {
@@ -597,7 +606,10 @@ function renderBbchDropdown(matches) {
 
 function selectBbchOption(entry) {
   document.getElementById("bbch-code").value = entry.stage || "";
-  document.getElementById("bbch-search").value = "";
+  const searchInput = document.getElementById("bbch-search");
+  if (searchInput) {
+    searchInput.value = `${entry.stage} — ${entry.description} (${entry.phaseName}, ${entry.cropGroup})`;
+  }
   const selected = document.getElementById("bbch-selected");
   if (selected) {
     selected.textContent = `${entry.stage} — ${entry.description} (${entry.phaseName}, ${entry.cropGroup})`;
@@ -661,6 +673,10 @@ function initBbchSearch() {
 
   searchInput.addEventListener("input", (e) => {
     debouncedFilter(e.target.value);
+  });
+
+  searchInput.addEventListener("focus", () => {
+    searchInput.select();
   });
 
   searchInput.addEventListener("keydown", (e) => {
@@ -1340,6 +1356,13 @@ function generatePDF(data) {
     ["Behandelte Fläche", `${document.getElementById("treated-area").value.replace(".", ",")} ha`],
   ]);
 
+  const notesVal = sanitizeInput(document.getElementById("notes").value);
+  if (notesVal) {
+    addBlock("Notizen", [
+      ["Bemerkungen", notesVal],
+    ]);
+  }
+
   addBlock("Kultur", [
     ["Kultur", sanitizeInput(document.getElementById("crop-name").value)],
     ["EPPO-Code", data.eppoCode],
@@ -1465,6 +1488,8 @@ async function generateExcel(data) {
   if (plotSizeInvekosVal) addLabelValue(ws, "Schlaggröße lt. INVEKOS GIS", plotSizeInvekosVal.replace(".", ",") + " ha");
   addLabelValue(ws, "Lage (FLIK/GPS)", sanitizeInput(document.getElementById("location").value));
   addLabelValue(ws, "Behandelte Fläche", document.getElementById("treated-area").value.replace(".", ",") + " ha");
+  const notesValExcel = sanitizeInput(document.getElementById("notes").value);
+  if (notesValExcel) addLabelValue(ws, "Bemerkungen", notesValExcel);
   ws.addRow([]);
 
   // Kultur
@@ -1586,6 +1611,380 @@ function checkExcelJs() {
 }
 
 /* ==========================================================================
+   INVEKOS Schlag-Suche
+   ========================================================================== */
+
+const INVEKOS_API_BASE = "https://gis.lfrz.gv.at/api/geodata/i009501/ogc/features/v1/collections";
+const INVEKOS_BBOX_DELTA = 0.001;
+const INVEKOS_FETCH_TIMEOUT_MS = 10000;
+const INVEKOS_RESULT_LIMIT = 10;
+
+function getInvekosCollectionName() {
+  const now = new Date();
+  const year = now.getFullYear();
+  return `i009501:invekos_schlaege_${year}_1_polygon`;
+}
+
+function parseCoordinatesFromInput(value) {
+  if (!value) return null;
+  const trimmed = value.trim();
+  const match = trimmed.match(/^(-?\d{1,2}\.\d+)[,\s]+(-?\d{1,3}\.\d+)$/);
+  if (!match) return null;
+  const lat = parseFloat(match[1]);
+  const lon = parseFloat(match[2]);
+  if (lat < -90 || lat > 90 || lon < -180 || lon > 180) return null;
+  return { lat, lon };
+}
+
+function calculateDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371000;
+  const toRad = (deg) => (deg * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+function getBboxCenter(bbox) {
+  if (!Array.isArray(bbox) || bbox.length < 4) return null;
+  return {
+    lon: (bbox[0] + bbox[2]) / 2,
+    lat: (bbox[1] + bbox[3]) / 2,
+  };
+}
+
+function initInvekosSearch() {
+  const btn = document.getElementById("btn-invekos");
+  if (!btn) return;
+  btn.addEventListener("click", openInvekosSearch);
+}
+
+function openInvekosSearch() {
+  const locationInput = document.getElementById("location");
+  let coords = null;
+  if (locationInput && locationInput.value) {
+    coords = parseCoordinatesFromInput(locationInput.value);
+  }
+
+  if (coords) {
+    showInvekosModal();
+    runInvekosQuery(coords.lon, coords.lat);
+    return;
+  }
+
+  if (!navigator.geolocation) {
+    showInvekosModalError("Geolocation wird von diesem Browser nicht unterstützt. Bitte geben Sie Koordinaten manuell ein.");
+    return;
+  }
+
+  setInvekosButtonState("loading");
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      setInvekosButtonState("default");
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      if (locationInput) {
+        locationInput.value = `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
+        clearError("error-location");
+      }
+      showInvekosModal();
+      runInvekosQuery(lon, lat);
+    },
+    (error) => {
+      setInvekosButtonState("error");
+      let message = "Standort konnte nicht ermittelt werden. Bitte geben Sie Koordinaten manuell ein.";
+      if (error.code === 1) {
+        message = "Standortzugriff wurde verweigert. Bitte aktivieren Sie den Standortzugriff in Ihren Browsereinstellungen oder geben Sie die Koordinaten manuell ein.";
+      } else if (error.code === 3) {
+        message = "Standortermittlung hat zu lange gedauert. Bitte versuchen Sie es erneut oder geben Sie die Koordinaten manuell ein.";
+      }
+      showInvekosModalError(message);
+    },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+  );
+}
+
+function setInvekosButtonState(state) {
+  const btn = document.getElementById("btn-invekos");
+  if (!btn) return;
+  btn.classList.remove("loading", "error");
+  if (state === "loading") btn.classList.add("loading");
+  else if (state === "error") btn.classList.add("error");
+}
+
+function showInvekosModal() {
+  const modal = document.getElementById("invekos-modal");
+  const body = document.getElementById("invekos-modal-body");
+  if (!modal || !body) return;
+  body.innerHTML = `<div class="invekos-loading">Schläge werden gesucht…</div>`;
+  modal.removeAttribute("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function showInvekosModalError(message) {
+  const modal = document.getElementById("invekos-modal");
+  const body = document.getElementById("invekos-modal-body");
+  if (!modal || !body) return;
+  body.innerHTML = `<div class="invekos-error">${escapeHtml(message)}</div>`;
+  modal.removeAttribute("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeInvekosModal() {
+  const modal = document.getElementById("invekos-modal");
+  if (!modal) return;
+  modal.setAttribute("hidden", "");
+  document.body.style.overflow = "";
+}
+
+async function runInvekosQuery(lon, lat) {
+  try {
+    const features = await fetchInvekosFields(lon, lat);
+    if (!features || features.length === 0) {
+      const body = document.getElementById("invekos-modal-body");
+      if (body) {
+        body.innerHTML = `<div class="invekos-no-results">Keine Schläge in der Nähe gefunden. Prüfen Sie, ob Sie sich in Österreich befinden.</div>`;
+      }
+      return;
+    }
+    renderInvekosResults(features, lat, lon);
+  } catch (err) {
+    const body = document.getElementById("invekos-modal-body");
+    if (body) {
+      body.innerHTML = `<div class="invekos-error">INVEKOS-Daten konnten nicht geladen werden. Bitte prüfen Sie Ihre Verbindung.</div>`;
+    }
+    console.warn("INVEKOS fetch failed:", err);
+  }
+}
+
+async function fetchInvekosFields(lon, lat) {
+  const collection = getInvekosCollectionName();
+  const minLon = lon - INVEKOS_BBOX_DELTA;
+  const minLat = lat - INVEKOS_BBOX_DELTA;
+  const maxLon = lon + INVEKOS_BBOX_DELTA;
+  const maxLat = lat + INVEKOS_BBOX_DELTA;
+  const url = `${INVEKOS_API_BASE}/${collection}/items?bbox=${minLon},${minLat},${maxLon},${maxLat}&limit=${INVEKOS_RESULT_LIMIT}&f=json`;
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), INVEKOS_FETCH_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeoutId);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    const data = await response.json();
+    return data.features || [];
+  } catch (err) {
+    clearTimeout(timeoutId);
+    throw err;
+  }
+}
+
+function renderInvekosResults(features, userLat, userLon) {
+  const body = document.getElementById("invekos-modal-body");
+  if (!body) return;
+
+  const enriched = features.map((f) => {
+    const center = getBboxCenter(f.bbox);
+    const distance = center
+      ? calculateDistance(userLat, userLon, center.lat, center.lon)
+      : Infinity;
+    return { feature: f, distance };
+  });
+
+  enriched.sort((a, b) => a.distance - b.distance);
+
+  const list = document.createElement("ul");
+  list.className = "invekos-result-list";
+
+  enriched.forEach(({ feature, distance }) => {
+    const props = feature.properties || {};
+    const name = props.snar_bezeichnung || "Unbekannter Schlag";
+    const area = props.sl_flaeche_brutto_ha;
+    const distText = distance === Infinity ? "" : `ca. ${Math.round(distance)} m`;
+    const areaText = typeof area === "number" ? `${area.toFixed(3)} ha` : "";
+
+    const li = document.createElement("li");
+    li.className = "invekos-result-item";
+    li.setAttribute("tabindex", "0");
+    li.setAttribute("role", "button");
+
+    let metaHtml = "";
+    if (areaText) metaHtml += `<span>${escapeHtml(areaText)}</span>`;
+    if (distText) metaHtml += `<span class="invekos-result-distance">${escapeHtml(distText)}</span>`;
+
+    li.innerHTML = `
+      <div class="invekos-result-name">${escapeHtml(name)}</div>
+      <div class="invekos-result-meta">${metaHtml}</div>
+    `;
+
+    const select = () => selectInvekosField(props, userLat, userLon);
+    li.addEventListener("click", select);
+    li.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        select();
+      }
+    });
+
+    list.appendChild(li);
+  });
+
+  body.innerHTML = "";
+  body.appendChild(list);
+}
+
+function selectInvekosField(properties, userLat, userLon) {
+  const plotSizeInvekos = document.getElementById("plot-size-invekos");
+  const treatedArea = document.getElementById("treated-area");
+  const location = document.getElementById("location");
+
+  if (plotSizeInvekos && properties.sl_flaeche_brutto_ha != null) {
+    const num = Number(properties.sl_flaeche_brutto_ha);
+    if (Number.isFinite(num)) {
+      plotSizeInvekos.value = num.toFixed(3);
+    }
+  }
+
+  if (treatedArea && !treatedArea.value && properties.sl_flaeche_brutto_ha != null) {
+    const num = Number(properties.sl_flaeche_brutto_ha);
+    if (Number.isFinite(num)) {
+      treatedArea.value = num.toFixed(3);
+      clearError("error-treated-area");
+    }
+  }
+
+  if (location && !location.value) {
+    location.value = `${userLat.toFixed(6)}, ${userLon.toFixed(6)}`;
+    clearError("error-location");
+  }
+
+  closeInvekosModal();
+}
+
+function initInvekosModal() {
+  const modal = document.getElementById("invekos-modal");
+  const closeBtn = modal?.querySelector(".modal-close");
+  const overlay = modal?.querySelector(".modal-overlay");
+
+  if (closeBtn) closeBtn.addEventListener("click", closeInvekosModal);
+  if (overlay) overlay.addEventListener("click", closeInvekosModal);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal && !modal.hasAttribute("hidden")) {
+      closeInvekosModal();
+    }
+  });
+}
+
+/* ==========================================================================
+   Form Clear
+   ========================================================================== */
+
+function clearForm() {
+  if (!confirm("Möchten Sie wirklich alle Felder außer Anwender und Datum leeren?")) return;
+
+  // Text inputs (except applicant and application-date)
+  const textInputs = document.querySelectorAll('#psm-form input[type="text"]');
+  textInputs.forEach((input) => {
+    if (input.id !== "applicant" && input.id !== "application-date") {
+      input.value = "";
+    }
+  });
+
+  // Number inputs
+  document.querySelectorAll('#psm-form input[type="number"]').forEach((input) => {
+    input.value = "";
+  });
+
+  // Hidden inputs
+  const eppoCode = document.getElementById("eppo-code");
+  if (eppoCode) eppoCode.value = "";
+  const bbchCode = document.getElementById("bbch-code");
+  if (bbchCode) bbchCode.value = "";
+
+  // Selected display divs
+  const eppoSelected = document.getElementById("eppo-selected");
+  if (eppoSelected) eppoSelected.textContent = "";
+  const bbchSelected = document.getElementById("bbch-selected");
+  if (bbchSelected) bbchSelected.textContent = "";
+
+  // Selects
+  const usageType = document.getElementById("usage-type");
+  if (usageType) usageType.value = "";
+
+  // Product unit defaults
+  document.querySelectorAll('select[name="productUnit"]').forEach((sel) => {
+    sel.value = "l";
+  });
+
+  // Checkboxes
+  const timeRequired = document.getElementById("time-required");
+  if (timeRequired) {
+    timeRequired.checked = false;
+    timeRequired.dispatchEvent(new Event("change"));
+  }
+  const bbchRequired = document.getElementById("bbch-required");
+  if (bbchRequired) {
+    bbchRequired.checked = false;
+    bbchRequired.dispatchEvent(new Event("change"));
+  }
+  const eppoManual = document.getElementById("eppo-manual");
+  if (eppoManual) {
+    eppoManual.checked = false;
+    eppoManual.dispatchEvent(new Event("change"));
+  }
+  const bbchManual = document.getElementById("bbch-manual");
+  if (bbchManual) {
+    bbchManual.checked = false;
+    bbchManual.dispatchEvent(new Event("change"));
+  }
+
+  // Textarea
+  const notes = document.getElementById("notes");
+  if (notes) notes.value = "";
+
+  // Product rows: remove all except first
+  const productRows = document.querySelectorAll(".product-row");
+  productRows.forEach((row, index) => {
+    if (index === 0) {
+      // Clear first row inputs
+      row.querySelectorAll('input[type="text"], input[type="number"]').forEach((input) => {
+        input.value = "";
+      });
+      row.querySelectorAll(".product-search-note").forEach((el) => {
+        el.textContent = "";
+      });
+    } else {
+      row.remove();
+    }
+  });
+  productRowCount = 1;
+
+  // GPS status
+  const gpsStatus = document.getElementById("gps-status");
+  if (gpsStatus) {
+    gpsStatus.textContent = "";
+    gpsStatus.className = "gps-status";
+  }
+  setGpsButtonState("default");
+  setInvekosButtonState("default");
+
+  // Clear all errors
+  clearAllErrors();
+  clearGlobalError();
+
+  // Clear cache
+  clearFormCache();
+}
+
+/* ==========================================================================
    Initialization
    ========================================================================== */
 
@@ -1597,6 +1996,8 @@ async function init() {
   initEppoSearch();
   initBbchSearch();
   initGeolocation();
+  initInvekosSearch();
+  initInvekosModal();
   initProductSearchForRow(0);
 
   await Promise.all([loadEppoData(), loadBbchData(), loadPsmRegisterData()]);
@@ -1653,6 +2054,11 @@ async function init() {
       clearFormCache();
       window.location.reload();
     });
+  }
+
+  const clearFormBtn = document.getElementById("btn-clear-form");
+  if (clearFormBtn) {
+    clearFormBtn.addEventListener("click", clearForm);
   }
 }
 

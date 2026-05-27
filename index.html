@@ -72,6 +72,7 @@
           <div class="location-wrapper">
             <input type="text" id="location" name="location" maxlength="100" required>
             <button type="button" id="btn-gps" class="btn-gps" title="Standort ermitteln">📍</button>
+            <button type="button" id="btn-invekos" class="btn-invekos" title="Schlag aus INVEKOS suchen">🌾</button>
           </div>
           <span class="gps-status" id="gps-status"></span>
           <span class="error-message" id="error-location"></span>
@@ -181,6 +182,14 @@
         </div>
       </section>
 
+      <section class="form-section">
+        <h2>Notizen</h2>
+        <div class="form-row">
+          <label for="notes">Bemerkungen</label>
+          <textarea id="notes" name="notes" rows="4" maxlength="500" placeholder="Optionale Notizen zur Anwendung..."></textarea>
+        </div>
+      </section>
+
       <section class="form-section submit-section">
         <div class="form-row checkbox-row">
           <input type="checkbox" id="generate-pdf" name="generatePdf" checked>
@@ -190,7 +199,10 @@
           <input type="checkbox" id="generate-excel" name="generateExcel" checked>
           <label for="generate-excel">Excel-Bericht erstellen</label>
         </div>
-        <button type="submit" id="btn-generate" class="btn-primary">Bericht erstellen</button>
+        <div class="submit-actions">
+          <button type="submit" id="btn-generate" class="btn-primary">Bericht erstellen</button>
+          <button type="button" id="btn-clear-form" class="btn-secondary btn-clear">Formular leeren</button>
+        </div>
         <span class="error-message" id="error-global"></span>
       </section>
     </form>
@@ -199,6 +211,15 @@
   <footer>
     <p>OpenPSM — Open Source PSM-Dokumentation · <a href="impressum.html">Impressum</a></p>
   </footer>
+
+  <div id="invekos-modal" class="modal" role="dialog" aria-modal="true" aria-label="Schlag auswählen" hidden>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" aria-label="Schließen">&times;</button>
+      <h3>Schlag auswählen</h3>
+      <div id="invekos-modal-body"></div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

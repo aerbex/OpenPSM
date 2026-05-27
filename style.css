@@ -126,7 +126,8 @@ input[type="text"],
 input[type="number"],
 input[type="date"],
 input[type="time"],
-select {
+select,
+textarea {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
@@ -143,7 +144,8 @@ input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="date"]:focus,
 input[type="time"]:focus,
-select:focus {
+select:focus,
+textarea:focus {
   outline: none;
   border-color: #2d5a27;
   box-shadow: 0 0 0 2px rgba(45, 90, 39, 0.2);
@@ -204,6 +206,7 @@ select.error:focus {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.15s;
+  flex-shrink: 0;
 }
 
 .btn-gps:hover {
@@ -548,4 +551,193 @@ footer a:hover {
     min-width: 280px;
     margin: 0 auto;
   }
+}
+
+/* INVEKOS Schlag-Suche */
+.btn-invekos {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  flex-shrink: 0;
+}
+
+.btn-invekos:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-invekos:active {
+  background-color: #e0e0e0;
+}
+
+.btn-invekos.loading {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.btn-invekos.error {
+  border-color: #b71c1c;
+  background-color: #fdecec;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.modal-content h3 {
+  margin: 0;
+  padding: 1rem 1.25rem 0.75rem;
+  font-size: 1.125rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+#invekos-modal-body {
+  padding: 0.75rem 1.25rem 1.25rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.invekos-loading,
+.invekos-error,
+.invekos-no-results {
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.invekos-loading {
+  color: #555;
+}
+
+.invekos-error {
+  color: #b71c1c;
+}
+
+.invekos-no-results {
+  color: #666;
+  font-style: italic;
+}
+
+.invekos-result-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.invekos-result-item {
+  padding: 0.875rem 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.12s;
+  border-radius: 4px;
+}
+
+.invekos-result-item:last-child {
+  border-bottom: none;
+}
+
+.invekos-result-item:hover,
+.invekos-result-item:focus {
+  background-color: #f0f7ef;
+}
+
+.invekos-result-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.invekos-result-meta {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.invekos-result-meta span {
+  white-space: nowrap;
+}
+
+.invekos-result-distance {
+  color: #2d5a27;
+  font-weight: 500;
+}
+
+/* Submit actions */
+.submit-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.submit-actions .btn-primary {
+  flex: 1;
+  min-width: 160px;
+}
+
+.submit-actions .btn-clear {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #555;
+}
+
+.submit-actions .btn-clear:hover {
+  background-color: #fdecec;
+  border-color: #b71c1c;
+  color: #b71c1c;
 }
