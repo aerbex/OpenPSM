@@ -1,0 +1,28 @@
+name: PSM Register aktualisieren
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # täglich 02:00 Uhr MEZ (01:00 UTC)
+  workflow_dispatch:        # auch manuell auslösbar
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install requests
+
+      - run: python scripts/fetch-psm-register.py
+
+      - name: Committen falls Änderungen
+        run: |
+          git config user.name "PSM-Bot"
+          git config user.email "bot@github"
+          git add data/psm-register.json
+          git diff --staged --quiet || git commit -m "PSM Register Update: $(date '+%Y-%m-%d')"
+          git push

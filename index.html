@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenPSM — Pflanzenschutzmittel-Anwendungsnachweis</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>OpenPSM</h1>
+    <p class="subtitle">Pflanzenschutzmittel-Anwendungsnachweis</p>
+    <p class="privacy-note">Alle Eingaben verbleiben ausschließlich auf Ihrem Gerät.</p>
+    <p class="cache-note">Eingaben werden für diese Browser-Sitzung zwischengespeichert. <button type="button" id="btn-clear-cache" class="btn-link">Cache löschen</button></p>
+  </header>
+
+  <main>
+    <form id="psm-form" novalidate>
+      <section class="form-section">
+        <h2>Anwender & Datum</h2>
+        <div class="form-row">
+          <label for="applicant">Anwender <span class="required">*</span></label>
+          <input type="text" id="applicant" name="applicant" maxlength="100" required>
+          <span class="error-message" id="error-applicant"></span>
+        </div>
+        <div class="form-row">
+          <label for="client">Auftraggeber/Landwirt</label>
+          <input type="text" id="client" name="client" maxlength="100">
+        </div>
+        <div class="form-row">
+          <label for="usage-type">Art der Verwendung <span class="required">*</span></label>
+          <select id="usage-type" name="usageType" required>
+            <option value="" disabled selected>Bitte wählen</option>
+            <option value="Oberfläche – Agrarfläche">Oberfläche – Agrarfläche</option>
+            <option value="Oberfläche – Nichtkulturland">Oberfläche – Nichtkulturland</option>
+            <option value="Oberfläche – Gleisanlage">Oberfläche – Gleisanlage</option>
+            <option value="Oberfläche – § 17-Fläche (Gewässerrandstreifen)">Oberfläche – § 17-Fläche (Gewässerrandstreifen)</option>
+            <option value="Geschlossener Raum – Lager">Geschlossener Raum – Lager</option>
+            <option value="Geschlossener Raum – Gewächshaus">Geschlossener Raum – Gewächshaus</option>
+            <option value="Saat-/Pflanzgutbehandlung">Saat-/Pflanzgutbehandlung</option>
+          </select>
+          <span class="error-message" id="error-usage-type"></span>
+        </div>
+        <div class="form-row">
+          <label for="application-date">Datum <span class="required">*</span></label>
+          <input type="date" id="application-date" name="applicationDate" required>
+          <span class="error-message" id="error-application-date"></span>
+        </div>
+        <div class="form-row checkbox-row">
+          <input type="checkbox" id="time-required" name="timeRequired">
+          <label for="time-required">Uhrzeit erforderlich (z. B. Bienenschutz)</label>
+        </div>
+        <div class="form-row conditional-field" id="time-field-wrapper">
+          <label for="application-time">Uhrzeit <span class="required">*</span></label>
+          <input type="time" id="application-time" name="applicationTime">
+          <span class="error-message" id="error-application-time"></span>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Fläche & Lage</h2>
+        <div class="form-row">
+          <label for="plot-name">Flächenbezeichnung <span class="required">*</span></label>
+          <input type="text" id="plot-name" name="plotName" maxlength="100" required>
+          <span class="error-message" id="error-plot-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="location">Lage (FLIK oder GPS) <span class="required">*</span></label>
+          <div class="location-wrapper">
+            <input type="text" id="location" name="location" maxlength="100" required>
+            <button type="button" id="btn-gps" class="btn-gps" title="Standort ermitteln">📍</button>
+          </div>
+          <span class="gps-status" id="gps-status"></span>
+          <span class="error-message" id="error-location"></span>
+        </div>
+        <div class="form-row">
+          <label for="treated-area">Behandelte Fläche (ha) <span class="required">*</span></label>
+          <input type="number" id="treated-area" name="treatedArea" min="0.001" step="0.001" required>
+          <span class="error-message" id="error-treated-area"></span>
+        </div>
+        <div class="form-row">
+          <label for="plot-number">Schlag Nr.</label>
+          <input type="text" id="plot-number" name="plotNumber" maxlength="50">
+        </div>
+        <div class="form-row">
+          <label for="plot-size-invekos">Schlaggröße lt. INVEKOS GIS (ha)</label>
+          <input type="number" id="plot-size-invekos" name="plotSizeInvekos" min="0.001" step="0.001">
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Kultur</h2>
+        <div class="form-row">
+          <label for="crop-name">Kultur <span class="required">*</span></label>
+          <input type="text" id="crop-name" name="cropName" required>
+          <span class="error-message" id="error-crop-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="eppo-search">EPPO-Code <span class="required">*</span></label>
+          <div class="eppo-search" id="eppo-search-wrapper">
+            <input type="text" id="eppo-search" name="eppoSearch" autocomplete="off" placeholder="Kultur suchen...">
+            <input type="hidden" id="eppo-code" name="eppoCode">
+            <div class="eppo-dropdown" id="eppo-dropdown"></div>
+          </div>
+          <div class="eppo-selected" id="eppo-selected"></div>
+          <div class="manual-toggle">
+            <input type="checkbox" id="eppo-manual" name="eppoManual">
+            <label for="eppo-manual">Code manuell eingeben</label>
+          </div>
+          <input type="text" id="eppo-code-manual" name="eppoCodeManual" class="conditional-field" maxlength="20" placeholder="EPPO-Code">
+          <span class="error-message" id="error-eppo-code"></span>
+        </div>
+        <div class="form-row checkbox-row">
+          <input type="checkbox" id="bbch-required" name="bbchRequired">
+          <label for="bbch-required">BBCH-Stadium erforderlich (z. B. Wachstumsregler)</label>
+        </div>
+        <div class="form-row conditional-field" id="bbch-field-wrapper">
+          <label for="bbch-search">BBCH-Stadium <span class="required">*</span></label>
+          <div class="bbch-search" id="bbch-search-wrapper">
+            <input type="text" id="bbch-search" name="bbchSearch" autocomplete="off" placeholder="Stadium suchen...">
+            <input type="hidden" id="bbch-code" name="bbchCode">
+            <div class="bbch-dropdown" id="bbch-dropdown"></div>
+          </div>
+          <div class="bbch-selected" id="bbch-selected"></div>
+          <div class="manual-toggle">
+            <input type="checkbox" id="bbch-manual" name="bbchManual">
+            <label for="bbch-manual">Code manuell eingeben</label>
+          </div>
+          <input type="text" id="bbch-code-manual" name="bbchCodeManual" class="conditional-field" maxlength="20" placeholder="BBCH-Stadium">
+          <span class="error-message" id="error-bbch-code"></span>
+          <div class="bbch-scale-note" id="bbch-scale-note" style="display: none; margin-top: 0.5rem; font-size: 0.85rem; color: #555; font-style: italic;"></div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Pflanzenschutzmittel</h2>
+        <div id="product-rows">
+          <div class="product-row" data-index="0">
+            <h3>Produkt 1</h3>
+            <div class="form-row">
+              <label>Produkt aus Register suchen</label>
+              <div class="product-search" id="product-search-wrapper-0">
+                <input type="text" id="product-search-0" autocomplete="off" placeholder="Produktname eingeben...">
+                <div class="product-dropdown" id="product-dropdown-0"></div>
+              </div>
+              <span class="product-search-note" id="product-search-note-0"></span>
+            </div>
+            <div class="form-row">
+              <label for="product-name-0">Produktname <span class="required">*</span></label>
+              <input type="text" id="product-name-0" name="productName" required>
+              <span class="error-message" id="error-product-name-0"></span>
+            </div>
+            <div class="form-row">
+              <label for="product-reg-0">Zulassungsnummer <span class="required">*</span></label>
+              <input type="text" id="product-reg-0" name="productReg" required>
+              <span class="error-message" id="error-product-reg-0"></span>
+            </div>
+            <div class="form-row product-amount-row">
+              <div class="amount-input">
+                <label for="product-amount-0">Aufwandmenge <span class="required">*</span></label>
+                <input type="number" id="product-amount-0" name="productAmount" min="0.01" step="0.01" required>
+              </div>
+              <div class="amount-unit">
+                <label for="product-unit-0">Einheit</label>
+                <select id="product-unit-0" name="productUnit">
+                  <option value="kg">kg</option>
+                  <option value="l" selected>l</option>
+                  <option value="g">g</option>
+                  <option value="ml">ml</option>
+                </select>
+              </div>
+            </div>
+            <span class="error-message" id="error-product-amount-0"></span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button type="button" id="btn-add-product" class="btn-secondary">+ Produkt hinzufügen</button>
+        </div>
+      </section>
+
+      <section class="form-section submit-section">
+        <div class="form-row checkbox-row">
+          <input type="checkbox" id="generate-pdf" name="generatePdf" checked>
+          <label for="generate-pdf">PDF-Bericht erstellen</label>
+        </div>
+        <div class="form-row checkbox-row">
+          <input type="checkbox" id="generate-excel" name="generateExcel" checked>
+          <label for="generate-excel">Excel-Bericht erstellen</label>
+        </div>
+        <button type="submit" id="btn-generate" class="btn-primary">Bericht erstellen</button>
+        <span class="error-message" id="error-global"></span>
+      </section>
+    </form>
+  </main>
+
+  <footer>
+    <p>OpenPSM — Open Source PSM-Dokumentation · <a href="impressum.html">Impressum</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

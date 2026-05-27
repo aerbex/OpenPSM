@@ -1,0 +1,7557 @@
+{
+  "lastUpdate": "2026-05-26T00:06:09",
+  "products": [
+    {
+      "tradeName": "1,4Sight",
+      "registrationNumber": "3713-0"
+    },
+    {
+      "tradeName": "1,4Sight",
+      "registrationNumber": "3713-1"
+    },
+    {
+      "tradeName": "3in1 Komplett-Rasendünger Gegen Unkraut & Moos",
+      "registrationNumber": "3778-0"
+    },
+    {
+      "tradeName": "Abran 250",
+      "registrationNumber": "4387-901"
+    },
+    {
+      "tradeName": "Account",
+      "registrationNumber": "4573-0"
+    },
+    {
+      "tradeName": "Accurate",
+      "registrationNumber": "2956-0"
+    },
+    {
+      "tradeName": "Acelepryn",
+      "registrationNumber": "4312-0"
+    },
+    {
+      "tradeName": "Acetogal",
+      "registrationNumber": "4594-0"
+    },
+    {
+      "tradeName": "Acoidal WG",
+      "registrationNumber": "4183-0"
+    },
+    {
+      "tradeName": "Acorit 250 SC",
+      "registrationNumber": "3550-0"
+    },
+    {
+      "tradeName": "Acorix 70 WG",
+      "registrationNumber": "3988-0"
+    },
+    {
+      "tradeName": "Activus SC",
+      "registrationNumber": "3241-0"
+    },
+    {
+      "tradeName": "Adalia",
+      "registrationNumber": "4127-0"
+    },
+    {
+      "tradeName": "Adengo",
+      "registrationNumber": "3063-0"
+    },
+    {
+      "tradeName": "Adengo",
+      "registrationNumber": "3063-7"
+    },
+    {
+      "tradeName": "Adengo 465 SC",
+      "registrationNumber": "3063-5"
+    },
+    {
+      "tradeName": "Adentis",
+      "registrationNumber": "3845-901"
+    },
+    {
+      "tradeName": "Adexar Top",
+      "registrationNumber": "3772-0"
+    },
+    {
+      "tradeName": "Admiral",
+      "registrationNumber": "3533-0"
+    },
+    {
+      "tradeName": "Affirm Opti",
+      "registrationNumber": "4080-0"
+    },
+    {
+      "tradeName": "Affirm Opti",
+      "registrationNumber": "4080-1"
+    },
+    {
+      "tradeName": "Afinto",
+      "registrationNumber": "3383-2"
+    },
+    {
+      "tradeName": "Afinto",
+      "registrationNumber": "3383-902"
+    },
+    {
+      "tradeName": "Afrasa Triple WG",
+      "registrationNumber": "4544-0"
+    },
+    {
+      "tradeName": "Afrodyta 250 SC",
+      "registrationNumber": "3991-0"
+    },
+    {
+      "tradeName": "Agil 100 EC",
+      "registrationNumber": "2928-1"
+    },
+    {
+      "tradeName": "Agil-S",
+      "registrationNumber": "2928-0"
+    },
+    {
+      "tradeName": "Agro Isoxaben",
+      "registrationNumber": "2691-2"
+    },
+    {
+      "tradeName": "Agro MCPA",
+      "registrationNumber": "3052-3"
+    },
+    {
+      "tradeName": "Agro Phos 750",
+      "registrationNumber": "3535-1"
+    },
+    {
+      "tradeName": "Ailantex",
+      "registrationNumber": "4498-0"
+    },
+    {
+      "tradeName": "Ailantex",
+      "registrationNumber": "4557-0"
+    },
+    {
+      "tradeName": "Ailantex",
+      "registrationNumber": "4656-0"
+    },
+    {
+      "tradeName": "Aim 40 WG",
+      "registrationNumber": "2880-0"
+    },
+    {
+      "tradeName": "Akris",
+      "registrationNumber": "3461-3"
+    },
+    {
+      "tradeName": "Akris SE",
+      "registrationNumber": "3461-2"
+    },
+    {
+      "tradeName": "Aktuan 3S",
+      "registrationNumber": "3290-901"
+    },
+    {
+      "tradeName": "Aktuan Gold",
+      "registrationNumber": "3207-0"
+    },
+    {
+      "tradeName": "AktyShield",
+      "registrationNumber": "4346-1"
+    },
+    {
+      "tradeName": "Alar 85 SG",
+      "registrationNumber": "3359-0"
+    },
+    {
+      "tradeName": "Alcoban 700 WG",
+      "registrationNumber": "3450-901"
+    },
+    {
+      "tradeName": "Alginure",
+      "registrationNumber": "3947-0"
+    },
+    {
+      "tradeName": "Aliette WG",
+      "registrationNumber": "4555-0"
+    },
+    {
+      "tradeName": "Aliette WG",
+      "registrationNumber": "4657-0"
+    },
+    {
+      "tradeName": "Aligal 2",
+      "registrationNumber": "3982-0"
+    },
+    {
+      "tradeName": "Allowin",
+      "registrationNumber": "3217-0"
+    },
+    {
+      "tradeName": "Alonty",
+      "registrationNumber": "4138-0"
+    },
+    {
+      "tradeName": "Alphaguard",
+      "registrationNumber": "4583-0"
+    },
+    {
+      "tradeName": "Altiplano Dam Tec",
+      "registrationNumber": "3802-0"
+    },
+    {
+      "tradeName": "Altivate",
+      "registrationNumber": "4297-0"
+    },
+    {
+      "tradeName": "Amblon",
+      "registrationNumber": "2491-0"
+    },
+    {
+      "tradeName": "Amblymite",
+      "registrationNumber": "4301-0"
+    },
+    {
+      "tradeName": "Amidir",
+      "registrationNumber": "4021-0"
+    },
+    {
+      "tradeName": "Amistar Era 240 EC",
+      "registrationNumber": "4428-902"
+    },
+    {
+      "tradeName": "Amistar Gold",
+      "registrationNumber": "4107-0"
+    },
+    {
+      "tradeName": "Amistar Gold Max",
+      "registrationNumber": "4107-1"
+    },
+    {
+      "tradeName": "Amistar Max",
+      "registrationNumber": "4541-0"
+    },
+    {
+      "tradeName": "Amistar Max",
+      "registrationNumber": "4541-1"
+    },
+    {
+      "tradeName": "Amistar Top",
+      "registrationNumber": "3077-1"
+    },
+    {
+      "tradeName": "Amistar Top",
+      "registrationNumber": "3077-2"
+    },
+    {
+      "tradeName": "Ampexio",
+      "registrationNumber": "3711-0"
+    },
+    {
+      "tradeName": "Ampexio",
+      "registrationNumber": "3711-2"
+    },
+    {
+      "tradeName": "Amylo-X WG",
+      "registrationNumber": "3958-0"
+    },
+    {
+      "tradeName": "Anderson",
+      "registrationNumber": "3696-0"
+    },
+    {
+      "tradeName": "Antarktis",
+      "registrationNumber": "3874-0"
+    },
+    {
+      "tradeName": "Anteva",
+      "registrationNumber": "4470-0"
+    },
+    {
+      "tradeName": "Aphelinus-System",
+      "registrationNumber": "4087-0"
+    },
+    {
+      "tradeName": "Aphicar Duo",
+      "registrationNumber": "4279-901"
+    },
+    {
+      "tradeName": "Aphidend",
+      "registrationNumber": "2529-0"
+    },
+    {
+      "tradeName": "Aphidend Aphidoletes aphidimyza",
+      "registrationNumber": "2546-0"
+    },
+    {
+      "tradeName": "Aphidius",
+      "registrationNumber": "4511-0"
+    },
+    {
+      "tradeName": "Aphidius-System",
+      "registrationNumber": "3512-0"
+    },
+    {
+      "tradeName": "Aphidoletes",
+      "registrationNumber": "4382-0"
+    },
+    {
+      "tradeName": "Aphidoletes-System",
+      "registrationNumber": "3513-0"
+    },
+    {
+      "tradeName": "Aphipar",
+      "registrationNumber": "2530-0"
+    },
+    {
+      "tradeName": "Aphipar Aphidius colemani",
+      "registrationNumber": "2545-0"
+    },
+    {
+      "tradeName": "Aphipar-M",
+      "registrationNumber": "4633-0"
+    },
+    {
+      "tradeName": "Applaud 25 SC",
+      "registrationNumber": "4040-0"
+    },
+    {
+      "tradeName": "AppleSmart 3,3 VP",
+      "registrationNumber": "3884-0"
+    },
+    {
+      "tradeName": "Apron XL 350 ES",
+      "registrationNumber": "3779-0"
+    },
+    {
+      "tradeName": "Aptrell 60",
+      "registrationNumber": "2653-901"
+    },
+    {
+      "tradeName": "Arcade",
+      "registrationNumber": "3326-0"
+    },
+    {
+      "tradeName": "Architect",
+      "registrationNumber": "4396-0"
+    },
+    {
+      "tradeName": "Areli",
+      "registrationNumber": "4606-0"
+    },
+    {
+      "tradeName": "Argos",
+      "registrationNumber": "4377-0"
+    },
+    {
+      "tradeName": "Ariane C",
+      "registrationNumber": "3338-0"
+    },
+    {
+      "tradeName": "Arigo",
+      "registrationNumber": "3260-0"
+    },
+    {
+      "tradeName": "Arinex 30",
+      "registrationNumber": "4141-0"
+    },
+    {
+      "tradeName": "Armicarb Spray",
+      "registrationNumber": "4311-0"
+    },
+    {
+      "tradeName": "Armisan AF PilzFrei",
+      "registrationNumber": "4311-902"
+    },
+    {
+      "tradeName": "Armisan PilzFrei",
+      "registrationNumber": "4344-0"
+    },
+    {
+      "tradeName": "Arnold",
+      "registrationNumber": "4054-0"
+    },
+    {
+      "tradeName": "Arrat",
+      "registrationNumber": "3133-0"
+    },
+    {
+      "tradeName": "Arrat",
+      "registrationNumber": "3133-3"
+    },
+    {
+      "tradeName": "Arrat",
+      "registrationNumber": "3133-4"
+    },
+    {
+      "tradeName": "Arrodim",
+      "registrationNumber": "4376-0"
+    },
+    {
+      "tradeName": "Artist",
+      "registrationNumber": "2913-0"
+    },
+    {
+      "tradeName": "Artist",
+      "registrationNumber": "2913-1"
+    },
+    {
+      "tradeName": "Artus",
+      "registrationNumber": "3158-0"
+    },
+    {
+      "tradeName": "Arvalin",
+      "registrationNumber": "4167-0"
+    },
+    {
+      "tradeName": "Arvalin Forte",
+      "registrationNumber": "4142-0"
+    },
+    {
+      "tradeName": "Arvalin Phos",
+      "registrationNumber": "4101-0"
+    },
+    {
+      "tradeName": "Ascra Xpro",
+      "registrationNumber": "3866-0"
+    },
+    {
+      "tradeName": "Ascra Xpro",
+      "registrationNumber": "3866-1"
+    },
+    {
+      "tradeName": "Askaphy",
+      "registrationNumber": "4478-901"
+    },
+    {
+      "tradeName": "Askon",
+      "registrationNumber": "3077-0"
+    },
+    {
+      "tradeName": "Aspect",
+      "registrationNumber": "2947-1"
+    },
+    {
+      "tradeName": "Aspect Neo",
+      "registrationNumber": "3461-901"
+    },
+    {
+      "tradeName": "Aspect Pro",
+      "registrationNumber": "2947-0"
+    },
+    {
+      "tradeName": "Asset",
+      "registrationNumber": "4598-0"
+    },
+    {
+      "tradeName": "Ataphos-K",
+      "registrationNumber": "4479-0"
+    },
+    {
+      "tradeName": "Atilla",
+      "registrationNumber": "4642-0"
+    },
+    {
+      "tradeName": "Atlantis OD",
+      "registrationNumber": "3253-0"
+    },
+    {
+      "tradeName": "Atlantis Star",
+      "registrationNumber": "3818-0"
+    },
+    {
+      "tradeName": "Atonik",
+      "registrationNumber": "3951-0"
+    },
+    {
+      "tradeName": "Attribut",
+      "registrationNumber": "4575-0"
+    },
+    {
+      "tradeName": "Aurora 40 WG",
+      "registrationNumber": "2880-901"
+    },
+    {
+      "tradeName": "Austriebsspritzmittel 7 E",
+      "registrationNumber": "1739-0"
+    },
+    {
+      "tradeName": "Austriebsspritzmittel Promanal Neu",
+      "registrationNumber": "2633-0"
+    },
+    {
+      "tradeName": "Avalon",
+      "registrationNumber": "3987-0"
+    },
+    {
+      "tradeName": "Avastel",
+      "registrationNumber": "4589-0"
+    },
+    {
+      "tradeName": "Avella",
+      "registrationNumber": "3539-0"
+    },
+    {
+      "tradeName": "Aviator Xpro",
+      "registrationNumber": "3053-0"
+    },
+    {
+      "tradeName": "Aviator Xpro",
+      "registrationNumber": "3053-3"
+    },
+    {
+      "tradeName": "Avoxa",
+      "registrationNumber": "3864-0"
+    },
+    {
+      "tradeName": "Axcela",
+      "registrationNumber": "3196-0"
+    },
+    {
+      "tradeName": "Axcela TS",
+      "registrationNumber": "4296-0"
+    },
+    {
+      "tradeName": "Axial 50",
+      "registrationNumber": "3067-0"
+    },
+    {
+      "tradeName": "Axial 50 EC",
+      "registrationNumber": "3067-2"
+    },
+    {
+      "tradeName": "Axial Komplett",
+      "registrationNumber": "3249-0"
+    },
+    {
+      "tradeName": "Aza",
+      "registrationNumber": "4487-0"
+    },
+    {
+      "tradeName": "Azarius",
+      "registrationNumber": "4284-0"
+    },
+    {
+      "tradeName": "Azatin EC",
+      "registrationNumber": "3994-0"
+    },
+    {
+      "tradeName": "Azbany",
+      "registrationNumber": "3664-2"
+    },
+    {
+      "tradeName": "Azofin 250 SC",
+      "registrationNumber": "3840-0"
+    },
+    {
+      "tradeName": "Azoshy",
+      "registrationNumber": "4285-0"
+    },
+    {
+      "tradeName": "Azuleo",
+      "registrationNumber": "3436-2"
+    },
+    {
+      "tradeName": "Bactospeine DF",
+      "registrationNumber": "3968-0"
+    },
+    {
+      "tradeName": "Badge WG",
+      "registrationNumber": "3966-0"
+    },
+    {
+      "tradeName": "Balaya",
+      "registrationNumber": "4178-0"
+    },
+    {
+      "tradeName": "Baltazar",
+      "registrationNumber": "4398-901"
+    },
+    {
+      "tradeName": "Banarg",
+      "registrationNumber": "3875-0"
+    },
+    {
+      "tradeName": "Bandera",
+      "registrationNumber": "3838-901"
+    },
+    {
+      "tradeName": "Bandur",
+      "registrationNumber": "2579-0"
+    },
+    {
+      "tradeName": "Bandur",
+      "registrationNumber": "2579-3"
+    },
+    {
+      "tradeName": "Bandur",
+      "registrationNumber": "2579-4"
+    },
+    {
+      "tradeName": "Banjo",
+      "registrationNumber": "3273-0"
+    },
+    {
+      "tradeName": "Banjo",
+      "registrationNumber": "3273-1"
+    },
+    {
+      "tradeName": "Banjo Forte",
+      "registrationNumber": "3270-0"
+    },
+    {
+      "tradeName": "Banjo Forte",
+      "registrationNumber": "3270-1"
+    },
+    {
+      "tradeName": "Baptiste",
+      "registrationNumber": "4172-0"
+    },
+    {
+      "tradeName": "Barbarian Super 360",
+      "registrationNumber": "3630-901"
+    },
+    {
+      "tradeName": "Barracuda",
+      "registrationNumber": "3821-0"
+    },
+    {
+      "tradeName": "Barracuda",
+      "registrationNumber": "3821-2"
+    },
+    {
+      "tradeName": "Basamid Granulat",
+      "registrationNumber": "1399-0"
+    },
+    {
+      "tradeName": "BasilProtect",
+      "registrationNumber": "3916-0"
+    },
+    {
+      "tradeName": "Battery",
+      "registrationNumber": "4333-0"
+    },
+    {
+      "tradeName": "Battle Delta",
+      "registrationNumber": "3703-0"
+    },
+    {
+      "tradeName": "Baymat Pilzfrei",
+      "registrationNumber": "3641-0"
+    },
+    {
+      "tradeName": "Beetix",
+      "registrationNumber": "3573-902"
+    },
+    {
+      "tradeName": "Beetix SC",
+      "registrationNumber": "3205-0"
+    },
+    {
+      "tradeName": "BeFlex",
+      "registrationNumber": "4374-0"
+    },
+    {
+      "tradeName": "Belem 0.8 MG",
+      "registrationNumber": "3553-0"
+    },
+    {
+      "tradeName": "Belkar",
+      "registrationNumber": "3957-0"
+    },
+    {
+      "tradeName": "Belkar",
+      "registrationNumber": "3957-1"
+    },
+    {
+      "tradeName": "bellaflora biogarten Schneckenkorn",
+      "registrationNumber": "2605-901"
+    },
+    {
+      "tradeName": "bellaflora biogarten Unkrautfrei",
+      "registrationNumber": "3050-901"
+    },
+    {
+      "tradeName": "Bellis",
+      "registrationNumber": "3156-0"
+    },
+    {
+      "tradeName": "Beloukha",
+      "registrationNumber": "3768-0"
+    },
+    {
+      "tradeName": "Beloukha Garden",
+      "registrationNumber": "3698-0"
+    },
+    {
+      "tradeName": "Beltanol",
+      "registrationNumber": "3887-0"
+    },
+    {
+      "tradeName": "Belvedere Duo",
+      "registrationNumber": "2707-0"
+    },
+    {
+      "tradeName": "Bemye",
+      "registrationNumber": "4422-0"
+    },
+    {
+      "tradeName": "Benevia",
+      "registrationNumber": "4611-0"
+    },
+    {
+      "tradeName": "Benevia",
+      "registrationNumber": "4611-1"
+    },
+    {
+      "tradeName": "Berelex 40 SG",
+      "registrationNumber": "3914-0"
+    },
+    {
+      "tradeName": "Betanal Tandem",
+      "registrationNumber": "3677-0"
+    },
+    {
+      "tradeName": "Betanal Tandem",
+      "registrationNumber": "3677-1"
+    },
+    {
+      "tradeName": "Betasana SC",
+      "registrationNumber": "3183-1"
+    },
+    {
+      "tradeName": "Betosip SC",
+      "registrationNumber": "3183-0"
+    },
+    {
+      "tradeName": "Betosip SC",
+      "registrationNumber": "3183-2"
+    },
+    {
+      "tradeName": "BFA1-14",
+      "registrationNumber": "4330-0"
+    },
+    {
+      "tradeName": "Biathlon 4D",
+      "registrationNumber": "3263-0"
+    },
+    {
+      "tradeName": "Biathlon 4D",
+      "registrationNumber": "3263-1"
+    },
+    {
+      "tradeName": "Biathlon Plus",
+      "registrationNumber": "4223-901"
+    },
+    {
+      "tradeName": "Bio Schneckenfrei NemArion",
+      "registrationNumber": "4205-901"
+    },
+    {
+      "tradeName": "Bio Spinnmilben- & Schädlingsfrei AF",
+      "registrationNumber": "3148-910"
+    },
+    {
+      "tradeName": "Bio Unkrautfrei",
+      "registrationNumber": "3264-0"
+    },
+    {
+      "tradeName": "Bio Unkrautfrei Spezial",
+      "registrationNumber": "3264-901"
+    },
+    {
+      "tradeName": "biogarten Blattlausfrei",
+      "registrationNumber": "2891-906"
+    },
+    {
+      "tradeName": "biohelp Finalsan",
+      "registrationNumber": "3057-902"
+    },
+    {
+      "tradeName": "biohelp Finalsan Plus",
+      "registrationNumber": "3056-901"
+    },
+    {
+      "tradeName": "BIOOtwin L+",
+      "registrationNumber": "4502-0"
+    },
+    {
+      "tradeName": "BIOOtwin LE",
+      "registrationNumber": "4503-0"
+    },
+    {
+      "tradeName": "Biox-M",
+      "registrationNumber": "3790-0"
+    },
+    {
+      "tradeName": "Bizon",
+      "registrationNumber": "3544-2"
+    },
+    {
+      "tradeName": "Blattlaus-Frei AF",
+      "registrationNumber": "2973-0"
+    },
+    {
+      "tradeName": "Blattlausfrei",
+      "registrationNumber": "2739-902"
+    },
+    {
+      "tradeName": "Blossom Protect",
+      "registrationNumber": "2994-0"
+    },
+    {
+      "tradeName": "Bokator",
+      "registrationNumber": "4517-0"
+    },
+    {
+      "tradeName": "Bolt 250",
+      "registrationNumber": "4387-902"
+    },
+    {
+      "tradeName": "Bonafide",
+      "registrationNumber": "4443-0"
+    },
+    {
+      "tradeName": "Bonzi",
+      "registrationNumber": "3693-0"
+    },
+    {
+      "tradeName": "Boogie Xpro",
+      "registrationNumber": "3302-2"
+    },
+    {
+      "tradeName": "Boom efekt",
+      "registrationNumber": "2948-0"
+    },
+    {
+      "tradeName": "Boom Efekt",
+      "registrationNumber": "2948-1"
+    },
+    {
+      "tradeName": "Boom efekt 360 SL",
+      "registrationNumber": "2948-2"
+    },
+    {
+      "tradeName": "Border",
+      "registrationNumber": "3666-0"
+    },
+    {
+      "tradeName": "BotaniGard WP",
+      "registrationNumber": "3798-0"
+    },
+    {
+      "tradeName": "Botector",
+      "registrationNumber": "3029-0"
+    },
+    {
+      "tradeName": "Botiga",
+      "registrationNumber": "4256-0"
+    },
+    {
+      "tradeName": "Botiga",
+      "registrationNumber": "4256-1"
+    },
+    {
+      "tradeName": "Botrefin",
+      "registrationNumber": "4053-0"
+    },
+    {
+      "tradeName": "Boxer",
+      "registrationNumber": "2525-0"
+    },
+    {
+      "tradeName": "Bozon",
+      "registrationNumber": "4529-0"
+    },
+    {
+      "tradeName": "Brando",
+      "registrationNumber": "4509-0"
+    },
+    {
+      "tradeName": "Brevis",
+      "registrationNumber": "3661-0"
+    },
+    {
+      "tradeName": "Broadway",
+      "registrationNumber": "3049-0"
+    },
+    {
+      "tradeName": "Broadway Plus",
+      "registrationNumber": "4411-0"
+    },
+    {
+      "tradeName": "Brodal SC 500",
+      "registrationNumber": "4524-0"
+    },
+    {
+      "tradeName": "Buchsbaumzünslerfrei",
+      "registrationNumber": "2699-911"
+    },
+    {
+      "tradeName": "Burakomitron 700 SC",
+      "registrationNumber": "3873-0"
+    },
+    {
+      "tradeName": "Buteo Start",
+      "registrationNumber": "4486-0"
+    },
+    {
+      "tradeName": "Buteo Start",
+      "registrationNumber": "4526-0"
+    },
+    {
+      "tradeName": "Buteo Start",
+      "registrationNumber": "4601-0"
+    },
+    {
+      "tradeName": "Butisan",
+      "registrationNumber": "2307-0"
+    },
+    {
+      "tradeName": "Butisan 500 SC",
+      "registrationNumber": "2307-5"
+    },
+    {
+      "tradeName": "Butisan Gold AT",
+      "registrationNumber": "3643-0"
+    },
+    {
+      "tradeName": "Butisan Kombi",
+      "registrationNumber": "3401-0"
+    },
+    {
+      "tradeName": "Butisan Top",
+      "registrationNumber": "3403-0"
+    },
+    {
+      "tradeName": "Butisan Top",
+      "registrationNumber": "3403-1"
+    },
+    {
+      "tradeName": "Butoxone",
+      "registrationNumber": "1052-0"
+    },
+    {
+      "tradeName": "Butoxone",
+      "registrationNumber": "1052-5"
+    },
+    {
+      "tradeName": "Buzz Ultra DF",
+      "registrationNumber": "3814-0"
+    },
+    {
+      "tradeName": "Buzzin",
+      "registrationNumber": "3585-0"
+    },
+    {
+      "tradeName": "Cacle",
+      "registrationNumber": "4247-905"
+    },
+    {
+      "tradeName": "CacTai",
+      "registrationNumber": "4247-904"
+    },
+    {
+      "tradeName": "Cadou SC",
+      "registrationNumber": "3941-0"
+    },
+    {
+      "tradeName": "Californicus-System",
+      "registrationNumber": "3068-0"
+    },
+    {
+      "tradeName": "Callisto",
+      "registrationNumber": "2726-0"
+    },
+    {
+      "tradeName": "Callisto",
+      "registrationNumber": "2726-1"
+    },
+    {
+      "tradeName": "Callisto 50 WG",
+      "registrationNumber": "3586-0"
+    },
+    {
+      "tradeName": "Calma",
+      "registrationNumber": "3163-0"
+    },
+    {
+      "tradeName": "Campus",
+      "registrationNumber": "2798-902"
+    },
+    {
+      "tradeName": "Cantus",
+      "registrationNumber": "3149-0"
+    },
+    {
+      "tradeName": "Cantus Revy",
+      "registrationNumber": "4445-0"
+    },
+    {
+      "tradeName": "Capetus Extra",
+      "registrationNumber": "4430-0"
+    },
+    {
+      "tradeName": "Caprecol flüssig",
+      "registrationNumber": "2469-901"
+    },
+    {
+      "tradeName": "Caprecol ST",
+      "registrationNumber": "2779-901"
+    },
+    {
+      "tradeName": "Capreno",
+      "registrationNumber": "3683-0"
+    },
+    {
+      "tradeName": "Capri Twin",
+      "registrationNumber": "3049-3"
+    },
+    {
+      "tradeName": "Capsanem",
+      "registrationNumber": "4390-0"
+    },
+    {
+      "tradeName": "Captan Plus 80 WDG",
+      "registrationNumber": "3638-0"
+    },
+    {
+      "tradeName": "Captan Plus 80 WDG",
+      "registrationNumber": "3638-1"
+    },
+    {
+      "tradeName": "Captan Plus 80 WG",
+      "registrationNumber": "3638-902"
+    },
+    {
+      "tradeName": "Caramba",
+      "registrationNumber": "2653-0"
+    },
+    {
+      "tradeName": "Caramba Turbo",
+      "registrationNumber": "3155-2"
+    },
+    {
+      "tradeName": "Carax",
+      "registrationNumber": "3155-0"
+    },
+    {
+      "tradeName": "Carbo Kohlensäure",
+      "registrationNumber": "3681-0"
+    },
+    {
+      "tradeName": "Careo N",
+      "registrationNumber": "2739-904"
+    },
+    {
+      "tradeName": "Carial flex",
+      "registrationNumber": "3362-0"
+    },
+    {
+      "tradeName": "Carial Star",
+      "registrationNumber": "3232-3"
+    },
+    {
+      "tradeName": "Carmina 640",
+      "registrationNumber": "3085-0"
+    },
+    {
+      "tradeName": "Carmina 640",
+      "registrationNumber": "3085-1"
+    },
+    {
+      "tradeName": "Carnadine",
+      "registrationNumber": "4426-0"
+    },
+    {
+      "tradeName": "Carnadine",
+      "registrationNumber": "4426-1"
+    },
+    {
+      "tradeName": "Carnadine 200",
+      "registrationNumber": "4426-3"
+    },
+    {
+      "tradeName": "Carneol",
+      "registrationNumber": "3273-901"
+    },
+    {
+      "tradeName": "Carpatus SC",
+      "registrationNumber": "3860-901"
+    },
+    {
+      "tradeName": "Carpovirusine",
+      "registrationNumber": "2570-0"
+    },
+    {
+      "tradeName": "Carpovirusine Evo 2",
+      "registrationNumber": "3851-0"
+    },
+    {
+      "tradeName": "Carpovirusine Ultra",
+      "registrationNumber": "4600-0"
+    },
+    {
+      "tradeName": "Casino Royale",
+      "registrationNumber": "4581-0"
+    },
+    {
+      "tradeName": "Casper",
+      "registrationNumber": "3088-0"
+    },
+    {
+      "tradeName": "Casper",
+      "registrationNumber": "3088-1"
+    },
+    {
+      "tradeName": "Cayunis",
+      "registrationNumber": "4518-0"
+    },
+    {
+      "tradeName": "Cedomon",
+      "registrationNumber": "2807-0"
+    },
+    {
+      "tradeName": "Celaflor Combi-Rosen Spray",
+      "registrationNumber": "3231-0"
+    },
+    {
+      "tradeName": "Celaflor Rasen-Unkrautfrei Weedex",
+      "registrationNumber": "3191-902"
+    },
+    {
+      "tradeName": "Celest",
+      "registrationNumber": "2575-0"
+    },
+    {
+      "tradeName": "Celest extra 050 FS",
+      "registrationNumber": "2578-0"
+    },
+    {
+      "tradeName": "Celest trio",
+      "registrationNumber": "3239-0"
+    },
+    {
+      "tradeName": "Centium CS",
+      "registrationNumber": "2733-0"
+    },
+    {
+      "tradeName": "Centurion Plus",
+      "registrationNumber": "4254-0"
+    },
+    {
+      "tradeName": "Centurion Plus",
+      "registrationNumber": "4254-2"
+    },
+    {
+      "tradeName": "Cerall",
+      "registrationNumber": "2860-0"
+    },
+    {
+      "tradeName": "Cerone 480 SL",
+      "registrationNumber": "4325-0"
+    },
+    {
+      "tradeName": "Certosan",
+      "registrationNumber": "3011-0"
+    },
+    {
+      "tradeName": "Cervacol Plus",
+      "registrationNumber": "3755-0"
+    },
+    {
+      "tradeName": "CHA 1640",
+      "registrationNumber": "3844-0"
+    },
+    {
+      "tradeName": "Challenge 600",
+      "registrationNumber": "2579-5"
+    },
+    {
+      "tradeName": "Chamane",
+      "registrationNumber": "4117-0"
+    },
+    {
+      "tradeName": "Champ WG",
+      "registrationNumber": "3676-0"
+    },
+    {
+      "tradeName": "Chandor",
+      "registrationNumber": "4229-0"
+    },
+    {
+      "tradeName": "Chanon",
+      "registrationNumber": "4318-0"
+    },
+    {
+      "tradeName": "Chanon",
+      "registrationNumber": "4318-2"
+    },
+    {
+      "tradeName": "CheckMate Puffer CM",
+      "registrationNumber": "4144-0"
+    },
+    {
+      "tradeName": "CheckMate Puffer LB/EA",
+      "registrationNumber": "4196-0"
+    },
+    {
+      "tradeName": "CheckMate Puffer Leaf Multi",
+      "registrationNumber": "4416-0"
+    },
+    {
+      "tradeName": "Chikara",
+      "registrationNumber": "3106-0"
+    },
+    {
+      "tradeName": "Chikara 25 WG",
+      "registrationNumber": "3106-1"
+    },
+    {
+      "tradeName": "Chorus 50 WG",
+      "registrationNumber": "2615-0"
+    },
+    {
+      "tradeName": "Chorus Next",
+      "registrationNumber": "2997-901"
+    },
+    {
+      "tradeName": "Chorus Next Bis",
+      "registrationNumber": "4398-903"
+    },
+    {
+      "tradeName": "Chrome",
+      "registrationNumber": "4408-0"
+    },
+    {
+      "tradeName": "Chrysal BVB",
+      "registrationNumber": "4181-0"
+    },
+    {
+      "tradeName": "Chrysal Plus",
+      "registrationNumber": "4182-0"
+    },
+    {
+      "tradeName": "Chryson",
+      "registrationNumber": "2487-0"
+    },
+    {
+      "tradeName": "Chrysopa-System",
+      "registrationNumber": "3582-0"
+    },
+    {
+      "tradeName": "Chrysoperla",
+      "registrationNumber": "4282-0"
+    },
+    {
+      "tradeName": "Chryzoplus grau 0.8%",
+      "registrationNumber": "3854-0"
+    },
+    {
+      "tradeName": "Chryzotop grün 0.25%",
+      "registrationNumber": "3853-0"
+    },
+    {
+      "tradeName": "Cidely",
+      "registrationNumber": "3157-2"
+    },
+    {
+      "tradeName": "Citation",
+      "registrationNumber": "3600-0"
+    },
+    {
+      "tradeName": "Clap",
+      "registrationNumber": "3830-0"
+    },
+    {
+      "tradeName": "Clap Forte",
+      "registrationNumber": "4003-0"
+    },
+    {
+      "tradeName": "Clara",
+      "registrationNumber": "4614-0"
+    },
+    {
+      "tradeName": "Clartex Neo",
+      "registrationNumber": "3222-0"
+    },
+    {
+      "tradeName": "Clayton Neutron",
+      "registrationNumber": "4460-0"
+    },
+    {
+      "tradeName": "Cleave",
+      "registrationNumber": "3467-1"
+    },
+    {
+      "tradeName": "Clematis",
+      "registrationNumber": "3261-3"
+    },
+    {
+      "tradeName": "Clentiga",
+      "registrationNumber": "3531-0"
+    },
+    {
+      "tradeName": "Clethofin 240",
+      "registrationNumber": "4257-0"
+    },
+    {
+      "tradeName": "Climb",
+      "registrationNumber": "4265-0"
+    },
+    {
+      "tradeName": "Clinic Xtreme",
+      "registrationNumber": "4467-0"
+    },
+    {
+      "tradeName": "Cliophar 600 SL",
+      "registrationNumber": "3611-0"
+    },
+    {
+      "tradeName": "Cliophar 600 SL",
+      "registrationNumber": "3611-1"
+    },
+    {
+      "tradeName": "Clomate",
+      "registrationNumber": "3261-0"
+    },
+    {
+      "tradeName": "Clomate",
+      "registrationNumber": "3261-2"
+    },
+    {
+      "tradeName": "Clomazone 360 CS",
+      "registrationNumber": "4283-0"
+    },
+    {
+      "tradeName": "Closer",
+      "registrationNumber": "4039-0"
+    },
+    {
+      "tradeName": "Closer",
+      "registrationNumber": "4039-1"
+    },
+    {
+      "tradeName": "Clyde",
+      "registrationNumber": "4292-0"
+    },
+    {
+      "tradeName": "Clyde FX",
+      "registrationNumber": "4211-0"
+    },
+    {
+      "tradeName": "Coccin",
+      "registrationNumber": "3041-0"
+    },
+    {
+      "tradeName": "Cofeno",
+      "registrationNumber": "4303-901"
+    },
+    {
+      "tradeName": "Collis",
+      "registrationNumber": "3299-0"
+    },
+    {
+      "tradeName": "Colombus EC",
+      "registrationNumber": "3338-4"
+    },
+    {
+      "tradeName": "Columbo 0.8 MG",
+      "registrationNumber": "4114-0"
+    },
+    {
+      "tradeName": "Columbus",
+      "registrationNumber": "3338-2"
+    },
+    {
+      "tradeName": "Colzamid",
+      "registrationNumber": "4462-0"
+    },
+    {
+      "tradeName": "Colzor Trio",
+      "registrationNumber": "3060-0"
+    },
+    {
+      "tradeName": "COM 10703 AI EC",
+      "registrationNumber": "3852-0"
+    },
+    {
+      "tradeName": "COM 10704 AI AL",
+      "registrationNumber": "3855-0"
+    },
+    {
+      "tradeName": "COM 503 15 H GR",
+      "registrationNumber": "3459-0"
+    },
+    {
+      "tradeName": "COM 503 21 H GR",
+      "registrationNumber": "3460-0"
+    },
+    {
+      "tradeName": "COM 508 09 H AL",
+      "registrationNumber": "3252-0"
+    },
+    {
+      "tradeName": "COM 508 16 H EW",
+      "registrationNumber": "3251-0"
+    },
+    {
+      "tradeName": "COM 508 24 H EC",
+      "registrationNumber": "4423-0"
+    },
+    {
+      "tradeName": "COM 802 09 M RB",
+      "registrationNumber": "3344-0"
+    },
+    {
+      "tradeName": "Combi-Rosen Spritzmittel",
+      "registrationNumber": "3230-0"
+    },
+    {
+      "tradeName": "Comet",
+      "registrationNumber": "3965-0"
+    },
+    {
+      "tradeName": "Comet 200 EC",
+      "registrationNumber": "3965-1"
+    },
+    {
+      "tradeName": "Command 36 CS",
+      "registrationNumber": "2733-4"
+    },
+    {
+      "tradeName": "Command 36 CS",
+      "registrationNumber": "2733-5"
+    },
+    {
+      "tradeName": "Command 48 EC",
+      "registrationNumber": "2524-0"
+    },
+    {
+      "tradeName": "Compo Austrieb-Spritzmittel",
+      "registrationNumber": "2633-901"
+    },
+    {
+      "tradeName": "Compo Bio Insekten-frei AF",
+      "registrationNumber": "2891-905"
+    },
+    {
+      "tradeName": "Compo Bio Insekten-frei Neem",
+      "registrationNumber": "2699-902"
+    },
+    {
+      "tradeName": "Compo Bio Mehltau-frei Thiovit Jet",
+      "registrationNumber": "2632-902"
+    },
+    {
+      "tradeName": "Compo Bio Mehltau-frei Universal AF",
+      "registrationNumber": "4311-901"
+    },
+    {
+      "tradeName": "Compo Bio Rasen Moos-frei Herbistop",
+      "registrationNumber": "3251-902"
+    },
+    {
+      "tradeName": "Compo Bio Schneckenkorn",
+      "registrationNumber": "3344-901"
+    },
+    {
+      "tradeName": "Compo Bio Unkrautvernichter Herbistop",
+      "registrationNumber": "3251-901"
+    },
+    {
+      "tradeName": "Compo Bio Unkrautvernichter Herbistop AF",
+      "registrationNumber": "3252-901"
+    },
+    {
+      "tradeName": "Compo Blattlaus-frei Nativert",
+      "registrationNumber": "3852-902"
+    },
+    {
+      "tradeName": "Compo Blattlaus-frei Nativert AF",
+      "registrationNumber": "3855-906"
+    },
+    {
+      "tradeName": "Compo Buchsbaumzünsler K.O. Rapid",
+      "registrationNumber": "4631-901"
+    },
+    {
+      "tradeName": "Compo Duaxo Rosen Pilz-frei",
+      "registrationNumber": "3346-901"
+    },
+    {
+      "tradeName": "Compo Duaxo Rosen Pilz-frei AF",
+      "registrationNumber": "3346-903"
+    },
+    {
+      "tradeName": "Compo Duaxo Rosen Pilz-Spray",
+      "registrationNumber": "3345-902"
+    },
+    {
+      "tradeName": "Compo Duaxo Universal Pilz-frei AF",
+      "registrationNumber": "3345-901"
+    },
+    {
+      "tradeName": "Compo Floranid Rasendünger gegen Unkraut + Moos",
+      "registrationNumber": "3460-901"
+    },
+    {
+      "tradeName": "Compo Floranid Rasendünger mit Moosvernichter",
+      "registrationNumber": "3101-0"
+    },
+    {
+      "tradeName": "Compo Floranid Rasendünger plus Unkrautvernichter",
+      "registrationNumber": "3459-901"
+    },
+    {
+      "tradeName": "Compo Grün- und Blühpflanzen Schädlings-frei AF",
+      "registrationNumber": "3855-904"
+    },
+    {
+      "tradeName": "Compo Insektenmittel PREV-AM",
+      "registrationNumber": "3882-901"
+    },
+    {
+      "tradeName": "Compo Kräuter & Gemüse Blattlaus-frei Nativert AF",
+      "registrationNumber": "3855-907"
+    },
+    {
+      "tradeName": "Compo Mehltau-frei Thiovit Jet",
+      "registrationNumber": "2632-901"
+    },
+    {
+      "tradeName": "Compo Nativert Blattlaus-frei",
+      "registrationNumber": "3852-901"
+    },
+    {
+      "tradeName": "Compo Nativert Kräuter und Gemüse Blattlaus-frei AF",
+      "registrationNumber": "3855-902"
+    },
+    {
+      "tradeName": "Compo Nativiert Blattlaus-frei AF",
+      "registrationNumber": "3855-903"
+    },
+    {
+      "tradeName": "Compo Orchideen Schädlings-frei AF",
+      "registrationNumber": "3855-905"
+    },
+    {
+      "tradeName": "Compo Ortiva Rosen Pilz-frei",
+      "registrationNumber": "2711-906"
+    },
+    {
+      "tradeName": "Compo Ortiva Spezial Pilz-frei",
+      "registrationNumber": "2711-905"
+    },
+    {
+      "tradeName": "Compo Ortiva Spezial Pilz-frei AF",
+      "registrationNumber": "2711-908"
+    },
+    {
+      "tradeName": "Compo Ortiva Universal Pilz-frei",
+      "registrationNumber": "2711-907"
+    },
+    {
+      "tradeName": "Compo Rasendünger gegen Unkraut + Moos",
+      "registrationNumber": "3460-902"
+    },
+    {
+      "tradeName": "Compo Rasendünger mit Moosvernichter",
+      "registrationNumber": "3101-902"
+    },
+    {
+      "tradeName": "Compo Rasendünger plus Unkrautvernichter",
+      "registrationNumber": "3459-905"
+    },
+    {
+      "tradeName": "Compo Rasenunkraut-Vernichter Banvel Quattro",
+      "registrationNumber": "3191-907"
+    },
+    {
+      "tradeName": "Compo Rasenunkraut-Vernichter Perfekt",
+      "registrationNumber": "3191-905"
+    },
+    {
+      "tradeName": "Compo Rosen Insekten- und Pilz-frei",
+      "registrationNumber": "4631-902"
+    },
+    {
+      "tradeName": "Compo Schnecken-frei",
+      "registrationNumber": "3220-901"
+    },
+    {
+      "tradeName": "Compo Schneckenkorn",
+      "registrationNumber": "3344-904"
+    },
+    {
+      "tradeName": "Compo Schädlings-frei plus",
+      "registrationNumber": "3141-901"
+    },
+    {
+      "tradeName": "Compo Schädlings-frei plus AF",
+      "registrationNumber": "3148-909"
+    },
+    {
+      "tradeName": "Compo Trauermücken-frei",
+      "registrationNumber": "2699-916"
+    },
+    {
+      "tradeName": "Compo Universal Pilz-frei Duaxo",
+      "registrationNumber": "2711-921"
+    },
+    {
+      "tradeName": "Compo Universal Pilz-frei Duaxo N",
+      "registrationNumber": "2711-922"
+    },
+    {
+      "tradeName": "Conaxis",
+      "registrationNumber": "4549-0"
+    },
+    {
+      "tradeName": "Concert SX",
+      "registrationNumber": "2932-0"
+    },
+    {
+      "tradeName": "Conclude AZT 250 SC",
+      "registrationNumber": "2711-915"
+    },
+    {
+      "tradeName": "ConShape",
+      "registrationNumber": "4194-0"
+    },
+    {
+      "tradeName": "Contra Schnecken 3%",
+      "registrationNumber": "3196-904"
+    },
+    {
+      "tradeName": "Conviso One",
+      "registrationNumber": "4004-0"
+    },
+    {
+      "tradeName": "Copac Flow",
+      "registrationNumber": "3675-0"
+    },
+    {
+      "tradeName": "Copforce Extra",
+      "registrationNumber": "4035-0"
+    },
+    {
+      "tradeName": "Coprantol Duo",
+      "registrationNumber": "3966-901"
+    },
+    {
+      "tradeName": "Coragen",
+      "registrationNumber": "2984-0"
+    },
+    {
+      "tradeName": "Coragen",
+      "registrationNumber": "2984-1"
+    },
+    {
+      "tradeName": "Coragen",
+      "registrationNumber": "2984-3"
+    },
+    {
+      "tradeName": "Coragen",
+      "registrationNumber": "2984-4"
+    },
+    {
+      "tradeName": "Corey",
+      "registrationNumber": "4448-0"
+    },
+    {
+      "tradeName": "Corida",
+      "registrationNumber": "3845-0"
+    },
+    {
+      "tradeName": "Cornufera MV Moosvernichter plus Rasendünger",
+      "registrationNumber": "3608-911"
+    },
+    {
+      "tradeName": "Cornufera UV Unkrautvernichter mit Rasendünger",
+      "registrationNumber": "2786-911"
+    },
+    {
+      "tradeName": "Corrib 250",
+      "registrationNumber": "4387-903"
+    },
+    {
+      "tradeName": "Cortina",
+      "registrationNumber": "4566-901"
+    },
+    {
+      "tradeName": "Cosan-Super Kolloid-Netzschwefel",
+      "registrationNumber": "238-0"
+    },
+    {
+      "tradeName": "Cosayr",
+      "registrationNumber": "4584-0"
+    },
+    {
+      "tradeName": "Cossack Star",
+      "registrationNumber": "3819-0"
+    },
+    {
+      "tradeName": "Countdown NT",
+      "registrationNumber": "3786-0"
+    },
+    {
+      "tradeName": "Credible",
+      "registrationNumber": "4410-0"
+    },
+    {
+      "tradeName": "Credit Xtreme",
+      "registrationNumber": "4467-1"
+    },
+    {
+      "tradeName": "Cresendo",
+      "registrationNumber": "4466-0"
+    },
+    {
+      "tradeName": "Crimson",
+      "registrationNumber": "4783-0"
+    },
+    {
+      "tradeName": "Croupier OD",
+      "registrationNumber": "3992-0"
+    },
+    {
+      "tradeName": "Crown MH",
+      "registrationNumber": "3785-901"
+    },
+    {
+      "tradeName": "Cryptobug",
+      "registrationNumber": "4510-0"
+    },
+    {
+      "tradeName": "Cryptolaemus(-L)-System",
+      "registrationNumber": "4126-0"
+    },
+    {
+      "tradeName": "Crypton",
+      "registrationNumber": "2499-0"
+    },
+    {
+      "tradeName": "Cube",
+      "registrationNumber": "4380-0"
+    },
+    {
+      "tradeName": "Cucumeris",
+      "registrationNumber": "4246-0"
+    },
+    {
+      "tradeName": "Cucumeris-(Vermiculite-)System",
+      "registrationNumber": "3511-0"
+    },
+    {
+      "tradeName": "Cucumeris-Breeding-System",
+      "registrationNumber": "3510-0"
+    },
+    {
+      "tradeName": "Cumatol",
+      "registrationNumber": "3404-901"
+    },
+    {
+      "tradeName": "Cupravit",
+      "registrationNumber": "3405-901"
+    },
+    {
+      "tradeName": "Cupro-Flow",
+      "registrationNumber": "3034-9"
+    },
+    {
+      "tradeName": "Cuprofor flow",
+      "registrationNumber": "3034-901"
+    },
+    {
+      "tradeName": "Cuproxat flüssig",
+      "registrationNumber": "2097-0"
+    },
+    {
+      "tradeName": "Cuproxat S.D.I.",
+      "registrationNumber": "2097-3"
+    },
+    {
+      "tradeName": "Cuprozin progress",
+      "registrationNumber": "3405-0"
+    },
+    {
+      "tradeName": "Cuprozin progress",
+      "registrationNumber": "3405-2"
+    },
+    {
+      "tradeName": "Curamat AZ Rosen-Pilzfrei",
+      "registrationNumber": "2711-918"
+    },
+    {
+      "tradeName": "Curamat AZ Universal-Pilzfrei",
+      "registrationNumber": "2711-920"
+    },
+    {
+      "tradeName": "Curamat Rosen-Pilzfrei",
+      "registrationNumber": "3641-901"
+    },
+    {
+      "tradeName": "Curatio",
+      "registrationNumber": "4489-0"
+    },
+    {
+      "tradeName": "Curatio",
+      "registrationNumber": "4533-0"
+    },
+    {
+      "tradeName": "Curatio",
+      "registrationNumber": "4545-0"
+    },
+    {
+      "tradeName": "Curbatur 250 EC",
+      "registrationNumber": "3771-901"
+    },
+    {
+      "tradeName": "Curifol Triple WG",
+      "registrationNumber": "4544-901"
+    },
+    {
+      "tradeName": "Custodia",
+      "registrationNumber": "3341-0"
+    },
+    {
+      "tradeName": "Cuter",
+      "registrationNumber": "3821-904"
+    },
+    {
+      "tradeName": "Cylem",
+      "registrationNumber": "3553-4"
+    },
+    {
+      "tradeName": "Cymbal",
+      "registrationNumber": "3476-1"
+    },
+    {
+      "tradeName": "Cymbal 45",
+      "registrationNumber": "3476-0"
+    },
+    {
+      "tradeName": "Cymbal Flow",
+      "registrationNumber": "3739-0"
+    },
+    {
+      "tradeName": "Cymbal Flow",
+      "registrationNumber": "3739-1"
+    },
+    {
+      "tradeName": "Cymbigon forte",
+      "registrationNumber": "3998-0"
+    },
+    {
+      "tradeName": "Cymopur WG",
+      "registrationNumber": "3478-0"
+    },
+    {
+      "tradeName": "Cyperkill Max 500 EC",
+      "registrationNumber": "3998-1"
+    },
+    {
+      "tradeName": "CYPERKILL MAX 500 EC",
+      "registrationNumber": "3998-2"
+    },
+    {
+      "tradeName": "Dagonis",
+      "registrationNumber": "4036-0"
+    },
+    {
+      "tradeName": "Daneva",
+      "registrationNumber": "4500-0"
+    },
+    {
+      "tradeName": "Darby",
+      "registrationNumber": "2759-901"
+    },
+    {
+      "tradeName": "Darium",
+      "registrationNumber": "4370-0"
+    },
+    {
+      "tradeName": "Dauphin 45 WDG",
+      "registrationNumber": "3288-0"
+    },
+    {
+      "tradeName": "Daxur",
+      "registrationNumber": "4454-0"
+    },
+    {
+      "tradeName": "DD-TrichoKugel Mais",
+      "registrationNumber": "3953-0"
+    },
+    {
+      "tradeName": "Deccopyr Pot",
+      "registrationNumber": "4275-0"
+    },
+    {
+      "tradeName": "Decis Expert 100 EC",
+      "registrationNumber": "3554-1"
+    },
+    {
+      "tradeName": "Decis Forte",
+      "registrationNumber": "3554-0"
+    },
+    {
+      "tradeName": "Decis Gemüse Schädlingsfrei",
+      "registrationNumber": "3365-0"
+    },
+    {
+      "tradeName": "Dedevap green",
+      "registrationNumber": "3423-902"
+    },
+    {
+      "tradeName": "Dedevap plus",
+      "registrationNumber": "3525-902"
+    },
+    {
+      "tradeName": "Degenerans-System",
+      "registrationNumber": "2944-0"
+    },
+    {
+      "tradeName": "Degesch Plate",
+      "registrationNumber": "4119-0"
+    },
+    {
+      "tradeName": "Dehner Moosvernichter und Rasendünger",
+      "registrationNumber": "3608-910"
+    },
+    {
+      "tradeName": "Dehner Schneckengranulat",
+      "registrationNumber": "3220-903"
+    },
+    {
+      "tradeName": "Dehner Schneckenkorn",
+      "registrationNumber": "2834-908"
+    },
+    {
+      "tradeName": "Dehner Schneckenkorn",
+      "registrationNumber": "3620-903"
+    },
+    {
+      "tradeName": "Dehner Schneckenkorn Wirkstoff aus der Natur",
+      "registrationNumber": "2605-903"
+    },
+    {
+      "tradeName": "Dehner Unkrautvernichter plus Rasendünger",
+      "registrationNumber": "2786-906"
+    },
+    {
+      "tradeName": "Delan 70 WG",
+      "registrationNumber": "3450-1"
+    },
+    {
+      "tradeName": "Delan 700 WG",
+      "registrationNumber": "3450-4"
+    },
+    {
+      "tradeName": "Delan Pro",
+      "registrationNumber": "3632-0"
+    },
+    {
+      "tradeName": "Delan Pro",
+      "registrationNumber": "3632-1"
+    },
+    {
+      "tradeName": "Delan Pro",
+      "registrationNumber": "3632-2"
+    },
+    {
+      "tradeName": "Delan WG",
+      "registrationNumber": "3450-0"
+    },
+    {
+      "tradeName": "Delaro Forte",
+      "registrationNumber": "4332-0"
+    },
+    {
+      "tradeName": "Delaro Forte",
+      "registrationNumber": "4332-1"
+    },
+    {
+      "tradeName": "Delfin WG",
+      "registrationNumber": "3865-0"
+    },
+    {
+      "tradeName": "Delion",
+      "registrationNumber": "4216-901"
+    },
+    {
+      "tradeName": "Delphibug",
+      "registrationNumber": "4037-0"
+    },
+    {
+      "tradeName": "Delta Super",
+      "registrationNumber": "3389-0"
+    },
+    {
+      "tradeName": "Deltax Schädlingsfrei AF",
+      "registrationNumber": "3365-902"
+    },
+    {
+      "tradeName": "Deltax Zierpflanzenspray AF",
+      "registrationNumber": "3365-904"
+    },
+    {
+      "tradeName": "Delu Wühlmausgas",
+      "registrationNumber": "4218-0"
+    },
+    {
+      "tradeName": "Depict",
+      "registrationNumber": "4472-0"
+    },
+    {
+      "tradeName": "Detia Wühlmausköder Neu",
+      "registrationNumber": "2703-902"
+    },
+    {
+      "tradeName": "Devrinol",
+      "registrationNumber": "2348-0"
+    },
+    {
+      "tradeName": "Diabolo",
+      "registrationNumber": "2873-0"
+    },
+    {
+      "tradeName": "Diagonal",
+      "registrationNumber": "4251-0"
+    },
+    {
+      "tradeName": "Dianem",
+      "registrationNumber": "3318-0"
+    },
+    {
+      "tradeName": "Diastar Maxi",
+      "registrationNumber": "4067-1"
+    },
+    {
+      "tradeName": "Diastar Maxi",
+      "registrationNumber": "4067-3"
+    },
+    {
+      "tradeName": "Dicamba Flüssig",
+      "registrationNumber": "3765-901"
+    },
+    {
+      "tradeName": "Dicash",
+      "registrationNumber": "3765-0"
+    },
+    {
+      "tradeName": "Dicopur 500 flüssig",
+      "registrationNumber": "2759-0"
+    },
+    {
+      "tradeName": "Dicopur M",
+      "registrationNumber": "3052-0"
+    },
+    {
+      "tradeName": "Dicotex",
+      "registrationNumber": "3191-0"
+    },
+    {
+      "tradeName": "Difaz",
+      "registrationNumber": "4405-0"
+    },
+    {
+      "tradeName": "Difcor",
+      "registrationNumber": "3323-2"
+    },
+    {
+      "tradeName": "Difcor 250 EC",
+      "registrationNumber": "3323-0"
+    },
+    {
+      "tradeName": "Difend",
+      "registrationNumber": "3415-0"
+    },
+    {
+      "tradeName": "Difend extra",
+      "registrationNumber": "3793-0"
+    },
+    {
+      "tradeName": "Difenofin",
+      "registrationNumber": "4000-0"
+    },
+    {
+      "tradeName": "Difenzone",
+      "registrationNumber": "3285-0"
+    },
+    {
+      "tradeName": "Diflanil 500 SC",
+      "registrationNumber": "3368-0"
+    },
+    {
+      "tradeName": "Diflanil 500 SC",
+      "registrationNumber": "3368-1"
+    },
+    {
+      "tradeName": "Difol",
+      "registrationNumber": "4421-0"
+    },
+    {
+      "tradeName": "Diglyphus-System",
+      "registrationNumber": "2886-0"
+    },
+    {
+      "tradeName": "Dimethofin",
+      "registrationNumber": "3995-0"
+    },
+    {
+      "tradeName": "Diniro",
+      "registrationNumber": "3857-901"
+    },
+    {
+      "tradeName": "Diopyr",
+      "registrationNumber": "3885-901"
+    },
+    {
+      "tradeName": "Diprospero",
+      "registrationNumber": "4161-0"
+    },
+    {
+      "tradeName": "Dirabel",
+      "registrationNumber": "3889-0"
+    },
+    {
+      "tradeName": "Dirager",
+      "registrationNumber": "4020-0"
+    },
+    {
+      "tradeName": "Diramid",
+      "registrationNumber": "3891-0"
+    },
+    {
+      "tradeName": "Director",
+      "registrationNumber": "4465-0"
+    },
+    {
+      "tradeName": "Dirigent SX",
+      "registrationNumber": "3233-0"
+    },
+    {
+      "tradeName": "Disco",
+      "registrationNumber": "4136-0"
+    },
+    {
+      "tradeName": "Dividend",
+      "registrationNumber": "4534-0"
+    },
+    {
+      "tradeName": "Doff Power Schneckenkorn",
+      "registrationNumber": "4132-0"
+    },
+    {
+      "tradeName": "Doff Schneckenkorn",
+      "registrationNumber": "4131-0"
+    },
+    {
+      "tradeName": "Domark 10 EC",
+      "registrationNumber": "3361-0"
+    },
+    {
+      "tradeName": "Domark 10 EC",
+      "registrationNumber": "3361-1"
+    },
+    {
+      "tradeName": "Dragster",
+      "registrationNumber": "4501-0"
+    },
+    {
+      "tradeName": "Dual Next",
+      "registrationNumber": "2881-902"
+    },
+    {
+      "tradeName": "Duaxo Rosen Pilz-frei AF",
+      "registrationNumber": "3345-903"
+    },
+    {
+      "tradeName": "Duaxo Rosen-Pilz Spray",
+      "registrationNumber": "3345-0"
+    },
+    {
+      "tradeName": "Duaxo Universal Pilz-frei",
+      "registrationNumber": "3346-0"
+    },
+    {
+      "tradeName": "Ducel",
+      "registrationNumber": "4030-0"
+    },
+    {
+      "tradeName": "Dukes",
+      "registrationNumber": "4537-0"
+    },
+    {
+      "tradeName": "Duplosan KV",
+      "registrationNumber": "3048-0"
+    },
+    {
+      "tradeName": "Duplosan KV neu",
+      "registrationNumber": "2841-0"
+    },
+    {
+      "tradeName": "Duplosan Super",
+      "registrationNumber": "3754-0"
+    },
+    {
+      "tradeName": "Duplosan turf",
+      "registrationNumber": "2841-901"
+    },
+    {
+      "tradeName": "Durano SL",
+      "registrationNumber": "4406-0"
+    },
+    {
+      "tradeName": "Duvit 420 FS",
+      "registrationNumber": "2037-901"
+    },
+    {
+      "tradeName": "Dynali",
+      "registrationNumber": "3256-0"
+    },
+    {
+      "tradeName": "Dynali",
+      "registrationNumber": "3256-1"
+    },
+    {
+      "tradeName": "Eclaire",
+      "registrationNumber": "4243-0"
+    },
+    {
+      "tradeName": "Ecodian CP",
+      "registrationNumber": "3766-0"
+    },
+    {
+      "tradeName": "Ecometal",
+      "registrationNumber": "4164-0"
+    },
+    {
+      "tradeName": "Elanvy",
+      "registrationNumber": "4481-0"
+    },
+    {
+      "tradeName": "Elanza",
+      "registrationNumber": "4513-0"
+    },
+    {
+      "tradeName": "Elatus Era",
+      "registrationNumber": "3829-0"
+    },
+    {
+      "tradeName": "Elatus Era",
+      "registrationNumber": "3829-1"
+    },
+    {
+      "tradeName": "Elatus Era",
+      "registrationNumber": "3829-2"
+    },
+    {
+      "tradeName": "Electis CX",
+      "registrationNumber": "3640-1"
+    },
+    {
+      "tradeName": "Elumis",
+      "registrationNumber": "3210-0"
+    },
+    {
+      "tradeName": "Eminent",
+      "registrationNumber": "3361-902"
+    },
+    {
+      "tradeName": "En-Strip Encarsia formosa",
+      "registrationNumber": "2511-0"
+    },
+    {
+      "tradeName": "Encarsia",
+      "registrationNumber": "4371-0"
+    },
+    {
+      "tradeName": "Encarsia-System",
+      "registrationNumber": "3514-0"
+    },
+    {
+      "tradeName": "Encon",
+      "registrationNumber": "2492-0"
+    },
+    {
+      "tradeName": "Enermix",
+      "registrationNumber": "3942-0"
+    },
+    {
+      "tradeName": "Enervin Pro",
+      "registrationNumber": "4603-0"
+    },
+    {
+      "tradeName": "Enervin SC",
+      "registrationNumber": "4221-0"
+    },
+    {
+      "tradeName": "Enervin SC",
+      "registrationNumber": "4221-1"
+    },
+    {
+      "tradeName": "Engerling-Stopp",
+      "registrationNumber": "4249-0"
+    },
+    {
+      "tradeName": "Entonem",
+      "registrationNumber": "4515-0"
+    },
+    {
+      "tradeName": "Epsom",
+      "registrationNumber": "3636-0"
+    },
+    {
+      "tradeName": "Era",
+      "registrationNumber": "4247-903"
+    },
+    {
+      "tradeName": "Eradicoat Max",
+      "registrationNumber": "4059-0"
+    },
+    {
+      "tradeName": "Ercal",
+      "registrationNumber": "2861-0"
+    },
+    {
+      "tradeName": "Ercal Eretmocerus eremicus",
+      "registrationNumber": "4075-0"
+    },
+    {
+      "tradeName": "Eretmocerus-System",
+      "registrationNumber": "3555-0"
+    },
+    {
+      "tradeName": "Erresei R6",
+      "registrationNumber": "3143-2"
+    },
+    {
+      "tradeName": "Erune 40 SC",
+      "registrationNumber": "4398-0"
+    },
+    {
+      "tradeName": "Ervi-System",
+      "registrationNumber": "2929-0"
+    },
+    {
+      "tradeName": "Ervipar",
+      "registrationNumber": "2901-0"
+    },
+    {
+      "tradeName": "Ervipar Aphidius ervi",
+      "registrationNumber": "4074-0"
+    },
+    {
+      "tradeName": "Ethephon Classic",
+      "registrationNumber": "4325-1"
+    },
+    {
+      "tradeName": "Ethofol",
+      "registrationNumber": "3421-901"
+    },
+    {
+      "tradeName": "Ethosat 500",
+      "registrationNumber": "4561-0"
+    },
+    {
+      "tradeName": "Etisso Schnecken-Linsen Power Packs",
+      "registrationNumber": "3134-901"
+    },
+    {
+      "tradeName": "Euflor Moosvernichter mit Rasendünger",
+      "registrationNumber": "3608-905"
+    },
+    {
+      "tradeName": "Euflor Unkrautvernichter mit Rasendünger",
+      "registrationNumber": "2786-913"
+    },
+    {
+      "tradeName": "Eupeodes-System",
+      "registrationNumber": "4324-0"
+    },
+    {
+      "tradeName": "Eurogreen Unkrautvernichter + Rasendünger",
+      "registrationNumber": "2786-902"
+    },
+    {
+      "tradeName": "Euskatel",
+      "registrationNumber": "4387-0"
+    },
+    {
+      "tradeName": "Euskatel",
+      "registrationNumber": "4387-1"
+    },
+    {
+      "tradeName": "Evure",
+      "registrationNumber": "3214-901"
+    },
+    {
+      "tradeName": "Excelero",
+      "registrationNumber": "4194-1"
+    },
+    {
+      "tradeName": "Excelero",
+      "registrationNumber": "4194-2"
+    },
+    {
+      "tradeName": "Exilis",
+      "registrationNumber": "3335-0"
+    },
+    {
+      "tradeName": "Exilis 100 SC",
+      "registrationNumber": "4779-0"
+    },
+    {
+      "tradeName": "Express Power SX",
+      "registrationNumber": "3112-0"
+    },
+    {
+      "tradeName": "Express SX",
+      "registrationNumber": "2914-0"
+    },
+    {
+      "tradeName": "Exteris Stressgard",
+      "registrationNumber": "3956-0"
+    },
+    {
+      "tradeName": "Faban",
+      "registrationNumber": "3591-0"
+    },
+    {
+      "tradeName": "Fabulis OD",
+      "registrationNumber": "4034-0"
+    },
+    {
+      "tradeName": "Falkon",
+      "registrationNumber": "3187-0"
+    },
+    {
+      "tradeName": "Fancy",
+      "registrationNumber": "4458-0"
+    },
+    {
+      "tradeName": "Fandango",
+      "registrationNumber": "3308-0"
+    },
+    {
+      "tradeName": "Fandango 200 EC",
+      "registrationNumber": "3308-1"
+    },
+    {
+      "tradeName": "Fantasia",
+      "registrationNumber": "4342-0"
+    },
+    {
+      "tradeName": "Fantasia",
+      "registrationNumber": "4342-1"
+    },
+    {
+      "tradeName": "Fantasia Gold",
+      "registrationNumber": "4342-2"
+    },
+    {
+      "tradeName": "Fantic F",
+      "registrationNumber": "3290-0"
+    },
+    {
+      "tradeName": "Fatizol 100 EC",
+      "registrationNumber": "3275-3"
+    },
+    {
+      "tradeName": "Feltiella-System",
+      "registrationNumber": "3619-0"
+    },
+    {
+      "tradeName": "Fence",
+      "registrationNumber": "4041-0"
+    },
+    {
+      "tradeName": "Fence 480 SC",
+      "registrationNumber": "4041-1"
+    },
+    {
+      "tradeName": "Ferramol Schneckenkorn",
+      "registrationNumber": "2605-0"
+    },
+    {
+      "tradeName": "Ferramol Schneckenkorn compact",
+      "registrationNumber": "3617-0"
+    },
+    {
+      "tradeName": "Ferrex",
+      "registrationNumber": "4051-0"
+    },
+    {
+      "tradeName": "Ferrimax",
+      "registrationNumber": "3940-901"
+    },
+    {
+      "tradeName": "Ferrocious",
+      "registrationNumber": "4564-0"
+    },
+    {
+      "tradeName": "Finalsan AF Unkrautfrei",
+      "registrationNumber": "3050-0"
+    },
+    {
+      "tradeName": "Finalsan AF UnkrautFrei Plus",
+      "registrationNumber": "3055-0"
+    },
+    {
+      "tradeName": "Finalsan AF UnkrautLos Speed",
+      "registrationNumber": "3050-904"
+    },
+    {
+      "tradeName": "Finalsan Konzentrat UnkrautFrei Plus",
+      "registrationNumber": "3056-0"
+    },
+    {
+      "tradeName": "Finalsan Unkrautfrei",
+      "registrationNumber": "3057-0"
+    },
+    {
+      "tradeName": "Finalsan UnkrautFrei Plus",
+      "registrationNumber": "3056-902"
+    },
+    {
+      "tradeName": "Finalsan UnkrautLos Speed",
+      "registrationNumber": "3057-904"
+    },
+    {
+      "tradeName": "Finy",
+      "registrationNumber": "3708-0"
+    },
+    {
+      "tradeName": "Fire Duo",
+      "registrationNumber": "4094-1"
+    },
+    {
+      "tradeName": "Fixor",
+      "registrationNumber": "3899-0"
+    },
+    {
+      "tradeName": "Flame",
+      "registrationNumber": "3850-0"
+    },
+    {
+      "tradeName": "Flame Duo",
+      "registrationNumber": "4094-0"
+    },
+    {
+      "tradeName": "Flash 500 SC",
+      "registrationNumber": "4634-0"
+    },
+    {
+      "tradeName": "Flazoflex",
+      "registrationNumber": "3106-3"
+    },
+    {
+      "tradeName": "Flexidor",
+      "registrationNumber": "2691-0"
+    },
+    {
+      "tradeName": "Flexity",
+      "registrationNumber": "3974-0"
+    },
+    {
+      "tradeName": "Flexity",
+      "registrationNumber": "3974-1"
+    },
+    {
+      "tradeName": "Flint",
+      "registrationNumber": "2758-0"
+    },
+    {
+      "tradeName": "Flint",
+      "registrationNumber": "2758-1"
+    },
+    {
+      "tradeName": "Flint",
+      "registrationNumber": "2758-2"
+    },
+    {
+      "tradeName": "Flint",
+      "registrationNumber": "2758-3"
+    },
+    {
+      "tradeName": "Flint Max",
+      "registrationNumber": "2980-0"
+    },
+    {
+      "tradeName": "Flint Max",
+      "registrationNumber": "2980-1"
+    },
+    {
+      "tradeName": "Flipper",
+      "registrationNumber": "4092-0"
+    },
+    {
+      "tradeName": "Floramite 240 SC",
+      "registrationNumber": "3282-0"
+    },
+    {
+      "tradeName": "Floraself Select Rasendünger mit Unkrautvernichter",
+      "registrationNumber": "2786-907"
+    },
+    {
+      "tradeName": "Florbac",
+      "registrationNumber": "3431-1"
+    },
+    {
+      "tradeName": "Florbac",
+      "registrationNumber": "3431-901"
+    },
+    {
+      "tradeName": "Florgib Tablet",
+      "registrationNumber": "3789-0"
+    },
+    {
+      "tradeName": "Flosul",
+      "registrationNumber": "4112-0"
+    },
+    {
+      "tradeName": "Flovine",
+      "registrationNumber": "2857-901"
+    },
+    {
+      "tradeName": "Flowbrix",
+      "registrationNumber": "3034-0"
+    },
+    {
+      "tradeName": "Flowbrix",
+      "registrationNumber": "3034-2"
+    },
+    {
+      "tradeName": "Flowbrix",
+      "registrationNumber": "3034-7"
+    },
+    {
+      "tradeName": "Flowbrix",
+      "registrationNumber": "3034-8"
+    },
+    {
+      "tradeName": "Flowbrix Trace",
+      "registrationNumber": "3034-4"
+    },
+    {
+      "tradeName": "Flua Power",
+      "registrationNumber": "4469-1"
+    },
+    {
+      "tradeName": "Fluazinova",
+      "registrationNumber": "3740-0"
+    },
+    {
+      "tradeName": "Fluence SX",
+      "registrationNumber": "2914-901"
+    },
+    {
+      "tradeName": "Fluent 500 SC",
+      "registrationNumber": "4015-0"
+    },
+    {
+      "tradeName": "Flurostar Forte",
+      "registrationNumber": "4475-0"
+    },
+    {
+      "tradeName": "Flurostar XL",
+      "registrationNumber": "4133-0"
+    },
+    {
+      "tradeName": "Flyer",
+      "registrationNumber": "4328-0"
+    },
+    {
+      "tradeName": "Flügol weiß",
+      "registrationNumber": "4609-0"
+    },
+    {
+      "tradeName": "Focus Ultra",
+      "registrationNumber": "3125-0"
+    },
+    {
+      "tradeName": "Focus Ultra",
+      "registrationNumber": "3125-3"
+    },
+    {
+      "tradeName": "Folicur",
+      "registrationNumber": "2670-0"
+    },
+    {
+      "tradeName": "Folicur",
+      "registrationNumber": "2670-5"
+    },
+    {
+      "tradeName": "Follow 80 WG",
+      "registrationNumber": "4108-0"
+    },
+    {
+      "tradeName": "Folpan 500 SC",
+      "registrationNumber": "2855-0"
+    },
+    {
+      "tradeName": "Folpan 80 WDG",
+      "registrationNumber": "2857-0"
+    },
+    {
+      "tradeName": "Folpan 80 WDG",
+      "registrationNumber": "2857-1"
+    },
+    {
+      "tradeName": "Folpan Gold",
+      "registrationNumber": "3545-0"
+    },
+    {
+      "tradeName": "Folpan Gold",
+      "registrationNumber": "3545-1"
+    },
+    {
+      "tradeName": "Folpan Gold",
+      "registrationNumber": "3545-2"
+    },
+    {
+      "tradeName": "Folpetis WG",
+      "registrationNumber": "4470-1"
+    },
+    {
+      "tradeName": "Folpetis WG",
+      "registrationNumber": "4470-901"
+    },
+    {
+      "tradeName": "Force 20 CS",
+      "registrationNumber": "3138-0"
+    },
+    {
+      "tradeName": "Force Evo",
+      "registrationNumber": "4067-0"
+    },
+    {
+      "tradeName": "Fornet",
+      "registrationNumber": "2959-0"
+    },
+    {
+      "tradeName": "Fortenza",
+      "registrationNumber": "4485-0"
+    },
+    {
+      "tradeName": "Fortuna",
+      "registrationNumber": "2792-0"
+    },
+    {
+      "tradeName": "Forum",
+      "registrationNumber": "2660-0"
+    },
+    {
+      "tradeName": "Forum Gold",
+      "registrationNumber": "3207-2"
+    },
+    {
+      "tradeName": "Foshield",
+      "registrationNumber": "4346-0"
+    },
+    {
+      "tradeName": "Fox",
+      "registrationNumber": "2783-0"
+    },
+    {
+      "tradeName": "Foxtrot",
+      "registrationNumber": "3418-0"
+    },
+    {
+      "tradeName": "Frequent",
+      "registrationNumber": "3964-0"
+    },
+    {
+      "tradeName": "FresaProtect",
+      "registrationNumber": "3706-0"
+    },
+    {
+      "tradeName": "Fresco",
+      "registrationNumber": "4118-0"
+    },
+    {
+      "tradeName": "Frooti",
+      "registrationNumber": "4389-0"
+    },
+    {
+      "tradeName": "Frowncide",
+      "registrationNumber": "2528-4"
+    },
+    {
+      "tradeName": "Fruit Auxin 30 SL",
+      "registrationNumber": "4022-0"
+    },
+    {
+      "tradeName": "Fruitone",
+      "registrationNumber": "3549-0"
+    },
+    {
+      "tradeName": "Fuego",
+      "registrationNumber": "3100-0"
+    },
+    {
+      "tradeName": "Fuego Top",
+      "registrationNumber": "3352-0"
+    },
+    {
+      "tradeName": "Fungisan Gemüse-Pilzfrei",
+      "registrationNumber": "2711-911"
+    },
+    {
+      "tradeName": "Fungisan Rosen- und Buxus-Pilzfrei",
+      "registrationNumber": "2711-912"
+    },
+    {
+      "tradeName": "Fungisei",
+      "registrationNumber": "4576-0"
+    },
+    {
+      "tradeName": "Funguran progress",
+      "registrationNumber": "3404-0"
+    },
+    {
+      "tradeName": "Funguran progress",
+      "registrationNumber": "3404-2"
+    },
+    {
+      "tradeName": "Fusilade Forte",
+      "registrationNumber": "4469-0"
+    },
+    {
+      "tradeName": "Fusilade MAX",
+      "registrationNumber": "2790-0"
+    },
+    {
+      "tradeName": "Fusilade MAX",
+      "registrationNumber": "2790-1"
+    },
+    {
+      "tradeName": "Futureco NoFly WP",
+      "registrationNumber": "4319-0"
+    },
+    {
+      "tradeName": "Fysium",
+      "registrationNumber": "3732-0"
+    },
+    {
+      "tradeName": "FytoSave",
+      "registrationNumber": "3870-0"
+    },
+    {
+      "tradeName": "Fytosol",
+      "registrationNumber": "4314-0"
+    },
+    {
+      "tradeName": "Gachinko",
+      "registrationNumber": "3905-0"
+    },
+    {
+      "tradeName": "Gajus",
+      "registrationNumber": "3890-0"
+    },
+    {
+      "tradeName": "Galileo",
+      "registrationNumber": "3665-0"
+    },
+    {
+      "tradeName": "Galipur",
+      "registrationNumber": "3421-0"
+    },
+    {
+      "tradeName": "Gallup Biograde 360",
+      "registrationNumber": "3630-0"
+    },
+    {
+      "tradeName": "Gardol Rasendünger plus Moosvernichter",
+      "registrationNumber": "3608-901"
+    },
+    {
+      "tradeName": "Gardol Rasendünger plus Unkrautvernichter",
+      "registrationNumber": "2786-908"
+    },
+    {
+      "tradeName": "Garten und Bienen Schädlingsstopp",
+      "registrationNumber": "2699-912"
+    },
+    {
+      "tradeName": "Gartenkrone Rasen Dünger mit Moosvernichter",
+      "registrationNumber": "3608-902"
+    },
+    {
+      "tradeName": "Gartenkrone Rasen Dünger mit Unkrautvernichter",
+      "registrationNumber": "2786-909"
+    },
+    {
+      "tradeName": "Genki",
+      "registrationNumber": "4476-0"
+    },
+    {
+      "tradeName": "Gentis",
+      "registrationNumber": "3949-0"
+    },
+    {
+      "tradeName": "Geoxe",
+      "registrationNumber": "3528-0"
+    },
+    {
+      "tradeName": "GF-2573",
+      "registrationNumber": "3757-0"
+    },
+    {
+      "tradeName": "GF-3967",
+      "registrationNumber": "4461-0"
+    },
+    {
+      "tradeName": "Gibb 3",
+      "registrationNumber": "3280-0"
+    },
+    {
+      "tradeName": "Gibb plus",
+      "registrationNumber": "3279-0"
+    },
+    {
+      "tradeName": "Giber Gobbi 10",
+      "registrationNumber": "4202-0"
+    },
+    {
+      "tradeName": "Gibritrin",
+      "registrationNumber": "4458-902"
+    },
+    {
+      "tradeName": "Giftweizen Arvastop",
+      "registrationNumber": "4167-901"
+    },
+    {
+      "tradeName": "Glanzit Schneckenkorn",
+      "registrationNumber": "2834-0"
+    },
+    {
+      "tradeName": "Glanzit Schneckenstopp",
+      "registrationNumber": "2834-906"
+    },
+    {
+      "tradeName": "Glister Ultra",
+      "registrationNumber": "4473-0"
+    },
+    {
+      "tradeName": "Globaryll 100",
+      "registrationNumber": "3434-0"
+    },
+    {
+      "tradeName": "Glosset SC",
+      "registrationNumber": "4135-0"
+    },
+    {
+      "tradeName": "Glotron 700 SC",
+      "registrationNumber": "4276-0"
+    },
+    {
+      "tradeName": "Glotron Neo",
+      "registrationNumber": "3886-901"
+    },
+    {
+      "tradeName": "Glypho-Rapid 450",
+      "registrationNumber": "3631-0"
+    },
+    {
+      "tradeName": "Glyphoxx 360 TF",
+      "registrationNumber": "2948-902"
+    },
+    {
+      "tradeName": "Gnatrol SC",
+      "registrationNumber": "3791-0"
+    },
+    {
+      "tradeName": "Gobbi Gib 4 LG",
+      "registrationNumber": "4203-0"
+    },
+    {
+      "tradeName": "Goltix compact",
+      "registrationNumber": "2773-0"
+    },
+    {
+      "tradeName": "Goltix Gold",
+      "registrationNumber": "3069-0"
+    },
+    {
+      "tradeName": "Goltix Super",
+      "registrationNumber": "4224-0"
+    },
+    {
+      "tradeName": "Goltix Titan",
+      "registrationNumber": "3370-0"
+    },
+    {
+      "tradeName": "Gramfix",
+      "registrationNumber": "4352-0"
+    },
+    {
+      "tradeName": "Granmet-P",
+      "registrationNumber": "4552-0"
+    },
+    {
+      "tradeName": "Granprotec",
+      "registrationNumber": "4307-0"
+    },
+    {
+      "tradeName": "Grasser 100 EC",
+      "registrationNumber": "3753-0"
+    },
+    {
+      "tradeName": "Grassrooter",
+      "registrationNumber": "3963-0"
+    },
+    {
+      "tradeName": "Grecale",
+      "registrationNumber": "3764-0"
+    },
+    {
+      "tradeName": "Grecale",
+      "registrationNumber": "3764-1"
+    },
+    {
+      "tradeName": "Greentime UV Unkrautvernichter mit Rasendünger",
+      "registrationNumber": "2786-915"
+    },
+    {
+      "tradeName": "Greteg",
+      "registrationNumber": "4367-0"
+    },
+    {
+      "tradeName": "Grid",
+      "registrationNumber": "2655-0"
+    },
+    {
+      "tradeName": "Grifon SC",
+      "registrationNumber": "4585-0"
+    },
+    {
+      "tradeName": "Gärtner exclusiv Schneckenkorn",
+      "registrationNumber": "3344-903"
+    },
+    {
+      "tradeName": "Habrohelp",
+      "registrationNumber": "3792-0"
+    },
+    {
+      "tradeName": "Harmony 50 SX",
+      "registrationNumber": "2941-1"
+    },
+    {
+      "tradeName": "Harmony Extra SX",
+      "registrationNumber": "2976-0"
+    },
+    {
+      "tradeName": "Harmony SX",
+      "registrationNumber": "2941-0"
+    },
+    {
+      "tradeName": "Harmony SX",
+      "registrationNumber": "2941-2"
+    },
+    {
+      "tradeName": "Harpun",
+      "registrationNumber": "3837-0"
+    },
+    {
+      "tradeName": "Hector Max",
+      "registrationNumber": "3274-901"
+    },
+    {
+      "tradeName": "Helicovex",
+      "registrationNumber": "4228-0"
+    },
+    {
+      "tradeName": "Herbiclean AL",
+      "registrationNumber": "3336-0"
+    },
+    {
+      "tradeName": "Herbiclean Konzentrat",
+      "registrationNumber": "4532-0"
+    },
+    {
+      "tradeName": "Heritage",
+      "registrationNumber": "3831-0"
+    },
+    {
+      "tradeName": "Herold",
+      "registrationNumber": "4264-0"
+    },
+    {
+      "tradeName": "Hierro",
+      "registrationNumber": "4568-0"
+    },
+    {
+      "tradeName": "Hingios",
+      "registrationNumber": "4495-0"
+    },
+    {
+      "tradeName": "Hinode",
+      "registrationNumber": "3383-901"
+    },
+    {
+      "tradeName": "Hirsefrei Extra",
+      "registrationNumber": "3842-0"
+    },
+    {
+      "tradeName": "HM-Nematoden gegen Dickmaulrüssler und Gartenlaubkäfer",
+      "registrationNumber": "2539-0"
+    },
+    {
+      "tradeName": "Hoestar",
+      "registrationNumber": "2554-0"
+    },
+    {
+      "tradeName": "Hoestar Super",
+      "registrationNumber": "2824-0"
+    },
+    {
+      "tradeName": "Hurler",
+      "registrationNumber": "4234-0"
+    },
+    {
+      "tradeName": "Husar OD",
+      "registrationNumber": "3019-0"
+    },
+    {
+      "tradeName": "Husar Plus",
+      "registrationNumber": "3566-0"
+    },
+    {
+      "tradeName": "Husar Plus",
+      "registrationNumber": "3566-1"
+    },
+    {
+      "tradeName": "Hutton Pro",
+      "registrationNumber": "3054-902"
+    },
+    {
+      "tradeName": "Hypoaspis",
+      "registrationNumber": "4305-0"
+    },
+    {
+      "tradeName": "Hypoaspis-System",
+      "registrationNumber": "3567-0"
+    },
+    {
+      "tradeName": "Ibriditrin",
+      "registrationNumber": "4458-901"
+    },
+    {
+      "tradeName": "Iconic",
+      "registrationNumber": "4070-901"
+    },
+    {
+      "tradeName": "Idemio",
+      "registrationNumber": "4577-0"
+    },
+    {
+      "tradeName": "Ikanos",
+      "registrationNumber": "3898-0"
+    },
+    {
+      "tradeName": "Imbrex",
+      "registrationNumber": "3152-0"
+    },
+    {
+      "tradeName": "Immergrün Blattlaus-Frei AF",
+      "registrationNumber": "2891-914"
+    },
+    {
+      "tradeName": "Immergrün Rasendünger plus Moosvernichter",
+      "registrationNumber": "3101-901"
+    },
+    {
+      "tradeName": "Immergrün Rasendünger plus Unkrautvernichter",
+      "registrationNumber": "3459-904"
+    },
+    {
+      "tradeName": "Immergrün Rasenherbizid Dicotex",
+      "registrationNumber": "3191-904"
+    },
+    {
+      "tradeName": "Immergrün Schneckenkorn",
+      "registrationNumber": "2605-906"
+    },
+    {
+      "tradeName": "Immergrün Schneckenkorn Plantamol Pro",
+      "registrationNumber": "4131-905"
+    },
+    {
+      "tradeName": "Imprus",
+      "registrationNumber": "4593-0"
+    },
+    {
+      "tradeName": "Inecor",
+      "registrationNumber": "2984-901"
+    },
+    {
+      "tradeName": "Infinito",
+      "registrationNumber": "3111-0"
+    },
+    {
+      "tradeName": "Infinito",
+      "registrationNumber": "3111-1"
+    },
+    {
+      "tradeName": "Input",
+      "registrationNumber": "4063-1"
+    },
+    {
+      "tradeName": "Input Classic",
+      "registrationNumber": "4063-0"
+    },
+    {
+      "tradeName": "Input Xpro",
+      "registrationNumber": "3302-0"
+    },
+    {
+      "tradeName": "Insektenil-Naturpyrethrum-Spray",
+      "registrationNumber": "3423-0"
+    },
+    {
+      "tradeName": "Insektenil-Raumnebel-fuerte",
+      "registrationNumber": "3422-0"
+    },
+    {
+      "tradeName": "Insektenil-Raumnebel-Spray",
+      "registrationNumber": "3525-0"
+    },
+    {
+      "tradeName": "Insektenil-Voraprotect",
+      "registrationNumber": "3410-901"
+    },
+    {
+      "tradeName": "Insektenil-VoraProtect ULV Profi",
+      "registrationNumber": "3417-901"
+    },
+    {
+      "tradeName": "Integral Pro",
+      "registrationNumber": "4166-0"
+    },
+    {
+      "tradeName": "Ironclad",
+      "registrationNumber": "4125-0"
+    },
+    {
+      "tradeName": "Ironmax Pro",
+      "registrationNumber": "3952-0"
+    },
+    {
+      "tradeName": "Iseran",
+      "registrationNumber": "4339-0"
+    },
+    {
+      "tradeName": "Isomate C Plus",
+      "registrationNumber": "2827-0"
+    },
+    {
+      "tradeName": "Isomate C Plus",
+      "registrationNumber": "2827-1"
+    },
+    {
+      "tradeName": "Isomate CLR",
+      "registrationNumber": "3001-0"
+    },
+    {
+      "tradeName": "Isomate CTT",
+      "registrationNumber": "2849-0"
+    },
+    {
+      "tradeName": "Isomate CTT",
+      "registrationNumber": "2849-1"
+    },
+    {
+      "tradeName": "Isomate OFM rosso flex",
+      "registrationNumber": "3002-0"
+    },
+    {
+      "tradeName": "Isomate OFM rosso flex",
+      "registrationNumber": "3002-1"
+    },
+    {
+      "tradeName": "Isonet L plus",
+      "registrationNumber": "2876-0"
+    },
+    {
+      "tradeName": "Isonet L/E",
+      "registrationNumber": "2842-0"
+    },
+    {
+      "tradeName": "Isonet T",
+      "registrationNumber": "4158-0"
+    },
+    {
+      "tradeName": "Isonet Z",
+      "registrationNumber": "4488-0"
+    },
+    {
+      "tradeName": "Isonet Z",
+      "registrationNumber": "4546-0"
+    },
+    {
+      "tradeName": "Isonet Z",
+      "registrationNumber": "4636-0"
+    },
+    {
+      "tradeName": "Isoxazone",
+      "registrationNumber": "3063-6"
+    },
+    {
+      "tradeName": "Itcan SL 270",
+      "registrationNumber": "3785-0"
+    },
+    {
+      "tradeName": "Jade",
+      "registrationNumber": "4259-0"
+    },
+    {
+      "tradeName": "Janero 480 SL",
+      "registrationNumber": "4570-0"
+    },
+    {
+      "tradeName": "Jessico One",
+      "registrationNumber": "4232-901"
+    },
+    {
+      "tradeName": "Joker 480",
+      "registrationNumber": "3859-3"
+    },
+    {
+      "tradeName": "Joust",
+      "registrationNumber": "4523-0"
+    },
+    {
+      "tradeName": "Joystick",
+      "registrationNumber": "4578-0"
+    },
+    {
+      "tradeName": "Jura",
+      "registrationNumber": "3745-0"
+    },
+    {
+      "tradeName": "Jura Max",
+      "registrationNumber": "4602-0"
+    },
+    {
+      "tradeName": "K-Obiol EC 25",
+      "registrationNumber": "3410-0"
+    },
+    {
+      "tradeName": "K-Obiol ULV 6",
+      "registrationNumber": "3417-0"
+    },
+    {
+      "tradeName": "Kabuki",
+      "registrationNumber": "2907-0"
+    },
+    {
+      "tradeName": "Kalimba",
+      "registrationNumber": "4216-902"
+    },
+    {
+      "tradeName": "Kalimba 480",
+      "registrationNumber": "4216-0"
+    },
+    {
+      "tradeName": "Kaltor",
+      "registrationNumber": "4237-0"
+    },
+    {
+      "tradeName": "Kamuy",
+      "registrationNumber": "3353-902"
+    },
+    {
+      "tradeName": "Kanemite SC",
+      "registrationNumber": "3129-0"
+    },
+    {
+      "tradeName": "Karate 0.4% GR",
+      "registrationNumber": "4281-0"
+    },
+    {
+      "tradeName": "Karate 0.4GR",
+      "registrationNumber": "4281-901"
+    },
+    {
+      "tradeName": "Karate avec Technologie Zeon",
+      "registrationNumber": "3061-1"
+    },
+    {
+      "tradeName": "Karate Zeon",
+      "registrationNumber": "3061-0"
+    },
+    {
+      "tradeName": "Karate Zeon",
+      "registrationNumber": "3061-2"
+    },
+    {
+      "tradeName": "Karate Zeon Forst",
+      "registrationNumber": "3061-901"
+    },
+    {
+      "tradeName": "Karathane Gold",
+      "registrationNumber": "2981-0"
+    },
+    {
+      "tradeName": "Karathane Gold 350 EC",
+      "registrationNumber": "2981-3"
+    },
+    {
+      "tradeName": "Karathane Star",
+      "registrationNumber": "2981-4"
+    },
+    {
+      "tradeName": "Karma SG",
+      "registrationNumber": "3398-0"
+    },
+    {
+      "tradeName": "Katana",
+      "registrationNumber": "3106-4"
+    },
+    {
+      "tradeName": "Katana",
+      "registrationNumber": "3106-901"
+    },
+    {
+      "tradeName": "Katoun Gold",
+      "registrationNumber": "3699-0"
+    },
+    {
+      "tradeName": "Kelvin Ultra",
+      "registrationNumber": "2514-901"
+    },
+    {
+      "tradeName": "Kenja",
+      "registrationNumber": "4341-0"
+    },
+    {
+      "tradeName": "Kerb Flo",
+      "registrationNumber": "3215-0"
+    },
+    {
+      "tradeName": "Kerb Flo",
+      "registrationNumber": "3215-2"
+    },
+    {
+      "tradeName": "Kezuro",
+      "registrationNumber": "3886-0"
+    },
+    {
+      "tradeName": "Kideka",
+      "registrationNumber": "3751-0"
+    },
+    {
+      "tradeName": "Kideka",
+      "registrationNumber": "3751-1"
+    },
+    {
+      "tradeName": "Kinto Plus",
+      "registrationNumber": "4375-0"
+    },
+    {
+      "tradeName": "Kinvara",
+      "registrationNumber": "4168-0"
+    },
+    {
+      "tradeName": "Kombi-Rosen Spray",
+      "registrationNumber": "4452-0"
+    },
+    {
+      "tradeName": "Kondor MehltauFrei",
+      "registrationNumber": "2711-902"
+    },
+    {
+      "tradeName": "Korit 420 FS",
+      "registrationNumber": "2037-0"
+    },
+    {
+      "tradeName": "Korvetto",
+      "registrationNumber": "4060-0"
+    },
+    {
+      "tradeName": "Korvetto",
+      "registrationNumber": "4060-1"
+    },
+    {
+      "tradeName": "Kudos",
+      "registrationNumber": "3827-0"
+    },
+    {
+      "tradeName": "Kumar",
+      "registrationNumber": "3399-0"
+    },
+    {
+      "tradeName": "Kumulus WG",
+      "registrationNumber": "396-0"
+    },
+    {
+      "tradeName": "Kunshi",
+      "registrationNumber": "3667-0"
+    },
+    {
+      "tradeName": "KUPFER 380 RK",
+      "registrationNumber": "3034-5"
+    },
+    {
+      "tradeName": "Kupfer Fusilan WG",
+      "registrationNumber": "3621-0"
+    },
+    {
+      "tradeName": "Kusabi",
+      "registrationNumber": "3825-0"
+    },
+    {
+      "tradeName": "Kusabi",
+      "registrationNumber": "3825-1"
+    },
+    {
+      "tradeName": "Kusabi",
+      "registrationNumber": "3825-2"
+    },
+    {
+      "tradeName": "Kwizda Dicamba",
+      "registrationNumber": "3776-901"
+    },
+    {
+      "tradeName": "Künstliche Rinde Lac Balsam",
+      "registrationNumber": "1777-0"
+    },
+    {
+      "tradeName": "Labamba",
+      "registrationNumber": "4571-0"
+    },
+    {
+      "tradeName": "LaceWin",
+      "registrationNumber": "4309-0"
+    },
+    {
+      "tradeName": "Laitane",
+      "registrationNumber": "4401-0"
+    },
+    {
+      "tradeName": "Lalguard M52 GR",
+      "registrationNumber": "3349-0"
+    },
+    {
+      "tradeName": "Lalguard M52 OD",
+      "registrationNumber": "4372-0"
+    },
+    {
+      "tradeName": "Lalstop Contans WG",
+      "registrationNumber": "2752-0"
+    },
+    {
+      "tradeName": "Landmaster 360 TF",
+      "registrationNumber": "2948-901"
+    },
+    {
+      "tradeName": "Landscaper Pro Moss Control + Fertilizer",
+      "registrationNumber": "3608-903"
+    },
+    {
+      "tradeName": "Landscaper Pro Weed Control",
+      "registrationNumber": "2786-901"
+    },
+    {
+      "tradeName": "Lanzarta",
+      "registrationNumber": "4559-0"
+    },
+    {
+      "tradeName": "Lariohelp",
+      "registrationNumber": "3943-0"
+    },
+    {
+      "tradeName": "Larven-Stopp",
+      "registrationNumber": "4298-0"
+    },
+    {
+      "tradeName": "Laudis",
+      "registrationNumber": "2912-0"
+    },
+    {
+      "tradeName": "Laudis",
+      "registrationNumber": "2912-3"
+    },
+    {
+      "tradeName": "Laudis",
+      "registrationNumber": "2912-6"
+    },
+    {
+      "tradeName": "Laudis OD 66",
+      "registrationNumber": "2912-5"
+    },
+    {
+      "tradeName": "Laudis Profi",
+      "registrationNumber": "3683-901"
+    },
+    {
+      "tradeName": "Laudis WG",
+      "registrationNumber": "3540-0"
+    },
+    {
+      "tradeName": "Laudis WG",
+      "registrationNumber": "3540-1"
+    },
+    {
+      "tradeName": "Laudis WG",
+      "registrationNumber": "3540-2"
+    },
+    {
+      "tradeName": "Launcher",
+      "registrationNumber": "4652-0"
+    },
+    {
+      "tradeName": "LBG-01F34",
+      "registrationNumber": "3535-0"
+    },
+    {
+      "tradeName": "Legado",
+      "registrationNumber": "4227-0"
+    },
+    {
+      "tradeName": "Legato Trio",
+      "registrationNumber": "3209-1"
+    },
+    {
+      "tradeName": "Leimay",
+      "registrationNumber": "3905-901"
+    },
+    {
+      "tradeName": "Leimay 200 SC",
+      "registrationNumber": "3905-2"
+    },
+    {
+      "tradeName": "Lentagran 45 WP",
+      "registrationNumber": "3462-0"
+    },
+    {
+      "tradeName": "Lentagran 45 WP",
+      "registrationNumber": "3462-1"
+    },
+    {
+      "tradeName": "Lentagran 45 WP",
+      "registrationNumber": "3462-2"
+    },
+    {
+      "tradeName": "Lentagran 45 WP",
+      "registrationNumber": "3462-3"
+    },
+    {
+      "tradeName": "Lentipur 500",
+      "registrationNumber": "3668-0"
+    },
+    {
+      "tradeName": "Lentipur Flo 500 SC",
+      "registrationNumber": "3668-1"
+    },
+    {
+      "tradeName": "Lenvyor",
+      "registrationNumber": "4106-0"
+    },
+    {
+      "tradeName": "Lenvyor",
+      "registrationNumber": "4106-2"
+    },
+    {
+      "tradeName": "Leopard",
+      "registrationNumber": "4124-0"
+    },
+    {
+      "tradeName": "Leopard 5 EC",
+      "registrationNumber": "4124-2"
+    },
+    {
+      "tradeName": "Leopard Extra 05 EC",
+      "registrationNumber": "4124-1"
+    },
+    {
+      "tradeName": "Lepinox Plus",
+      "registrationNumber": "3657-0"
+    },
+    {
+      "tradeName": "Lepton",
+      "registrationNumber": "2502-0"
+    },
+    {
+      "tradeName": "Lima Oro 3%",
+      "registrationNumber": "3571-0"
+    },
+    {
+      "tradeName": "Limex N",
+      "registrationNumber": "3620-901"
+    },
+    {
+      "tradeName": "Limocide",
+      "registrationNumber": "4097-0"
+    },
+    {
+      "tradeName": "Limonica",
+      "registrationNumber": "3581-0"
+    },
+    {
+      "tradeName": "Limonicus-(Breeding-)System",
+      "registrationNumber": "4209-0"
+    },
+    {
+      "tradeName": "Listego",
+      "registrationNumber": "3628-3"
+    },
+    {
+      "tradeName": "Lizetan AZ Schädlingsfrei",
+      "registrationNumber": "2699-908"
+    },
+    {
+      "tradeName": "Lizetan AZ Schädlingsfrei Gießmittel",
+      "registrationNumber": "2699-909"
+    },
+    {
+      "tradeName": "Lizetan AZ Trauermückenfrei",
+      "registrationNumber": "2699-919"
+    },
+    {
+      "tradeName": "Lizetan Buchsbaumzünslerfrei AF",
+      "registrationNumber": "3365-903"
+    },
+    {
+      "tradeName": "Lizetan Orchideen- & Zierpflanzenspray",
+      "registrationNumber": "3148-911"
+    },
+    {
+      "tradeName": "Lizetan Orchideen-Spray AF",
+      "registrationNumber": "3148-912"
+    },
+    {
+      "tradeName": "Lizetan Plus Blattlausfrei AF",
+      "registrationNumber": "4143-901"
+    },
+    {
+      "tradeName": "Lizetan Plus Combistäbchen",
+      "registrationNumber": "3977-0"
+    },
+    {
+      "tradeName": "Lizetan Plus Schädlingsfrei",
+      "registrationNumber": "4315-0"
+    },
+    {
+      "tradeName": "Lizetan Plus Schädlingsfrei AF",
+      "registrationNumber": "4143-0"
+    },
+    {
+      "tradeName": "Lizetan Zierpflanzen- und Rosen-Spray",
+      "registrationNumber": "3148-908"
+    },
+    {
+      "tradeName": "Lodin",
+      "registrationNumber": "4031-0"
+    },
+    {
+      "tradeName": "Lontrel 600",
+      "registrationNumber": "3612-0"
+    },
+    {
+      "tradeName": "Lontrel 72 SG",
+      "registrationNumber": "3409-1"
+    },
+    {
+      "tradeName": "Lontrel 720 SG",
+      "registrationNumber": "3409-0"
+    },
+    {
+      "tradeName": "Loop 240 OD",
+      "registrationNumber": "3433-901"
+    },
+    {
+      "tradeName": "Loredo Quattro Universal-Rasenunkrautfrei",
+      "registrationNumber": "3191-908"
+    },
+    {
+      "tradeName": "Luma Gold 5%",
+      "registrationNumber": "3572-0"
+    },
+    {
+      "tradeName": "Lumiderm VG",
+      "registrationNumber": "4530-0"
+    },
+    {
+      "tradeName": "Lumiposa 625 FS",
+      "registrationNumber": "4554-0"
+    },
+    {
+      "tradeName": "Lumisena",
+      "registrationNumber": "4435-0"
+    },
+    {
+      "tradeName": "Luna Care",
+      "registrationNumber": "3973-0"
+    },
+    {
+      "tradeName": "Luna Experience 400 SC",
+      "registrationNumber": "3655-1"
+    },
+    {
+      "tradeName": "Luna Experience SC",
+      "registrationNumber": "3655-901"
+    },
+    {
+      "tradeName": "Luna Max",
+      "registrationNumber": "3888-0"
+    },
+    {
+      "tradeName": "Luna Sensation",
+      "registrationNumber": "3603-0"
+    },
+    {
+      "tradeName": "Luna Sensation 500 SC",
+      "registrationNumber": "3603-1"
+    },
+    {
+      "tradeName": "Luna Veggie",
+      "registrationNumber": "3655-0"
+    },
+    {
+      "tradeName": "Lynx Pro",
+      "registrationNumber": "3054-901"
+    },
+    {
+      "tradeName": "M1-Rasendünger mit Unkrautvernichter",
+      "registrationNumber": "2786-905"
+    },
+    {
+      "tradeName": "Maceta 100",
+      "registrationNumber": "4320-0"
+    },
+    {
+      "tradeName": "Macrolophus-System",
+      "registrationNumber": "2887-0"
+    },
+    {
+      "tradeName": "Macromite",
+      "registrationNumber": "3752-0"
+    },
+    {
+      "tradeName": "Maden-Stopp",
+      "registrationNumber": "4298-901"
+    },
+    {
+      "tradeName": "Madex Apfelwicklerfrei",
+      "registrationNumber": "4295-0"
+    },
+    {
+      "tradeName": "Madex Max",
+      "registrationNumber": "3316-0"
+    },
+    {
+      "tradeName": "Madex Top",
+      "registrationNumber": "3592-0"
+    },
+    {
+      "tradeName": "Madex Top",
+      "registrationNumber": "3592-1"
+    },
+    {
+      "tradeName": "Madex Twin",
+      "registrationNumber": "3809-0"
+    },
+    {
+      "tradeName": "Maganic",
+      "registrationNumber": "4538-0"
+    },
+    {
+      "tradeName": "Magellan",
+      "registrationNumber": "3338-3"
+    },
+    {
+      "tradeName": "Magnello",
+      "registrationNumber": "3569-0"
+    },
+    {
+      "tradeName": "Mainspring",
+      "registrationNumber": "4065-0"
+    },
+    {
+      "tradeName": "Mais Banvel flüssig",
+      "registrationNumber": "3859-0"
+    },
+    {
+      "tradeName": "Mais-Banvel WG",
+      "registrationNumber": "2674-0"
+    },
+    {
+      "tradeName": "MaisTer power",
+      "registrationNumber": "3271-0"
+    },
+    {
+      "tradeName": "MaisTer power",
+      "registrationNumber": "3271-1"
+    },
+    {
+      "tradeName": "Malvin WG",
+      "registrationNumber": "3074-0"
+    },
+    {
+      "tradeName": "Maran",
+      "registrationNumber": "2726-901"
+    },
+    {
+      "tradeName": "Mateno Duo",
+      "registrationNumber": "4198-0"
+    },
+    {
+      "tradeName": "Mateno Duo",
+      "registrationNumber": "4198-1"
+    },
+    {
+      "tradeName": "Mateno Duo",
+      "registrationNumber": "4616-0"
+    },
+    {
+      "tradeName": "Matox",
+      "registrationNumber": "2643-0"
+    },
+    {
+      "tradeName": "Matrican 100 SC",
+      "registrationNumber": "4543-0"
+    },
+    {
+      "tradeName": "Mavita 250 SC",
+      "registrationNumber": "3255-901"
+    },
+    {
+      "tradeName": "Mavrik Vita",
+      "registrationNumber": "3214-0"
+    },
+    {
+      "tradeName": "Mavrik Vita 240 EW",
+      "registrationNumber": "3214-1"
+    },
+    {
+      "tradeName": "MaxCel",
+      "registrationNumber": "3419-0"
+    },
+    {
+      "tradeName": "Maxcel",
+      "registrationNumber": "3419-1"
+    },
+    {
+      "tradeName": "Maxentis",
+      "registrationNumber": "4484-0"
+    },
+    {
+      "tradeName": "Maxim 480",
+      "registrationNumber": "3502-0"
+    },
+    {
+      "tradeName": "Maxim Quattro",
+      "registrationNumber": "4095-0"
+    },
+    {
+      "tradeName": "Maxim XL",
+      "registrationNumber": "2865-0"
+    },
+    {
+      "tradeName": "Mcoy",
+      "registrationNumber": "4425-0"
+    },
+    {
+      "tradeName": "Mcoy 500 SC",
+      "registrationNumber": "2855-902"
+    },
+    {
+      "tradeName": "MCPA 750 SL",
+      "registrationNumber": "4123-0"
+    },
+    {
+      "tradeName": "Medallion",
+      "registrationNumber": "3527-0"
+    },
+    {
+      "tradeName": "Medax Max",
+      "registrationNumber": "3780-2"
+    },
+    {
+      "tradeName": "Medax Top",
+      "registrationNumber": "3257-0"
+    },
+    {
+      "tradeName": "Medax Top",
+      "registrationNumber": "3257-1"
+    },
+    {
+      "tradeName": "Meet 24",
+      "registrationNumber": "4248-0"
+    },
+    {
+      "tradeName": "Melocont Pilzgerste",
+      "registrationNumber": "4490-0"
+    },
+    {
+      "tradeName": "Melocont Pilzgerste",
+      "registrationNumber": "4553-0"
+    },
+    {
+      "tradeName": "Melocont Pilzgerste",
+      "registrationNumber": "4644-0"
+    },
+    {
+      "tradeName": "Melody Combi",
+      "registrationNumber": "3137-0"
+    },
+    {
+      "tradeName": "Melody Combi",
+      "registrationNumber": "3137-1"
+    },
+    {
+      "tradeName": "Melody Super",
+      "registrationNumber": "4381-0"
+    },
+    {
+      "tradeName": "Melvar Start",
+      "registrationNumber": "4658-0"
+    },
+    {
+      "tradeName": "Menno Florades",
+      "registrationNumber": "4242-0"
+    },
+    {
+      "tradeName": "Mepisha",
+      "registrationNumber": "4468-0"
+    },
+    {
+      "tradeName": "Merkur",
+      "registrationNumber": "4365-0"
+    },
+    {
+      "tradeName": "Merlin Flexx",
+      "registrationNumber": "4535-0"
+    },
+    {
+      "tradeName": "Merpan 48 SC",
+      "registrationNumber": "3820-0"
+    },
+    {
+      "tradeName": "Merpan 80 WDG",
+      "registrationNumber": "2803-0"
+    },
+    {
+      "tradeName": "Merpan 80 WDG",
+      "registrationNumber": "2803-1"
+    },
+    {
+      "tradeName": "Merplus",
+      "registrationNumber": "4187-0"
+    },
+    {
+      "tradeName": "MetaDisque 3%",
+      "registrationNumber": "3196-902"
+    },
+    {
+      "tradeName": "Metafol SC",
+      "registrationNumber": "3205-2"
+    },
+    {
+      "tradeName": "Metafol SC",
+      "registrationNumber": "3573-0"
+    },
+    {
+      "tradeName": "Metafol Super",
+      "registrationNumber": "3645-0"
+    },
+    {
+      "tradeName": "Metarex Duo",
+      "registrationNumber": "3922-0"
+    },
+    {
+      "tradeName": "Metarex Inov",
+      "registrationNumber": "3216-0"
+    },
+    {
+      "tradeName": "Metarex Inov",
+      "registrationNumber": "3216-1"
+    },
+    {
+      "tradeName": "Metarex M",
+      "registrationNumber": "3220-0"
+    },
+    {
+      "tradeName": "Metarex One",
+      "registrationNumber": "3219-0"
+    },
+    {
+      "tradeName": "Metatron 700 SC",
+      "registrationNumber": "3873-901"
+    },
+    {
+      "tradeName": "Metfin",
+      "registrationNumber": "3921-0"
+    },
+    {
+      "tradeName": "Metric",
+      "registrationNumber": "3639-0"
+    },
+    {
+      "tradeName": "Metropolitan",
+      "registrationNumber": "4572-0"
+    },
+    {
+      "tradeName": "Metso",
+      "registrationNumber": "4317-0"
+    },
+    {
+      "tradeName": "Mevalone",
+      "registrationNumber": "4558-0"
+    },
+    {
+      "tradeName": "Micromus-System",
+      "registrationNumber": "4450-0"
+    },
+    {
+      "tradeName": "microsol-bio-autofog",
+      "registrationNumber": "3423-901"
+    },
+    {
+      "tradeName": "microsol-pyrho SP-autofog",
+      "registrationNumber": "3525-901"
+    },
+    {
+      "tradeName": "microsol-pyrho-fluid",
+      "registrationNumber": "3422-901"
+    },
+    {
+      "tradeName": "microsol-SP 3000 ULV-RTU",
+      "registrationNumber": "3417-902"
+    },
+    {
+      "tradeName": "Microthiol WG",
+      "registrationNumber": "3701-0"
+    },
+    {
+      "tradeName": "Microthiol WG",
+      "registrationNumber": "3701-1"
+    },
+    {
+      "tradeName": "Micula",
+      "registrationNumber": "2568-902"
+    },
+    {
+      "tradeName": "Mien",
+      "registrationNumber": "3990-0"
+    },
+    {
+      "tradeName": "Mighty",
+      "registrationNumber": "4560-0"
+    },
+    {
+      "tradeName": "Miglyphus",
+      "registrationNumber": "2532-0"
+    },
+    {
+      "tradeName": "Milagro 240",
+      "registrationNumber": "3433-0"
+    },
+    {
+      "tradeName": "Milbeknock",
+      "registrationNumber": "2875-902"
+    },
+    {
+      "tradeName": "Milbeknock Top",
+      "registrationNumber": "2875-0"
+    },
+    {
+      "tradeName": "Mildicut",
+      "registrationNumber": "4308-0"
+    },
+    {
+      "tradeName": "Mildicut",
+      "registrationNumber": "4308-1"
+    },
+    {
+      "tradeName": "Mildicut",
+      "registrationNumber": "4308-2"
+    },
+    {
+      "tradeName": "Mimic",
+      "registrationNumber": "2620-0"
+    },
+    {
+      "tradeName": "Minusa",
+      "registrationNumber": "2534-0"
+    },
+    {
+      "tradeName": "Minusa Dacnusa sibirica",
+      "registrationNumber": "2547-0"
+    },
+    {
+      "tradeName": "Mirador SC",
+      "registrationNumber": "2711-4"
+    },
+    {
+      "tradeName": "Mirador SC",
+      "registrationNumber": "2711-6"
+    },
+    {
+      "tradeName": "Miralon",
+      "registrationNumber": "4542-0"
+    },
+    {
+      "tradeName": "Mirical",
+      "registrationNumber": "2800-0"
+    },
+    {
+      "tradeName": "Mirical Macrolophus pygmaeus",
+      "registrationNumber": "4057-0"
+    },
+    {
+      "tradeName": "Mistral",
+      "registrationNumber": "2796-0"
+    },
+    {
+      "tradeName": "Mitroquin",
+      "registrationNumber": "3886-1"
+    },
+    {
+      "tradeName": "Modan 250 EC",
+      "registrationNumber": "3559-0"
+    },
+    {
+      "tradeName": "Moddus",
+      "registrationNumber": "3007-0"
+    },
+    {
+      "tradeName": "Moddus",
+      "registrationNumber": "3007-3"
+    },
+    {
+      "tradeName": "Moddus Start",
+      "registrationNumber": "3637-0"
+    },
+    {
+      "tradeName": "Modipur",
+      "registrationNumber": "3429-0"
+    },
+    {
+      "tradeName": "Modown 4F",
+      "registrationNumber": "2783-1"
+    },
+    {
+      "tradeName": "Modulan DC",
+      "registrationNumber": "3637-901"
+    },
+    {
+      "tradeName": "Molina",
+      "registrationNumber": "4103-0"
+    },
+    {
+      "tradeName": "Moncut",
+      "registrationNumber": "3488-0"
+    },
+    {
+      "tradeName": "Monex",
+      "registrationNumber": "4383-0"
+    },
+    {
+      "tradeName": "Monsoon",
+      "registrationNumber": "2826-0"
+    },
+    {
+      "tradeName": "Monsoon Active",
+      "registrationNumber": "3734-0"
+    },
+    {
+      "tradeName": "Montdorensis-(Breeding-)System",
+      "registrationNumber": "4208-0"
+    },
+    {
+      "tradeName": "Montyhelp",
+      "registrationNumber": "3799-0"
+    },
+    {
+      "tradeName": "Mospilan 20 SG",
+      "registrationNumber": "2830-0"
+    },
+    {
+      "tradeName": "Mospilan 20 SG",
+      "registrationNumber": "2830-4"
+    },
+    {
+      "tradeName": "Mospilan SG",
+      "registrationNumber": "2830-2"
+    },
+    {
+      "tradeName": "Movento 100 SC",
+      "registrationNumber": "4653-0"
+    },
+    {
+      "tradeName": "Moxa",
+      "registrationNumber": "3648-0"
+    },
+    {
+      "tradeName": "Moxa",
+      "registrationNumber": "3648-1"
+    },
+    {
+      "tradeName": "Multirose",
+      "registrationNumber": "3720-0"
+    },
+    {
+      "tradeName": "Multivo",
+      "registrationNumber": "4425-901"
+    },
+    {
+      "tradeName": "Multivo 500 SC",
+      "registrationNumber": "2855-903"
+    },
+    {
+      "tradeName": "Mural",
+      "registrationNumber": "3776-0"
+    },
+    {
+      "tradeName": "Mycotal",
+      "registrationNumber": "4620-0"
+    },
+    {
+      "tradeName": "Mystic 250 EW",
+      "registrationNumber": "3644-0"
+    },
+    {
+      "tradeName": "Naceto",
+      "registrationNumber": "3860-0"
+    },
+    {
+      "tradeName": "Nando 500 SC",
+      "registrationNumber": "3240-0"
+    },
+    {
+      "tradeName": "Nando 500 SC",
+      "registrationNumber": "3240-1"
+    },
+    {
+      "tradeName": "Naprop 450",
+      "registrationNumber": "4139-0"
+    },
+    {
+      "tradeName": "Narita",
+      "registrationNumber": "3523-0"
+    },
+    {
+      "tradeName": "Narita 250 EC",
+      "registrationNumber": "3523-1"
+    },
+    {
+      "tradeName": "Nasa",
+      "registrationNumber": "3599-0"
+    },
+    {
+      "tradeName": "Natrisan",
+      "registrationNumber": "4289-0"
+    },
+    {
+      "tradeName": "Naturalis",
+      "registrationNumber": "4397-0"
+    },
+    {
+      "tradeName": "Naturen Bio Schneckenkorn",
+      "registrationNumber": "3620-0"
+    },
+    {
+      "tradeName": "Naturen Bio Schädlingsfrei Neem",
+      "registrationNumber": "2699-901"
+    },
+    {
+      "tradeName": "Naturen Cuproxat flüssig",
+      "registrationNumber": "2097-901"
+    },
+    {
+      "tradeName": "Naturid BlattlausFrei AF",
+      "registrationNumber": "2891-907"
+    },
+    {
+      "tradeName": "Navigate",
+      "registrationNumber": "3703-902"
+    },
+    {
+      "tradeName": "Nealta",
+      "registrationNumber": "4350-0"
+    },
+    {
+      "tradeName": "Neem Bio-Schädlingsfrei",
+      "registrationNumber": "2699-907"
+    },
+    {
+      "tradeName": "Neem Duo Schädlingsfrei",
+      "registrationNumber": "4191-0"
+    },
+    {
+      "tradeName": "Neem Plus Schädlingsfrei",
+      "registrationNumber": "3602-0"
+    },
+    {
+      "tradeName": "NeemAzal-T/S",
+      "registrationNumber": "2699-0"
+    },
+    {
+      "tradeName": "NeemAzal-T/S",
+      "registrationNumber": "2699-2"
+    },
+    {
+      "tradeName": "NeemAzal-T/S",
+      "registrationNumber": "2699-3"
+    },
+    {
+      "tradeName": "nema-green",
+      "registrationNumber": "3518-0"
+    },
+    {
+      "tradeName": "Nema-Stopp",
+      "registrationNumber": "4512-0"
+    },
+    {
+      "tradeName": "NemaFence Carpo",
+      "registrationNumber": "4055-0"
+    },
+    {
+      "tradeName": "NemaFence Felti",
+      "registrationNumber": "3564-0"
+    },
+    {
+      "tradeName": "NemaFence Green",
+      "registrationNumber": "4056-0"
+    },
+    {
+      "tradeName": "nemaflor C",
+      "registrationNumber": "4649-0"
+    },
+    {
+      "tradeName": "nemaflor F",
+      "registrationNumber": "4650-0"
+    },
+    {
+      "tradeName": "Nemahelp",
+      "registrationNumber": "2720-0"
+    },
+    {
+      "tradeName": "nemamax",
+      "registrationNumber": "4386-0"
+    },
+    {
+      "tradeName": "Nemaplus",
+      "registrationNumber": "2823-0"
+    },
+    {
+      "tradeName": "nemaplus depot",
+      "registrationNumber": "4654-0"
+    },
+    {
+      "tradeName": "nemapom",
+      "registrationNumber": "3519-0"
+    },
+    {
+      "tradeName": "NemArion",
+      "registrationNumber": "3969-901"
+    },
+    {
+      "tradeName": "Nemaslug",
+      "registrationNumber": "3969-0"
+    },
+    {
+      "tradeName": "Nemaslug",
+      "registrationNumber": "3969-902"
+    },
+    {
+      "tradeName": "Nemaslug",
+      "registrationNumber": "4205-902"
+    },
+    {
+      "tradeName": "Nemaslug 2.0",
+      "registrationNumber": "4205-0"
+    },
+    {
+      "tradeName": "Nemastar",
+      "registrationNumber": "2969-0"
+    },
+    {
+      "tradeName": "Nematon",
+      "registrationNumber": "2519-0"
+    },
+    {
+      "tradeName": "Nematop",
+      "registrationNumber": "2730-0"
+    },
+    {
+      "tradeName": "nematop Käfer-Stopp",
+      "registrationNumber": "3278-0"
+    },
+    {
+      "tradeName": "NemaTrident B",
+      "registrationNumber": "4439-0"
+    },
+    {
+      "tradeName": "NemaTrident F",
+      "registrationNumber": "4438-0"
+    },
+    {
+      "tradeName": "Nemycel",
+      "registrationNumber": "3926-0"
+    },
+    {
+      "tradeName": "Neomite",
+      "registrationNumber": "4304-0"
+    },
+    {
+      "tradeName": "Neovit Pilzstopp",
+      "registrationNumber": "3346-902"
+    },
+    {
+      "tradeName": "Nermady",
+      "registrationNumber": "4648-0"
+    },
+    {
+      "tradeName": "Nero",
+      "registrationNumber": "3363-0"
+    },
+    {
+      "tradeName": "Netz-Schwefelit WG",
+      "registrationNumber": "2915-901"
+    },
+    {
+      "tradeName": "Netzschwefel Kwizda",
+      "registrationNumber": "1941-0"
+    },
+    {
+      "tradeName": "Netzschwefel Mehltau-Pilzfrei",
+      "registrationNumber": "2632-2"
+    },
+    {
+      "tradeName": "Netzschwefel Stulln",
+      "registrationNumber": "2915-0"
+    },
+    {
+      "tradeName": "Neudosan AF Neu Blattlausfrei",
+      "registrationNumber": "2623-0"
+    },
+    {
+      "tradeName": "Neudosan Neu",
+      "registrationNumber": "2622-903"
+    },
+    {
+      "tradeName": "Neudosan Neu Blattlausfrei",
+      "registrationNumber": "2622-0"
+    },
+    {
+      "tradeName": "Neudosan Obst- u. Gemüse SchädlingsFrei",
+      "registrationNumber": "2622-901"
+    },
+    {
+      "tradeName": "Nexide",
+      "registrationNumber": "4052-0"
+    },
+    {
+      "tradeName": "Next",
+      "registrationNumber": "3795-0"
+    },
+    {
+      "tradeName": "Nexy",
+      "registrationNumber": "3710-0"
+    },
+    {
+      "tradeName": "Nezapar",
+      "registrationNumber": "4596-0"
+    },
+    {
+      "tradeName": "Nicogan",
+      "registrationNumber": "3162-0"
+    },
+    {
+      "tradeName": "Nicorn 040 SC",
+      "registrationNumber": "3880-0"
+    },
+    {
+      "tradeName": "Nicosh 4 OD",
+      "registrationNumber": "3098-0"
+    },
+    {
+      "tradeName": "Nimrod EC",
+      "registrationNumber": "2059-0"
+    },
+    {
+      "tradeName": "Nissovin",
+      "registrationNumber": "3157-901"
+    },
+    {
+      "tradeName": "Novagib",
+      "registrationNumber": "3469-0"
+    },
+    {
+      "tradeName": "Novitron Dam Tec",
+      "registrationNumber": "3781-0"
+    },
+    {
+      "tradeName": "Novodor FC",
+      "registrationNumber": "4492-0"
+    },
+    {
+      "tradeName": "Novodor FC",
+      "registrationNumber": "4548-0"
+    },
+    {
+      "tradeName": "Novodor FC",
+      "registrationNumber": "4647-0"
+    },
+    {
+      "tradeName": "Nozomi",
+      "registrationNumber": "3013-0"
+    },
+    {
+      "tradeName": "Nuance",
+      "registrationNumber": "3669-0"
+    },
+    {
+      "tradeName": "Nucleus",
+      "registrationNumber": "3703-901"
+    },
+    {
+      "tradeName": "Nuxine",
+      "registrationNumber": "4629-0"
+    },
+    {
+      "tradeName": "Nymeo SC",
+      "registrationNumber": "3573-903"
+    },
+    {
+      "tradeName": "Nützlings-Nematoden",
+      "registrationNumber": "4038-0"
+    },
+    {
+      "tradeName": "Obelisk",
+      "registrationNumber": "4491-0"
+    },
+    {
+      "tradeName": "Oblix",
+      "registrationNumber": "3421-1"
+    },
+    {
+      "tradeName": "Oceal",
+      "registrationNumber": "3835-0"
+    },
+    {
+      "tradeName": "Oceal",
+      "registrationNumber": "3835-2"
+    },
+    {
+      "tradeName": "Odin 40 ME",
+      "registrationNumber": "3665-902"
+    },
+    {
+      "tradeName": "OIBP BioAgentsPro Mais",
+      "registrationNumber": "4635-0"
+    },
+    {
+      "tradeName": "Okubi",
+      "registrationNumber": "4308-901"
+    },
+    {
+      "tradeName": "Omix Duo",
+      "registrationNumber": "4313-2"
+    },
+    {
+      "tradeName": "Omnera LQM",
+      "registrationNumber": "3808-0"
+    },
+    {
+      "tradeName": "Onyx",
+      "registrationNumber": "3658-0"
+    },
+    {
+      "tradeName": "Onyx",
+      "registrationNumber": "3658-1"
+    },
+    {
+      "tradeName": "Oratio 40 WG",
+      "registrationNumber": "2880-902"
+    },
+    {
+      "tradeName": "Orchideen & Zimmerpflanzen",
+      "registrationNumber": "2739-901"
+    },
+    {
+      "tradeName": "Orefa Di-Amide-P",
+      "registrationNumber": "2798-2"
+    },
+    {
+      "tradeName": "Organic Carboxid",
+      "registrationNumber": "4597-0"
+    },
+    {
+      "tradeName": "Orius",
+      "registrationNumber": "3164-0"
+    },
+    {
+      "tradeName": "Orius",
+      "registrationNumber": "3164-2"
+    },
+    {
+      "tradeName": "Orius-System",
+      "registrationNumber": "2900-0"
+    },
+    {
+      "tradeName": "Ormet",
+      "registrationNumber": "3283-0"
+    },
+    {
+      "tradeName": "Orocide Plus",
+      "registrationNumber": "4226-0"
+    },
+    {
+      "tradeName": "Orondis",
+      "registrationNumber": "3978-2"
+    },
+    {
+      "tradeName": "Orondis",
+      "registrationNumber": "3989-901"
+    },
+    {
+      "tradeName": "Orondis Evo",
+      "registrationNumber": "4531-0"
+    },
+    {
+      "tradeName": "Orondis Evo",
+      "registrationNumber": "4531-1"
+    },
+    {
+      "tradeName": "Orondis Forte",
+      "registrationNumber": "4592-0"
+    },
+    {
+      "tradeName": "Orondis Plus",
+      "registrationNumber": "3978-901"
+    },
+    {
+      "tradeName": "Orondis Vip",
+      "registrationNumber": "4615-0"
+    },
+    {
+      "tradeName": "Orpen",
+      "registrationNumber": "4385-901"
+    },
+    {
+      "tradeName": "Ortho-Phaltan",
+      "registrationNumber": "4427-901"
+    },
+    {
+      "tradeName": "Ortiva",
+      "registrationNumber": "2711-0"
+    },
+    {
+      "tradeName": "Orvego",
+      "registrationNumber": "3672-1"
+    },
+    {
+      "tradeName": "Osiris Revy",
+      "registrationNumber": "4516-0"
+    },
+    {
+      "tradeName": "Osorna",
+      "registrationNumber": "3646-901"
+    },
+    {
+      "tradeName": "Output Classic",
+      "registrationNumber": "4063-2"
+    },
+    {
+      "tradeName": "Overtake",
+      "registrationNumber": "4392-0"
+    },
+    {
+      "tradeName": "Pablo",
+      "registrationNumber": "4417-0"
+    },
+    {
+      "tradeName": "Palacid 480 SL",
+      "registrationNumber": "4570-1"
+    },
+    {
+      "tradeName": "Palermo 720",
+      "registrationNumber": "4235-901"
+    },
+    {
+      "tradeName": "Panarex",
+      "registrationNumber": "3201-0"
+    },
+    {
+      "tradeName": "Panorama",
+      "registrationNumber": "4505-0"
+    },
+    {
+      "tradeName": "Panorama",
+      "registrationNumber": "4505-1"
+    },
+    {
+      "tradeName": "Para Sommer",
+      "registrationNumber": "3354-0"
+    },
+    {
+      "tradeName": "Parafex 830 EC",
+      "registrationNumber": "1739-901"
+    },
+    {
+      "tradeName": "Peak",
+      "registrationNumber": "3200-0"
+    },
+    {
+      "tradeName": "Peak",
+      "registrationNumber": "3200-2"
+    },
+    {
+      "tradeName": "Pecari 300 EC",
+      "registrationNumber": "4274-901"
+    },
+    {
+      "tradeName": "Pelican Delta",
+      "registrationNumber": "3660-0"
+    },
+    {
+      "tradeName": "Penshui",
+      "registrationNumber": "4520-0"
+    },
+    {
+      "tradeName": "Pergado",
+      "registrationNumber": "2910-0"
+    },
+    {
+      "tradeName": "Pergado F",
+      "registrationNumber": "2910-1"
+    },
+    {
+      "tradeName": "Pergado F",
+      "registrationNumber": "2910-2"
+    },
+    {
+      "tradeName": "Pergado SC",
+      "registrationNumber": "2906-2"
+    },
+    {
+      "tradeName": "Pergovi Flex",
+      "registrationNumber": "3362-1"
+    },
+    {
+      "tradeName": "Pergovia",
+      "registrationNumber": "4590-0"
+    },
+    {
+      "tradeName": "Permaclean Duo Unkraut & Wurzel-Ex",
+      "registrationNumber": "3056-903"
+    },
+    {
+      "tradeName": "Permaclean Duo Unkraut & Wurzel-Ex AF",
+      "registrationNumber": "3336-904"
+    },
+    {
+      "tradeName": "Permaclean Express Unkrautfrei AF",
+      "registrationNumber": "4391-901"
+    },
+    {
+      "tradeName": "Permaclean Spray",
+      "registrationNumber": "4391-0"
+    },
+    {
+      "tradeName": "Permit",
+      "registrationNumber": "4660-0"
+    },
+    {
+      "tradeName": "Phostoxin Bag",
+      "registrationNumber": "4120-0"
+    },
+    {
+      "tradeName": "Phostoxin Pellet",
+      "registrationNumber": "4121-0"
+    },
+    {
+      "tradeName": "Phostoxin Tablet",
+      "registrationNumber": "4122-0"
+    },
+    {
+      "tradeName": "Phuket",
+      "registrationNumber": "4427-0"
+    },
+    {
+      "tradeName": "Phytomite",
+      "registrationNumber": "4302-0"
+    },
+    {
+      "tradeName": "Phyton",
+      "registrationNumber": "2488-0"
+    },
+    {
+      "tradeName": "Phytoseiulus-System",
+      "registrationNumber": "3515-0"
+    },
+    {
+      "tradeName": "Picador 1.6 MG",
+      "registrationNumber": "4109-0"
+    },
+    {
+      "tradeName": "Pico",
+      "registrationNumber": "4453-0"
+    },
+    {
+      "tradeName": "Pictor Active",
+      "registrationNumber": "4260-0"
+    },
+    {
+      "tradeName": "Pilzfrei AF",
+      "registrationNumber": "4311-903"
+    },
+    {
+      "tradeName": "Pilzspray Saprol N",
+      "registrationNumber": "4311-904"
+    },
+    {
+      "tradeName": "Pioli",
+      "registrationNumber": "3152-1"
+    },
+    {
+      "tradeName": "Pioli",
+      "registrationNumber": "3152-901"
+    },
+    {
+      "tradeName": "Piramax EC",
+      "registrationNumber": "2907-1"
+    },
+    {
+      "tradeName": "Piretro Verde",
+      "registrationNumber": "3380-0"
+    },
+    {
+      "tradeName": "Pirimor 50 WG",
+      "registrationNumber": "3238-1"
+    },
+    {
+      "tradeName": "Pirimor Granulat",
+      "registrationNumber": "3238-0"
+    },
+    {
+      "tradeName": "Piroseo",
+      "registrationNumber": "2525-901"
+    },
+    {
+      "tradeName": "Pirouette",
+      "registrationNumber": "3714-0"
+    },
+    {
+      "tradeName": "Pixxaro",
+      "registrationNumber": "3756-1"
+    },
+    {
+      "tradeName": "Pixxaro EC",
+      "registrationNumber": "3756-0"
+    },
+    {
+      "tradeName": "Pixxaro EC",
+      "registrationNumber": "3756-2"
+    },
+    {
+      "tradeName": "Planet",
+      "registrationNumber": "4618-0"
+    },
+    {
+      "tradeName": "Plantelan",
+      "registrationNumber": "4537-902"
+    },
+    {
+      "tradeName": "Plantelan 70 WG",
+      "registrationNumber": "4537-901"
+    },
+    {
+      "tradeName": "Plantline C99",
+      "registrationNumber": "4608-0"
+    },
+    {
+      "tradeName": "Plantop Moosvernichter + Rasendünger",
+      "registrationNumber": "3608-904"
+    },
+    {
+      "tradeName": "Plantura Power Schneckenkorn",
+      "registrationNumber": "4132-902"
+    },
+    {
+      "tradeName": "Plateen 41,5 WG",
+      "registrationNumber": "2913-2"
+    },
+    {
+      "tradeName": "Plaza",
+      "registrationNumber": "4574-0"
+    },
+    {
+      "tradeName": "Pledge",
+      "registrationNumber": "3570-0"
+    },
+    {
+      "tradeName": "Plenaris",
+      "registrationNumber": "4435-901"
+    },
+    {
+      "tradeName": "Plexeo 60",
+      "registrationNumber": "3705-902"
+    },
+    {
+      "tradeName": "PMV-01",
+      "registrationNumber": "3747-0"
+    },
+    {
+      "tradeName": "Pointer Plus",
+      "registrationNumber": "3727-0"
+    },
+    {
+      "tradeName": "Pointer SX",
+      "registrationNumber": "2914-1"
+    },
+    {
+      "tradeName": "Pointer SX",
+      "registrationNumber": "2914-2"
+    },
+    {
+      "tradeName": "Pointer SX",
+      "registrationNumber": "2914-3"
+    },
+    {
+      "tradeName": "Pointer SX",
+      "registrationNumber": "2914-4"
+    },
+    {
+      "tradeName": "Poleposition 300 EC",
+      "registrationNumber": "4274-1"
+    },
+    {
+      "tradeName": "Polyram DF",
+      "registrationNumber": "3384-1"
+    },
+    {
+      "tradeName": "Polyram WG",
+      "registrationNumber": "3384-0"
+    },
+    {
+      "tradeName": "Polyversum",
+      "registrationNumber": "3871-0"
+    },
+    {
+      "tradeName": "Polyversum OD",
+      "registrationNumber": "4628-0"
+    },
+    {
+      "tradeName": "Pomax",
+      "registrationNumber": "3962-0"
+    },
+    {
+      "tradeName": "Pontos",
+      "registrationNumber": "3797-0"
+    },
+    {
+      "tradeName": "Pontos",
+      "registrationNumber": "3797-1"
+    },
+    {
+      "tradeName": "Portland Garden Unkrautmittel",
+      "registrationNumber": "3698-907"
+    },
+    {
+      "tradeName": "Powdrio",
+      "registrationNumber": "3825-901"
+    },
+    {
+      "tradeName": "Powertwin",
+      "registrationNumber": "2707-3"
+    },
+    {
+      "tradeName": "Prabha",
+      "registrationNumber": "4412-0"
+    },
+    {
+      "tradeName": "Praktis",
+      "registrationNumber": "4230-0"
+    },
+    {
+      "tradeName": "Pranayama",
+      "registrationNumber": "4398-902"
+    },
+    {
+      "tradeName": "Premazor Turbo",
+      "registrationNumber": "3788-0"
+    },
+    {
+      "tradeName": "Prepper",
+      "registrationNumber": "4162-0"
+    },
+    {
+      "tradeName": "Presidium",
+      "registrationNumber": "3749-0"
+    },
+    {
+      "tradeName": "Prestop",
+      "registrationNumber": "3680-0"
+    },
+    {
+      "tradeName": "Pretil",
+      "registrationNumber": "4399-0"
+    },
+    {
+      "tradeName": "Prev-AM",
+      "registrationNumber": "3882-0"
+    },
+    {
+      "tradeName": "Prev-Gold Garden",
+      "registrationNumber": "4631-0"
+    },
+    {
+      "tradeName": "Previcur Energy",
+      "registrationNumber": "3109-0"
+    },
+    {
+      "tradeName": "Prevint Flow",
+      "registrationNumber": "4221-901"
+    },
+    {
+      "tradeName": "Priaxor",
+      "registrationNumber": "3623-1"
+    },
+    {
+      "tradeName": "Priaxor EC",
+      "registrationNumber": "3623-0"
+    },
+    {
+      "tradeName": "Primary MX",
+      "registrationNumber": "4514-0"
+    },
+    {
+      "tradeName": "Primero",
+      "registrationNumber": "3838-0"
+    },
+    {
+      "tradeName": "Primo Maxx II",
+      "registrationNumber": "3811-0"
+    },
+    {
+      "tradeName": "Primstar",
+      "registrationNumber": "3167-0"
+    },
+    {
+      "tradeName": "Primus",
+      "registrationNumber": "2698-0"
+    },
+    {
+      "tradeName": "Primus Perfect",
+      "registrationNumber": "3561-0"
+    },
+    {
+      "tradeName": "Principal",
+      "registrationNumber": "3131-0"
+    },
+    {
+      "tradeName": "Principal Plus",
+      "registrationNumber": "3274-0"
+    },
+    {
+      "tradeName": "Prize",
+      "registrationNumber": "4154-0"
+    },
+    {
+      "tradeName": "Problad",
+      "registrationNumber": "4522-0"
+    },
+    {
+      "tradeName": "Procer 300 EC",
+      "registrationNumber": "4247-901"
+    },
+    {
+      "tradeName": "Proclova",
+      "registrationNumber": "4497-0"
+    },
+    {
+      "tradeName": "Prodax",
+      "registrationNumber": "3780-0"
+    },
+    {
+      "tradeName": "Professional",
+      "registrationNumber": "4140-0"
+    },
+    {
+      "tradeName": "Profiler",
+      "registrationNumber": "3143-0"
+    },
+    {
+      "tradeName": "ProFume",
+      "registrationNumber": "3430-0"
+    },
+    {
+      "tradeName": "Prolectus",
+      "registrationNumber": "3353-0"
+    },
+    {
+      "tradeName": "Proliant",
+      "registrationNumber": "4190-0"
+    },
+    {
+      "tradeName": "Proline",
+      "registrationNumber": "3771-0"
+    },
+    {
+      "tradeName": "Promalin",
+      "registrationNumber": "4220-0"
+    },
+    {
+      "tradeName": "Promalin",
+      "registrationNumber": "4220-1"
+    },
+    {
+      "tradeName": "Proman",
+      "registrationNumber": "3662-0"
+    },
+    {
+      "tradeName": "Proman",
+      "registrationNumber": "3662-1"
+    },
+    {
+      "tradeName": "Proman",
+      "registrationNumber": "3662-2"
+    },
+    {
+      "tradeName": "Proman",
+      "registrationNumber": "3662-3"
+    },
+    {
+      "tradeName": "Promanal AF Neu Schild- und Wolllausfrei",
+      "registrationNumber": "2624-0"
+    },
+    {
+      "tradeName": "Promanal Neu Austriebsspritzmittel",
+      "registrationNumber": "2633-903"
+    },
+    {
+      "tradeName": "Promanal Schild- und Wolllausfrei",
+      "registrationNumber": "2633-902"
+    },
+    {
+      "tradeName": "Promesa",
+      "registrationNumber": "4286-0"
+    },
+    {
+      "tradeName": "Prominent New",
+      "registrationNumber": "3665-1"
+    },
+    {
+      "tradeName": "Promino 300 EC",
+      "registrationNumber": "4247-902"
+    },
+    {
+      "tradeName": "Promino Xtra",
+      "registrationNumber": "4428-0"
+    },
+    {
+      "tradeName": "Pronto Plus",
+      "registrationNumber": "2628-0"
+    },
+    {
+      "tradeName": "Property 180 SC",
+      "registrationNumber": "3885-0"
+    },
+    {
+      "tradeName": "Propulse",
+      "registrationNumber": "3371-0"
+    },
+    {
+      "tradeName": "Propulse",
+      "registrationNumber": "3371-1"
+    },
+    {
+      "tradeName": "Propy 400 SC",
+      "registrationNumber": "3215-1"
+    },
+    {
+      "tradeName": "Propylea-System",
+      "registrationNumber": "4556-0"
+    },
+    {
+      "tradeName": "Proradix",
+      "registrationNumber": "3464-0"
+    },
+    {
+      "tradeName": "Prosaro",
+      "registrationNumber": "3054-0"
+    },
+    {
+      "tradeName": "Prosaro",
+      "registrationNumber": "3054-4"
+    },
+    {
+      "tradeName": "Prosaro",
+      "registrationNumber": "3054-5"
+    },
+    {
+      "tradeName": "Prosaro",
+      "registrationNumber": "3054-6"
+    },
+    {
+      "tradeName": "Prosaro 250 EC",
+      "registrationNumber": "3054-3"
+    },
+    {
+      "tradeName": "Prosim",
+      "registrationNumber": "4551-0"
+    },
+    {
+      "tradeName": "Prosper",
+      "registrationNumber": "2644-0"
+    },
+    {
+      "tradeName": "Prosper 300 CS",
+      "registrationNumber": "4025-2"
+    },
+    {
+      "tradeName": "Prosper 500 EC",
+      "registrationNumber": "2644-5"
+    },
+    {
+      "tradeName": "Prosper TEC",
+      "registrationNumber": "4025-0"
+    },
+    {
+      "tradeName": "Protapianta Ethen",
+      "registrationNumber": "3904-0"
+    },
+    {
+      "tradeName": "Protect MaXX Schneckenkorn",
+      "registrationNumber": "3220-904"
+    },
+    {
+      "tradeName": "Protefin",
+      "registrationNumber": "4271-0"
+    },
+    {
+      "tradeName": "Proteg 250 EC",
+      "registrationNumber": "4152-0"
+    },
+    {
+      "tradeName": "Protendo 300 EC",
+      "registrationNumber": "4274-0"
+    },
+    {
+      "tradeName": "Protendo Extra",
+      "registrationNumber": "4310-0"
+    },
+    {
+      "tradeName": "Protiostar",
+      "registrationNumber": "4300-0"
+    },
+    {
+      "tradeName": "Pulsar 40",
+      "registrationNumber": "3628-0"
+    },
+    {
+      "tradeName": "Pulsar 40",
+      "registrationNumber": "3628-1"
+    },
+    {
+      "tradeName": "Pulsar Plus",
+      "registrationNumber": "3737-0"
+    },
+    {
+      "tradeName": "Pulsar Plus",
+      "registrationNumber": "3737-1"
+    },
+    {
+      "tradeName": "Pulsar Plus",
+      "registrationNumber": "3737-2"
+    },
+    {
+      "tradeName": "Puma Extra",
+      "registrationNumber": "2586-0"
+    },
+    {
+      "tradeName": "Pyramid",
+      "registrationNumber": "4366-0"
+    },
+    {
+      "tradeName": "Pyrogal",
+      "registrationNumber": "4400-0"
+    },
+    {
+      "tradeName": "Pyrus",
+      "registrationNumber": "2997-0"
+    },
+    {
+      "tradeName": "Quantum",
+      "registrationNumber": "2881-901"
+    },
+    {
+      "tradeName": "Quassol",
+      "registrationNumber": "4494-0"
+    },
+    {
+      "tradeName": "Quassol",
+      "registrationNumber": "4547-0"
+    },
+    {
+      "tradeName": "Quassol",
+      "registrationNumber": "4655-0"
+    },
+    {
+      "tradeName": "Questar",
+      "registrationNumber": "4232-0"
+    },
+    {
+      "tradeName": "Questar",
+      "registrationNumber": "4232-1"
+    },
+    {
+      "tradeName": "Quick 5% EC",
+      "registrationNumber": "3454-0"
+    },
+    {
+      "tradeName": "Quickphos Beutelkette",
+      "registrationNumber": "4261-902"
+    },
+    {
+      "tradeName": "Quickphos Beutelprodukte",
+      "registrationNumber": "4261-0"
+    },
+    {
+      "tradeName": "Quickphos Beutelrolle",
+      "registrationNumber": "4261-903"
+    },
+    {
+      "tradeName": "Quickphos Einzelbeutel",
+      "registrationNumber": "4261-901"
+    },
+    {
+      "tradeName": "QuickPhos Pellets",
+      "registrationNumber": "3671-0"
+    },
+    {
+      "tradeName": "Quickphos Pellets WM",
+      "registrationNumber": "3770-0"
+    },
+    {
+      "tradeName": "Quickphos Tabletten",
+      "registrationNumber": "2391-0"
+    },
+    {
+      "tradeName": "Quickphos Tabs",
+      "registrationNumber": "3670-0"
+    },
+    {
+      "tradeName": "Raikiri",
+      "registrationNumber": "3821-903"
+    },
+    {
+      "tradeName": "RAK 3",
+      "registrationNumber": "2437-0"
+    },
+    {
+      "tradeName": "RAK 3+4",
+      "registrationNumber": "3878-0"
+    },
+    {
+      "tradeName": "Rambo",
+      "registrationNumber": "4323-0"
+    },
+    {
+      "tradeName": "Rampart",
+      "registrationNumber": "4204-0"
+    },
+    {
+      "tradeName": "Ranger",
+      "registrationNumber": "3684-0"
+    },
+    {
+      "tradeName": "Ranger",
+      "registrationNumber": "3684-1"
+    },
+    {
+      "tradeName": "Ranger Plus",
+      "registrationNumber": "4604-0"
+    },
+    {
+      "tradeName": "Ranman Top",
+      "registrationNumber": "3436-0"
+    },
+    {
+      "tradeName": "Ranman Top",
+      "registrationNumber": "3436-1"
+    },
+    {
+      "tradeName": "Ranman Top",
+      "registrationNumber": "3436-3"
+    },
+    {
+      "tradeName": "Rapsan",
+      "registrationNumber": "4455-0"
+    },
+    {
+      "tradeName": "Rapsan 500",
+      "registrationNumber": "2307-901"
+    },
+    {
+      "tradeName": "Rapsan 500 SC",
+      "registrationNumber": "3647-0"
+    },
+    {
+      "tradeName": "Rapsan Turbo",
+      "registrationNumber": "3403-901"
+    },
+    {
+      "tradeName": "Raptol HP",
+      "registrationNumber": "4477-0"
+    },
+    {
+      "tradeName": "Raptol HP",
+      "registrationNumber": "4477-901"
+    },
+    {
+      "tradeName": "Rasen Floranid mit Unkrautvernichter",
+      "registrationNumber": "3459-902"
+    },
+    {
+      "tradeName": "Rasen-Unkrautfrei",
+      "registrationNumber": "3348-901"
+    },
+    {
+      "tradeName": "Rasen-Unkrautfrei Anicon Ultra",
+      "registrationNumber": "3347-0"
+    },
+    {
+      "tradeName": "Rasen-Unkrautfrei Anicon Ultra Spray",
+      "registrationNumber": "3348-0"
+    },
+    {
+      "tradeName": "Rasen-Unkrautfrei Konzentrat",
+      "registrationNumber": "3347-901"
+    },
+    {
+      "tradeName": "Rasendünger mit Unkrautvernichter 2in1",
+      "registrationNumber": "2786-916"
+    },
+    {
+      "tradeName": "Rasendünger plus Unkrautvernichter",
+      "registrationNumber": "3379-0"
+    },
+    {
+      "tradeName": "Rasenfreund Dicotex",
+      "registrationNumber": "3191-901"
+    },
+    {
+      "tradeName": "Rasenpflege UV-RD",
+      "registrationNumber": "2786-912"
+    },
+    {
+      "tradeName": "Rasput",
+      "registrationNumber": "4496-0"
+    },
+    {
+      "tradeName": "Ratron Gift-Linsen",
+      "registrationNumber": "4088-0"
+    },
+    {
+      "tradeName": "Ratron Giftweizen",
+      "registrationNumber": "3975-0"
+    },
+    {
+      "tradeName": "Ratron Schermaus-Sticks",
+      "registrationNumber": "3937-0"
+    },
+    {
+      "tradeName": "Reactor",
+      "registrationNumber": "2733-901"
+    },
+    {
+      "tradeName": "Reactor 360 CS",
+      "registrationNumber": "3548-0"
+    },
+    {
+      "tradeName": "Ready",
+      "registrationNumber": "4316-0"
+    },
+    {
+      "tradeName": "Reboot",
+      "registrationNumber": "3640-0"
+    },
+    {
+      "tradeName": "Rebwachs Pro",
+      "registrationNumber": "3524-0"
+    },
+    {
+      "tradeName": "Recudo",
+      "registrationNumber": "4605-0"
+    },
+    {
+      "tradeName": "Redigo",
+      "registrationNumber": "2885-0"
+    },
+    {
+      "tradeName": "Redigo M",
+      "registrationNumber": "4017-0"
+    },
+    {
+      "tradeName": "Redigo Pro",
+      "registrationNumber": "3762-0"
+    },
+    {
+      "tradeName": "Refine 50 SX",
+      "registrationNumber": "2941-3"
+    },
+    {
+      "tradeName": "Refine 50 SX",
+      "registrationNumber": "2941-901"
+    },
+    {
+      "tradeName": "Regalis Plus",
+      "registrationNumber": "3366-0"
+    },
+    {
+      "tradeName": "Regalis Plus",
+      "registrationNumber": "3366-2"
+    },
+    {
+      "tradeName": "Regalis Plus",
+      "registrationNumber": "3366-3"
+    },
+    {
+      "tradeName": "Regulator 720",
+      "registrationNumber": "4235-0"
+    },
+    {
+      "tradeName": "Regulex 10 SG",
+      "registrationNumber": "3400-0"
+    },
+    {
+      "tradeName": "Ressivi",
+      "registrationNumber": "4347-0"
+    },
+    {
+      "tradeName": "Restrain",
+      "registrationNumber": "3597-0"
+    },
+    {
+      "tradeName": "Revesti",
+      "registrationNumber": "4419-0"
+    },
+    {
+      "tradeName": "Revus",
+      "registrationNumber": "2906-0"
+    },
+    {
+      "tradeName": "Revus",
+      "registrationNumber": "2906-1"
+    },
+    {
+      "tradeName": "Revus",
+      "registrationNumber": "2906-3"
+    },
+    {
+      "tradeName": "Revus Pro",
+      "registrationNumber": "4550-0"
+    },
+    {
+      "tradeName": "Revus Top",
+      "registrationNumber": "3232-0"
+    },
+    {
+      "tradeName": "Revus Top",
+      "registrationNumber": "3232-2"
+    },
+    {
+      "tradeName": "Revycare",
+      "registrationNumber": "4178-1"
+    },
+    {
+      "tradeName": "Revydas",
+      "registrationNumber": "4445-1"
+    },
+    {
+      "tradeName": "Revyflex",
+      "registrationNumber": "4480-0"
+    },
+    {
+      "tradeName": "Revyona",
+      "registrationNumber": "4287-0"
+    },
+    {
+      "tradeName": "Revysion",
+      "registrationNumber": "4287-1"
+    },
+    {
+      "tradeName": "Revysky",
+      "registrationNumber": "4217-1"
+    },
+    {
+      "tradeName": "Revystar",
+      "registrationNumber": "4106-1"
+    },
+    {
+      "tradeName": "Revytrex",
+      "registrationNumber": "4217-0"
+    },
+    {
+      "tradeName": "Ridomil Gold R",
+      "registrationNumber": "4610-0"
+    },
+    {
+      "tradeName": "Rim 25 WG",
+      "registrationNumber": "4169-0"
+    },
+    {
+      "tradeName": "Rimuron 25 WG",
+      "registrationNumber": "4193-0"
+    },
+    {
+      "tradeName": "Rinidi WG",
+      "registrationNumber": "4321-0"
+    },
+    {
+      "tradeName": "Rinpode 26",
+      "registrationNumber": "4641-0"
+    },
+    {
+      "tradeName": "RipeLock Tabs 2.0",
+      "registrationNumber": "3652-0"
+    },
+    {
+      "tradeName": "Rival",
+      "registrationNumber": "4579-0"
+    },
+    {
+      "tradeName": "Rival Duo",
+      "registrationNumber": "4313-0"
+    },
+    {
+      "tradeName": "Rival Duo",
+      "registrationNumber": "4313-1"
+    },
+    {
+      "tradeName": "Rodixelf",
+      "registrationNumber": "2691-3"
+    },
+    {
+      "tradeName": "Rombiphos Extra",
+      "registrationNumber": "4478-0"
+    },
+    {
+      "tradeName": "Romeo",
+      "registrationNumber": "3960-0"
+    },
+    {
+      "tradeName": "Rosan",
+      "registrationNumber": "3088-901"
+    },
+    {
+      "tradeName": "Rosate Clean 360",
+      "registrationNumber": "2948-903"
+    },
+    {
+      "tradeName": "Rosen Pilzfrei Kondor",
+      "registrationNumber": "2711-913"
+    },
+    {
+      "tradeName": "Rosen Schädlings-Frei AF",
+      "registrationNumber": "2934-0"
+    },
+    {
+      "tradeName": "Rosen-Pilzfrei",
+      "registrationNumber": "2711-916"
+    },
+    {
+      "tradeName": "Rosen-Pilzfrei Saprol",
+      "registrationNumber": "3113-0"
+    },
+    {
+      "tradeName": "Rosenkombi",
+      "registrationNumber": "2711-917"
+    },
+    {
+      "tradeName": "Roslix",
+      "registrationNumber": "4426-2"
+    },
+    {
+      "tradeName": "Roundup AC",
+      "registrationNumber": "3264-902"
+    },
+    {
+      "tradeName": "Roundup AC Konzentrat",
+      "registrationNumber": "3698-902"
+    },
+    {
+      "tradeName": "Roundup Future",
+      "registrationNumber": "4471-0"
+    },
+    {
+      "tradeName": "Roxy 800 EC",
+      "registrationNumber": "3748-0"
+    },
+    {
+      "tradeName": "Roxy EC",
+      "registrationNumber": "4303-0"
+    },
+    {
+      "tradeName": "Roxy XL",
+      "registrationNumber": "4626-0"
+    },
+    {
+      "tradeName": "Royal MH 60 SG",
+      "registrationNumber": "3281-0"
+    },
+    {
+      "tradeName": "Royalty",
+      "registrationNumber": "4197-0"
+    },
+    {
+      "tradeName": "Ruler",
+      "registrationNumber": "4661-0"
+    },
+    {
+      "tradeName": "Rüssler-Stopp",
+      "registrationNumber": "4249-901"
+    },
+    {
+      "tradeName": "Sacron 45 WG",
+      "registrationNumber": "3289-1"
+    },
+    {
+      "tradeName": "Sacron WG",
+      "registrationNumber": "3289-0"
+    },
+    {
+      "tradeName": "Samba K",
+      "registrationNumber": "2762-0"
+    },
+    {
+      "tradeName": "Sanax",
+      "registrationNumber": "3578-901"
+    },
+    {
+      "tradeName": "Sanvino",
+      "registrationNumber": "3504-0"
+    },
+    {
+      "tradeName": "Saracen",
+      "registrationNumber": "3562-0"
+    },
+    {
+      "tradeName": "Saracen Delta",
+      "registrationNumber": "3656-0"
+    },
+    {
+      "tradeName": "Saracen Delta",
+      "registrationNumber": "3656-1"
+    },
+    {
+      "tradeName": "Saracen Max",
+      "registrationNumber": "3691-0"
+    },
+    {
+      "tradeName": "Sarumo",
+      "registrationNumber": "3665-901"
+    },
+    {
+      "tradeName": "Saviran Star",
+      "registrationNumber": "3290-1"
+    },
+    {
+      "tradeName": "SC-Nematoden gegen Maulwurfsgrillen und Wiesenschnaken (Tipula)",
+      "registrationNumber": "2935-0"
+    },
+    {
+      "tradeName": "Scab 480 SC",
+      "registrationNumber": "3938-0"
+    },
+    {
+      "tradeName": "Scala",
+      "registrationNumber": "3064-0"
+    },
+    {
+      "tradeName": "Scala",
+      "registrationNumber": "3064-1"
+    },
+    {
+      "tradeName": "Scala",
+      "registrationNumber": "3064-2"
+    },
+    {
+      "tradeName": "Scenic Gold",
+      "registrationNumber": "4099-0"
+    },
+    {
+      "tradeName": "Schneck weg Schneckenkorn",
+      "registrationNumber": "2605-905"
+    },
+    {
+      "tradeName": "Schnecken-Korn 3%",
+      "registrationNumber": "3196-903"
+    },
+    {
+      "tradeName": "Schnecken-Linsen",
+      "registrationNumber": "3134-0"
+    },
+    {
+      "tradeName": "Schneckenkorn Limex",
+      "registrationNumber": "3220-902"
+    },
+    {
+      "tradeName": "Schneckenkorn Limex Fe",
+      "registrationNumber": "3620-902"
+    },
+    {
+      "tradeName": "Schneckenkorn Limex Ultra",
+      "registrationNumber": "4444-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo",
+      "registrationNumber": "3227-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo Eco",
+      "registrationNumber": "2568-903"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo Express",
+      "registrationNumber": "4617-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo Konzentrat",
+      "registrationNumber": "3035-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo N",
+      "registrationNumber": "3946-902"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo N Konzentrat",
+      "registrationNumber": "3892-901"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo N Neem",
+      "registrationNumber": "2699-913"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo Rosenspray",
+      "registrationNumber": "3227-901"
+    },
+    {
+      "tradeName": "Schädlingsfrei Careo Spray",
+      "registrationNumber": "3229-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Forte",
+      "registrationNumber": "3946-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Forte Konzentrat",
+      "registrationNumber": "3892-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Neem",
+      "registrationNumber": "2699-920"
+    },
+    {
+      "tradeName": "Schädlingsfrei Obst & Gemüse",
+      "registrationNumber": "2739-0"
+    },
+    {
+      "tradeName": "Schädlingsfrei Obst & Gemüse Konzentrat",
+      "registrationNumber": "2568-0"
+    },
+    {
+      "tradeName": "Schädlingsspray",
+      "registrationNumber": "3946-901"
+    },
+    {
+      "tradeName": "Score",
+      "registrationNumber": "3255-0"
+    },
+    {
+      "tradeName": "Scout",
+      "registrationNumber": "4456-0"
+    },
+    {
+      "tradeName": "Seedron",
+      "registrationNumber": "3927-0"
+    },
+    {
+      "tradeName": "Sekator Maxx",
+      "registrationNumber": "4184-0"
+    },
+    {
+      "tradeName": "Sekator OD",
+      "registrationNumber": "3372-0"
+    },
+    {
+      "tradeName": "Sekator OD",
+      "registrationNumber": "3372-1"
+    },
+    {
+      "tradeName": "Sekvenca",
+      "registrationNumber": "4001-0"
+    },
+    {
+      "tradeName": "Select 240 EC",
+      "registrationNumber": "2744-0"
+    },
+    {
+      "tradeName": "Select Super",
+      "registrationNumber": "4254-3"
+    },
+    {
+      "tradeName": "SemiosNET-Codling Moth",
+      "registrationNumber": "4238-0"
+    },
+    {
+      "tradeName": "Sempra",
+      "registrationNumber": "4100-0"
+    },
+    {
+      "tradeName": "Sencor Liquid",
+      "registrationNumber": "3381-0"
+    },
+    {
+      "tradeName": "Sencor Liquid 600 SC",
+      "registrationNumber": "3381-1"
+    },
+    {
+      "tradeName": "Sentrallas LQM",
+      "registrationNumber": "4569-0"
+    },
+    {
+      "tradeName": "Sercadis",
+      "registrationNumber": "3796-0"
+    },
+    {
+      "tradeName": "Sercadis",
+      "registrationNumber": "3796-1"
+    },
+    {
+      "tradeName": "Serenade ASO",
+      "registrationNumber": "3536-0"
+    },
+    {
+      "tradeName": "Serenade Soil Activ",
+      "registrationNumber": "4607-0"
+    },
+    {
+      "tradeName": "Sesto",
+      "registrationNumber": "4199-0"
+    },
+    {
+      "tradeName": "SF-Nematoden gegen Trauermücken",
+      "registrationNumber": "2520-0"
+    },
+    {
+      "tradeName": "Sharfen",
+      "registrationNumber": "4433-0"
+    },
+    {
+      "tradeName": "Shark",
+      "registrationNumber": "2878-0"
+    },
+    {
+      "tradeName": "Shenzi 200 SC",
+      "registrationNumber": "2984-903"
+    },
+    {
+      "tradeName": "Sherpa Duo",
+      "registrationNumber": "4279-0"
+    },
+    {
+      "tradeName": "Shirlan",
+      "registrationNumber": "2528-3"
+    },
+    {
+      "tradeName": "Shirlan",
+      "registrationNumber": "2528-6"
+    },
+    {
+      "tradeName": "Shirlan",
+      "registrationNumber": "2528-7"
+    },
+    {
+      "tradeName": "Shyfo",
+      "registrationNumber": "3692-0"
+    },
+    {
+      "tradeName": "Signum",
+      "registrationNumber": "3199-0"
+    },
+    {
+      "tradeName": "Signum",
+      "registrationNumber": "3199-1"
+    },
+    {
+      "tradeName": "Signum WG",
+      "registrationNumber": "3199-2"
+    },
+    {
+      "tradeName": "Signum WG",
+      "registrationNumber": "3199-3"
+    },
+    {
+      "tradeName": "Signum WG",
+      "registrationNumber": "3199-5"
+    },
+    {
+      "tradeName": "SilicoSec",
+      "registrationNumber": "2669-0"
+    },
+    {
+      "tradeName": "Siltra Xpro",
+      "registrationNumber": "3800-0"
+    },
+    {
+      "tradeName": "Silvron",
+      "registrationNumber": "4463-0"
+    },
+    {
+      "tradeName": "Simplex",
+      "registrationNumber": "3212-0"
+    },
+    {
+      "tradeName": "Sinclaire",
+      "registrationNumber": "4378-0"
+    },
+    {
+      "tradeName": "Sinco Rasen Wunder 18",
+      "registrationNumber": "2786-910"
+    },
+    {
+      "tradeName": "Sinopia",
+      "registrationNumber": "4134-0"
+    },
+    {
+      "tradeName": "Sinstar",
+      "registrationNumber": "3761-0"
+    },
+    {
+      "tradeName": "SIP 41061",
+      "registrationNumber": "4566-0"
+    },
+    {
+      "tradeName": "Sirena",
+      "registrationNumber": "3705-0"
+    },
+    {
+      "tradeName": "Sirionova",
+      "registrationNumber": "4159-0"
+    },
+    {
+      "tradeName": "Sisam",
+      "registrationNumber": "3832-0"
+    },
+    {
+      "tradeName": "Sivanto Energy",
+      "registrationNumber": "4482-0"
+    },
+    {
+      "tradeName": "Sivanto Energy 85 EC",
+      "registrationNumber": "4482-1"
+    },
+    {
+      "tradeName": "Sivanto Prime",
+      "registrationNumber": "4091-0"
+    },
+    {
+      "tradeName": "Sivanto Prime 200 SL",
+      "registrationNumber": "4091-2"
+    },
+    {
+      "tradeName": "SL 950",
+      "registrationNumber": "2514-0"
+    },
+    {
+      "tradeName": "Sluggo PRO",
+      "registrationNumber": "4565-0"
+    },
+    {
+      "tradeName": "Sluxx HP",
+      "registrationNumber": "3317-0"
+    },
+    {
+      "tradeName": "Smaragd",
+      "registrationNumber": "4103-901"
+    },
+    {
+      "tradeName": "SmartFresh",
+      "registrationNumber": "2968-0"
+    },
+    {
+      "tradeName": "SmartFresh ProTabs",
+      "registrationNumber": "3651-0"
+    },
+    {
+      "tradeName": "Society",
+      "registrationNumber": "4306-0"
+    },
+    {
+      "tradeName": "Society",
+      "registrationNumber": "4306-1"
+    },
+    {
+      "tradeName": "Soilguard 0.5 GR",
+      "registrationNumber": "4290-0"
+    },
+    {
+      "tradeName": "SoilGuard 0.5 GR",
+      "registrationNumber": "4290-1"
+    },
+    {
+      "tradeName": "Soilguard 0.5 GR",
+      "registrationNumber": "4290-2"
+    },
+    {
+      "tradeName": "Soilguard 0.5 GR",
+      "registrationNumber": "4290-3"
+    },
+    {
+      "tradeName": "Solabiol Bio-Schneckenkorn",
+      "registrationNumber": "4131-904"
+    },
+    {
+      "tradeName": "Solabiol Netzschwefel",
+      "registrationNumber": "2632-903"
+    },
+    {
+      "tradeName": "Solabiol Schneckenkorn",
+      "registrationNumber": "3940-0"
+    },
+    {
+      "tradeName": "Soleil",
+      "registrationNumber": "3663-0"
+    },
+    {
+      "tradeName": "Solofol",
+      "registrationNumber": "4090-0"
+    },
+    {
+      "tradeName": "Soratel",
+      "registrationNumber": "4536-0"
+    },
+    {
+      "tradeName": "Soriale",
+      "registrationNumber": "3535-2"
+    },
+    {
+      "tradeName": "Soriale Pro",
+      "registrationNumber": "4588-0"
+    },
+    {
+      "tradeName": "Spandis",
+      "registrationNumber": "3857-0"
+    },
+    {
+      "tradeName": "Spectrum",
+      "registrationNumber": "2798-0"
+    },
+    {
+      "tradeName": "Spectrum Gold",
+      "registrationNumber": "3461-0"
+    },
+    {
+      "tradeName": "Spectrum Plus",
+      "registrationNumber": "3397-0"
+    },
+    {
+      "tradeName": "Speech",
+      "registrationNumber": "4355-0"
+    },
+    {
+      "tradeName": "Spektral Uni",
+      "registrationNumber": "2798-5"
+    },
+    {
+      "tradeName": "Sphaerophoria-System",
+      "registrationNumber": "4322-0"
+    },
+    {
+      "tradeName": "Spical",
+      "registrationNumber": "2868-0"
+    },
+    {
+      "tradeName": "Spical Neoseiulus californicus",
+      "registrationNumber": "4071-0"
+    },
+    {
+      "tradeName": "Spical-Plus Neoseiulus californicus",
+      "registrationNumber": "4072-0"
+    },
+    {
+      "tradeName": "Spiculus",
+      "registrationNumber": "4483-0"
+    },
+    {
+      "tradeName": "Spidend",
+      "registrationNumber": "3746-0"
+    },
+    {
+      "tradeName": "Spidex Vital Phytoseiulus persimilis",
+      "registrationNumber": "2516-0"
+    },
+    {
+      "tradeName": "SpinTor",
+      "registrationNumber": "3296-0"
+    },
+    {
+      "tradeName": "Spintor",
+      "registrationNumber": "3296-3"
+    },
+    {
+      "tradeName": "SpinTor 480 SC",
+      "registrationNumber": "3296-2"
+    },
+    {
+      "tradeName": "Spintor 480 SC",
+      "registrationNumber": "3296-4"
+    },
+    {
+      "tradeName": "Spintor GR",
+      "registrationNumber": "4267-0"
+    },
+    {
+      "tradeName": "Spirox",
+      "registrationNumber": "2644-4"
+    },
+    {
+      "tradeName": "Spirox",
+      "registrationNumber": "2644-901"
+    },
+    {
+      "tradeName": "Spirox D",
+      "registrationNumber": "3863-0"
+    },
+    {
+      "tradeName": "Spirox D",
+      "registrationNumber": "3863-1"
+    },
+    {
+      "tradeName": "Spirox Duo",
+      "registrationNumber": "3863-901"
+    },
+    {
+      "tradeName": "Sporax",
+      "registrationNumber": "4451-0"
+    },
+    {
+      "tradeName": "Spotlight",
+      "registrationNumber": "2878-902"
+    },
+    {
+      "tradeName": "Spotlight Plus",
+      "registrationNumber": "2878-1"
+    },
+    {
+      "tradeName": "Spotlight Plus",
+      "registrationNumber": "2878-2"
+    },
+    {
+      "tradeName": "Spruzit AF RosenSchädlingsFrei",
+      "registrationNumber": "3148-901"
+    },
+    {
+      "tradeName": "Spruzit AF Schädlingsfrei",
+      "registrationNumber": "3148-0"
+    },
+    {
+      "tradeName": "Spruzit NEEM GemüseSchädlingsfrei",
+      "registrationNumber": "2699-914"
+    },
+    {
+      "tradeName": "Spruzit Neem ZierpflanzenSchädlingsfrei",
+      "registrationNumber": "2699-917"
+    },
+    {
+      "tradeName": "Spruzit progress",
+      "registrationNumber": "3141-903"
+    },
+    {
+      "tradeName": "Spruzit Schädlingsfrei",
+      "registrationNumber": "3141-0"
+    },
+    {
+      "tradeName": "Spruzit Schädlingsfrei Rosenspray",
+      "registrationNumber": "3148-913"
+    },
+    {
+      "tradeName": "Spruzit SchädlingsSpray",
+      "registrationNumber": "3148-902"
+    },
+    {
+      "tradeName": "Spruzit TrauermückenFrei",
+      "registrationNumber": "2699-915"
+    },
+    {
+      "tradeName": "Spyrale",
+      "registrationNumber": "2685-0"
+    },
+    {
+      "tradeName": "Spyrale",
+      "registrationNumber": "2685-2"
+    },
+    {
+      "tradeName": "Stabilan 400",
+      "registrationNumber": "2206-0"
+    },
+    {
+      "tradeName": "Stallion Sync TEC",
+      "registrationNumber": "3483-0"
+    },
+    {
+      "tradeName": "Stallion SyncTec",
+      "registrationNumber": "3483-1"
+    },
+    {
+      "tradeName": "Stampa",
+      "registrationNumber": "4539-0"
+    },
+    {
+      "tradeName": "Stapler",
+      "registrationNumber": "2759-902"
+    },
+    {
+      "tradeName": "Star Azoxystrobin",
+      "registrationNumber": "2711-3"
+    },
+    {
+      "tradeName": "Star Cyflufenamid",
+      "registrationNumber": "3157-1"
+    },
+    {
+      "tradeName": "Star Dimethenamid-P",
+      "registrationNumber": "2798-4"
+    },
+    {
+      "tradeName": "STAR Dimethenamid-P",
+      "registrationNumber": "2798-6"
+    },
+    {
+      "tradeName": "Star Dimethenamid-P + Pendimethalin",
+      "registrationNumber": "3397-1"
+    },
+    {
+      "tradeName": "Star Fenpyroximat",
+      "registrationNumber": "2762-1"
+    },
+    {
+      "tradeName": "Star Florasulam + Pyroxulam",
+      "registrationNumber": "3049-2"
+    },
+    {
+      "tradeName": "Star Fludioxonil",
+      "registrationNumber": "2575-1"
+    },
+    {
+      "tradeName": "Star Fludioxonil Trio",
+      "registrationNumber": "3239-1"
+    },
+    {
+      "tradeName": "Star Fluopicolide + Fosetyl",
+      "registrationNumber": "3143-1"
+    },
+    {
+      "tradeName": "Star Isoxaben",
+      "registrationNumber": "2691-1"
+    },
+    {
+      "tradeName": "STAR Maleinsäurehydrazid",
+      "registrationNumber": "3281-2"
+    },
+    {
+      "tradeName": "Star MCPA",
+      "registrationNumber": "3052-2"
+    },
+    {
+      "tradeName": "Star Metsulfuron + Thifensulfuron",
+      "registrationNumber": "2932-2"
+    },
+    {
+      "tradeName": "Star Oxathiapiprolin",
+      "registrationNumber": "3989-2"
+    },
+    {
+      "tradeName": "Star Penconazol",
+      "registrationNumber": "3275-2"
+    },
+    {
+      "tradeName": "STAR Prothioconazol + Fenpicoxamid",
+      "registrationNumber": "4340-1"
+    },
+    {
+      "tradeName": "Star Tebuconazol",
+      "registrationNumber": "2670-4"
+    },
+    {
+      "tradeName": "Star Tribenuron 75 WG",
+      "registrationNumber": "3537-1"
+    },
+    {
+      "tradeName": "Starane XL",
+      "registrationNumber": "2879-0"
+    },
+    {
+      "tradeName": "Starship",
+      "registrationNumber": "4612-0"
+    },
+    {
+      "tradeName": "Stavento",
+      "registrationNumber": "2855-4"
+    },
+    {
+      "tradeName": "Stemper",
+      "registrationNumber": "4353-0"
+    },
+    {
+      "tradeName": "Stomp Aqua",
+      "registrationNumber": "3107-0"
+    },
+    {
+      "tradeName": "Stomp Aqua",
+      "registrationNumber": "3107-2"
+    },
+    {
+      "tradeName": "Stomp Aqua",
+      "registrationNumber": "3107-3"
+    },
+    {
+      "tradeName": "Stomp Aqua 455 CS",
+      "registrationNumber": "3107-4"
+    },
+    {
+      "tradeName": "Stratos Ultra",
+      "registrationNumber": "3125-2"
+    },
+    {
+      "tradeName": "Stroby",
+      "registrationNumber": "2576-0"
+    },
+    {
+      "tradeName": "Substral Rasendünger mit Moosvernichter",
+      "registrationNumber": "3608-0"
+    },
+    {
+      "tradeName": "Substral Rasendünger mit Unkrautvernichter",
+      "registrationNumber": "2786-0"
+    },
+    {
+      "tradeName": "Substral Rasendünger Premium 3 in 1 Komplett",
+      "registrationNumber": "3136-0"
+    },
+    {
+      "tradeName": "Successor 600",
+      "registrationNumber": "2881-0"
+    },
+    {
+      "tradeName": "Successor Pro",
+      "registrationNumber": "2881-5"
+    },
+    {
+      "tradeName": "Successor Tx",
+      "registrationNumber": "3777-0"
+    },
+    {
+      "tradeName": "Sugoi",
+      "registrationNumber": "3436-901"
+    },
+    {
+      "tradeName": "Sultan Top 500 SC",
+      "registrationNumber": "3352-1"
+    },
+    {
+      "tradeName": "Sumi Pro",
+      "registrationNumber": "3583-0"
+    },
+    {
+      "tradeName": "Sumi-Alpha",
+      "registrationNumber": "2421-0"
+    },
+    {
+      "tradeName": "Sumi-Alpha 050 EC",
+      "registrationNumber": "2421-1"
+    },
+    {
+      "tradeName": "Sumicidin Pro",
+      "registrationNumber": "4195-0"
+    },
+    {
+      "tradeName": "Sumicidin Super",
+      "registrationNumber": "2996-0"
+    },
+    {
+      "tradeName": "Sumicidin Top",
+      "registrationNumber": "2421-901"
+    },
+    {
+      "tradeName": "Sunda",
+      "registrationNumber": "4395-0"
+    },
+    {
+      "tradeName": "Sunergist",
+      "registrationNumber": "4459-0"
+    },
+    {
+      "tradeName": "Sunfire",
+      "registrationNumber": "4070-0"
+    },
+    {
+      "tradeName": "Super",
+      "registrationNumber": "4613-0"
+    },
+    {
+      "tradeName": "Suprax",
+      "registrationNumber": "4335-0"
+    },
+    {
+      "tradeName": "Surdone",
+      "registrationNumber": "2796-3"
+    },
+    {
+      "tradeName": "Surrender",
+      "registrationNumber": "4474-0"
+    },
+    {
+      "tradeName": "Surround WP Crop Protectant",
+      "registrationNumber": "4200-0"
+    },
+    {
+      "tradeName": "Susteed",
+      "registrationNumber": "4637-0"
+    },
+    {
+      "tradeName": "Swim",
+      "registrationNumber": "4407-0"
+    },
+    {
+      "tradeName": "Swirski-Mite",
+      "registrationNumber": "2938-0"
+    },
+    {
+      "tradeName": "Swirski-Mite Amblyseius swirskii",
+      "registrationNumber": "3971-0"
+    },
+    {
+      "tradeName": "Swirski-Mite Plus Amblyseius swirskii",
+      "registrationNumber": "4206-0"
+    },
+    {
+      "tradeName": "Swirskii-Breeding System",
+      "registrationNumber": "3076-0"
+    },
+    {
+      "tradeName": "Swirskii-System",
+      "registrationNumber": "3004-0"
+    },
+    {
+      "tradeName": "Switch",
+      "registrationNumber": "2619-0"
+    },
+    {
+      "tradeName": "Switch",
+      "registrationNumber": "2619-1"
+    },
+    {
+      "tradeName": "Switch",
+      "registrationNumber": "2619-3"
+    },
+    {
+      "tradeName": "Symphonie",
+      "registrationNumber": "3487-0"
+    },
+    {
+      "tradeName": "Systiva",
+      "registrationNumber": "3872-0"
+    },
+    {
+      "tradeName": "Systiva 333 FS",
+      "registrationNumber": "3872-1"
+    },
+    {
+      "tradeName": "Tachigaren 70% W.P.",
+      "registrationNumber": "2142-0"
+    },
+    {
+      "tradeName": "Tachigaren LS",
+      "registrationNumber": "4368-0"
+    },
+    {
+      "tradeName": "Taegro",
+      "registrationNumber": "4160-0"
+    },
+    {
+      "tradeName": "Taifun forte",
+      "registrationNumber": "3014-0"
+    },
+    {
+      "tradeName": "Talendo",
+      "registrationNumber": "2889-0"
+    },
+    {
+      "tradeName": "Talendo Extra",
+      "registrationNumber": "3342-0"
+    },
+    {
+      "tradeName": "Talendo Extra",
+      "registrationNumber": "3342-1"
+    },
+    {
+      "tradeName": "Talisma EC",
+      "registrationNumber": "3463-0"
+    },
+    {
+      "tradeName": "Talisman",
+      "registrationNumber": "3767-0"
+    },
+    {
+      "tradeName": "Tanaris",
+      "registrationNumber": "3697-0"
+    },
+    {
+      "tradeName": "Tandus",
+      "registrationNumber": "4331-0"
+    },
+    {
+      "tradeName": "Tandus",
+      "registrationNumber": "4331-1"
+    },
+    {
+      "tradeName": "Targa Super",
+      "registrationNumber": "2477-0"
+    },
+    {
+      "tradeName": "Target Compact",
+      "registrationNumber": "3606-0"
+    },
+    {
+      "tradeName": "Target SC",
+      "registrationNumber": "4081-0"
+    },
+    {
+      "tradeName": "Tartaros 300 EC",
+      "registrationNumber": "4247-0"
+    },
+    {
+      "tradeName": "Task",
+      "registrationNumber": "2673-0"
+    },
+    {
+      "tradeName": "Tazer 250 SC",
+      "registrationNumber": "3664-0"
+    },
+    {
+      "tradeName": "Tazer 250 SC",
+      "registrationNumber": "3664-1"
+    },
+    {
+      "tradeName": "TBM 75 WG",
+      "registrationNumber": "3733-0"
+    },
+    {
+      "tradeName": "Tebu Super 250 EW",
+      "registrationNumber": "3327-0"
+    },
+    {
+      "tradeName": "Tebucur 250 EW",
+      "registrationNumber": "3493-0"
+    },
+    {
+      "tradeName": "Tebusha 25 EW",
+      "registrationNumber": "4129-0"
+    },
+    {
+      "tradeName": "Tebusul",
+      "registrationNumber": "4137-0"
+    },
+    {
+      "tradeName": "Tebycon",
+      "registrationNumber": "4128-0"
+    },
+    {
+      "tradeName": "Teflix",
+      "registrationNumber": "4651-0"
+    },
+    {
+      "tradeName": "Teko 250",
+      "registrationNumber": "4387-904"
+    },
+    {
+      "tradeName": "Teldor WG",
+      "registrationNumber": "3690-0"
+    },
+    {
+      "tradeName": "Temsa SC",
+      "registrationNumber": "3646-0"
+    },
+    {
+      "tradeName": "Teppeki",
+      "registrationNumber": "3383-0"
+    },
+    {
+      "tradeName": "Teppeki",
+      "registrationNumber": "3383-1"
+    },
+    {
+      "tradeName": "Teppeki",
+      "registrationNumber": "3383-3"
+    },
+    {
+      "tradeName": "Terafit",
+      "registrationNumber": "3106-2"
+    },
+    {
+      "tradeName": "Teridox 500 EC",
+      "registrationNumber": "1938-0"
+    },
+    {
+      "tradeName": "Tern",
+      "registrationNumber": "4149-0"
+    },
+    {
+      "tradeName": "Terplex",
+      "registrationNumber": "3847-0"
+    },
+    {
+      "tradeName": "Tessior",
+      "registrationNumber": "4258-0"
+    },
+    {
+      "tradeName": "Thiopron",
+      "registrationNumber": "3997-0"
+    },
+    {
+      "tradeName": "Thiovit Gold",
+      "registrationNumber": "3701-901"
+    },
+    {
+      "tradeName": "Thiovit Jet",
+      "registrationNumber": "2632-0"
+    },
+    {
+      "tradeName": "Thripans",
+      "registrationNumber": "2869-0"
+    },
+    {
+      "tradeName": "Thripex Neoseiulus cucumeris",
+      "registrationNumber": "2543-0"
+    },
+    {
+      "tradeName": "Thripex Plus Neoseiulus cucumeris",
+      "registrationNumber": "2544-0"
+    },
+    {
+      "tradeName": "Thripor-L",
+      "registrationNumber": "3010-0"
+    },
+    {
+      "tradeName": "Thripor-L Orius laevigatus",
+      "registrationNumber": "4058-0"
+    },
+    {
+      "tradeName": "Tilmor",
+      "registrationNumber": "3307-0"
+    },
+    {
+      "tradeName": "Titus",
+      "registrationNumber": "2478-0"
+    },
+    {
+      "tradeName": "Titus 25 DF",
+      "registrationNumber": "2478-4"
+    },
+    {
+      "tradeName": "Toltek",
+      "registrationNumber": "4525-0"
+    },
+    {
+      "tradeName": "Toluron 700 SC",
+      "registrationNumber": "3032-0"
+    },
+    {
+      "tradeName": "Tomigan 200",
+      "registrationNumber": "3479-0"
+    },
+    {
+      "tradeName": "Tomigan XL",
+      "registrationNumber": "3467-0"
+    },
+    {
+      "tradeName": "Topas",
+      "registrationNumber": "3275-0"
+    },
+    {
+      "tradeName": "Toprex",
+      "registrationNumber": "3130-0"
+    },
+    {
+      "tradeName": "Toprex",
+      "registrationNumber": "3130-1"
+    },
+    {
+      "tradeName": "Touchdown Quattro",
+      "registrationNumber": "2809-0"
+    },
+    {
+      "tradeName": "Tramat 500",
+      "registrationNumber": "2945-0"
+    },
+    {
+      "tradeName": "TrauermückenEX",
+      "registrationNumber": "2699-918"
+    },
+    {
+      "tradeName": "Trauermückenfrei Neem",
+      "registrationNumber": "2699-921"
+    },
+    {
+      "tradeName": "TrauermückenStopp Plus",
+      "registrationNumber": "2699-922"
+    },
+    {
+      "tradeName": "Trebon 30 EC",
+      "registrationNumber": "3395-0"
+    },
+    {
+      "tradeName": "Trebon 30 EC",
+      "registrationNumber": "3395-1"
+    },
+    {
+      "tradeName": "Treconc Esix",
+      "registrationNumber": "2932-3"
+    },
+    {
+      "tradeName": "Treso",
+      "registrationNumber": "3528-1"
+    },
+    {
+      "tradeName": "Trianum G",
+      "registrationNumber": "4587-0"
+    },
+    {
+      "tradeName": "Trianum P",
+      "registrationNumber": "4591-0"
+    },
+    {
+      "tradeName": "Tribun 75 WG",
+      "registrationNumber": "3537-0"
+    },
+    {
+      "tradeName": "Trichohelp",
+      "registrationNumber": "3246-0"
+    },
+    {
+      "tradeName": "TrichoKarte Mais",
+      "registrationNumber": "3954-0"
+    },
+    {
+      "tradeName": "TrichoKugel Mais",
+      "registrationNumber": "3955-0"
+    },
+    {
+      "tradeName": "Trichon",
+      "registrationNumber": "2549-0"
+    },
+    {
+      "tradeName": "Trichopria-System",
+      "registrationNumber": "4210-0"
+    },
+    {
+      "tradeName": "Trichosafe",
+      "registrationNumber": "2921-0"
+    },
+    {
+      "tradeName": "TrichoWin Agrar",
+      "registrationNumber": "4394-0"
+    },
+    {
+      "tradeName": "TrichoWin VS",
+      "registrationNumber": "4393-0"
+    },
+    {
+      "tradeName": "Trico",
+      "registrationNumber": "2787-0"
+    },
+    {
+      "tradeName": "Trico Silva",
+      "registrationNumber": "2936-0"
+    },
+    {
+      "tradeName": "Trico-garden",
+      "registrationNumber": "2931-0"
+    },
+    {
+      "tradeName": "Tridus",
+      "registrationNumber": "3648-901"
+    },
+    {
+      "tradeName": "Trimaxx",
+      "registrationNumber": "3163-901"
+    },
+    {
+      "tradeName": "Trinity",
+      "registrationNumber": "3209-0"
+    },
+    {
+      "tradeName": "Trinity 590 SC",
+      "registrationNumber": "3209-2"
+    },
+    {
+      "tradeName": "Trissohelp",
+      "registrationNumber": "4429-0"
+    },
+    {
+      "tradeName": "Trissolcus",
+      "registrationNumber": "4504-0"
+    },
+    {
+      "tradeName": "Turbo Glyphos",
+      "registrationNumber": "3014-1"
+    },
+    {
+      "tradeName": "Turboclean Unkrautfrei",
+      "registrationNumber": "3057-906"
+    },
+    {
+      "tradeName": "Turboclean Unkrautfrei AF",
+      "registrationNumber": "3336-902"
+    },
+    {
+      "tradeName": "Turbogrün Rasenunkrautvernichter",
+      "registrationNumber": "3191-909"
+    },
+    {
+      "tradeName": "Turret 60",
+      "registrationNumber": "3705-903"
+    },
+    {
+      "tradeName": "Tyron",
+      "registrationNumber": "3042-0"
+    },
+    {
+      "tradeName": "Ulti-Mite Swirski Amblyseius swirskii",
+      "registrationNumber": "3972-0"
+    },
+    {
+      "tradeName": "Ultraca",
+      "registrationNumber": "4367-901"
+    },
+    {
+      "tradeName": "Unicorn DF",
+      "registrationNumber": "4189-0"
+    },
+    {
+      "tradeName": "Universal Pilzfrei Saprol",
+      "registrationNumber": "2711-909"
+    },
+    {
+      "tradeName": "Universal-Pilzfrei",
+      "registrationNumber": "2711-919"
+    },
+    {
+      "tradeName": "Univoq",
+      "registrationNumber": "4340-0"
+    },
+    {
+      "tradeName": "Univoq EC",
+      "registrationNumber": "4340-2"
+    },
+    {
+      "tradeName": "Unix",
+      "registrationNumber": "3869-0"
+    },
+    {
+      "tradeName": "Unkrautfrei",
+      "registrationNumber": "3050-905"
+    },
+    {
+      "tradeName": "Unkrautfrei Express",
+      "registrationNumber": "4010-901"
+    },
+    {
+      "tradeName": "Unkrautfrei Express Konzentrat",
+      "registrationNumber": "4011-901"
+    },
+    {
+      "tradeName": "Unkrautfrei Forte Konzentrat",
+      "registrationNumber": "3698-901"
+    },
+    {
+      "tradeName": "Unkrautfrei Plus AF",
+      "registrationNumber": "3336-903"
+    },
+    {
+      "tradeName": "Unkrautfrei Turboclean AF",
+      "registrationNumber": "3336-901"
+    },
+    {
+      "tradeName": "Unkrautfrei Universal",
+      "registrationNumber": "4010-0"
+    },
+    {
+      "tradeName": "Unkrautfrei Universal Konzentrat",
+      "registrationNumber": "4011-0"
+    },
+    {
+      "tradeName": "Unkrautsalz Flüssig N",
+      "registrationNumber": "4010-902"
+    },
+    {
+      "tradeName": "Unkrautsalz Flüssig N Konzentrat",
+      "registrationNumber": "4011-902"
+    },
+    {
+      "tradeName": "Unkrautvernichter",
+      "registrationNumber": "3057-907"
+    },
+    {
+      "tradeName": "Unser Bio Optikugel",
+      "registrationNumber": "3760-0"
+    },
+    {
+      "tradeName": "Unser Bio Tricho-Kapsel",
+      "registrationNumber": "3759-0"
+    },
+    {
+      "tradeName": "Unser Bio Tricho-Kärtchen",
+      "registrationNumber": "3758-0"
+    },
+    {
+      "tradeName": "Upside",
+      "registrationNumber": "4528-0"
+    },
+    {
+      "tradeName": "Uri",
+      "registrationNumber": "4507-0"
+    },
+    {
+      "tradeName": "V10",
+      "registrationNumber": "4024-0"
+    },
+    {
+      "tradeName": "Valdor Flex",
+      "registrationNumber": "3775-0"
+    },
+    {
+      "tradeName": "Valdor Trio",
+      "registrationNumber": "4540-0"
+    },
+    {
+      "tradeName": "Valentia",
+      "registrationNumber": "4385-0"
+    },
+    {
+      "tradeName": "Valentin Schädling-Frei",
+      "registrationNumber": "2891-0"
+    },
+    {
+      "tradeName": "Variano Xpro",
+      "registrationNumber": "3552-0"
+    },
+    {
+      "tradeName": "Vegas",
+      "registrationNumber": "3157-0"
+    },
+    {
+      "tradeName": "Velifer",
+      "registrationNumber": "4599-0"
+    },
+    {
+      "tradeName": "Venzar 500 SC",
+      "registrationNumber": "3682-1"
+    },
+    {
+      "tradeName": "Venzar 500SC",
+      "registrationNumber": "3682-0"
+    },
+    {
+      "tradeName": "Verben",
+      "registrationNumber": "4329-0"
+    },
+    {
+      "tradeName": "Verben",
+      "registrationNumber": "4329-1"
+    },
+    {
+      "tradeName": "Verimark",
+      "registrationNumber": "4519-0"
+    },
+    {
+      "tradeName": "VeriPhos",
+      "registrationNumber": "3535-901"
+    },
+    {
+      "tradeName": "Versus Extra",
+      "registrationNumber": "3466-0"
+    },
+    {
+      "tradeName": "Vespi-Thrips",
+      "registrationNumber": "4643-0"
+    },
+    {
+      "tradeName": "Vespiformis-System",
+      "registrationNumber": "4563-0"
+    },
+    {
+      "tradeName": "VextaDim 240 EC",
+      "registrationNumber": "3848-0"
+    },
+    {
+      "tradeName": "VextaMitron 700 SC",
+      "registrationNumber": "3856-0"
+    },
+    {
+      "tradeName": "Viballa",
+      "registrationNumber": "4638-0"
+    },
+    {
+      "tradeName": "Vibrance 500 FS",
+      "registrationNumber": "4023-0"
+    },
+    {
+      "tradeName": "Vibrance Gold",
+      "registrationNumber": "3563-0"
+    },
+    {
+      "tradeName": "Vibrance SB",
+      "registrationNumber": "3979-0"
+    },
+    {
+      "tradeName": "Vibrance Star",
+      "registrationNumber": "3981-0"
+    },
+    {
+      "tradeName": "Vibrance Star 70 FS",
+      "registrationNumber": "3980-0"
+    },
+    {
+      "tradeName": "Vibrance Trio",
+      "registrationNumber": "3950-0"
+    },
+    {
+      "tradeName": "Vibrance Trio 60 FS",
+      "registrationNumber": "3945-0"
+    },
+    {
+      "tradeName": "Victus",
+      "registrationNumber": "3065-0"
+    },
+    {
+      "tradeName": "Victus OD",
+      "registrationNumber": "3072-0"
+    },
+    {
+      "tradeName": "Videryo F",
+      "registrationNumber": "3783-0"
+    },
+    {
+      "tradeName": "Videryo F",
+      "registrationNumber": "3783-1"
+    },
+    {
+      "tradeName": "Videryo F",
+      "registrationNumber": "3783-2"
+    },
+    {
+      "tradeName": "Vidia",
+      "registrationNumber": "3630-1"
+    },
+    {
+      "tradeName": "Vincare",
+      "registrationNumber": "2888-0"
+    },
+    {
+      "tradeName": "Vinifol SC",
+      "registrationNumber": "2855-901"
+    },
+    {
+      "tradeName": "Vinifol WDG",
+      "registrationNumber": "2857-902"
+    },
+    {
+      "tradeName": "VinoStar",
+      "registrationNumber": "3269-0"
+    },
+    {
+      "tradeName": "Vintec",
+      "registrationNumber": "3967-0"
+    },
+    {
+      "tradeName": "Viper Compact",
+      "registrationNumber": "3544-0"
+    },
+    {
+      "tradeName": "VitiSan",
+      "registrationNumber": "3578-0"
+    },
+    {
+      "tradeName": "VitiSan",
+      "registrationNumber": "3578-1"
+    },
+    {
+      "tradeName": "Vitrol GB",
+      "registrationNumber": "4415-0"
+    },
+    {
+      "tradeName": "Vitrol GB Pro",
+      "registrationNumber": "4414-0"
+    },
+    {
+      "tradeName": "Vivando",
+      "registrationNumber": "3356-0"
+    },
+    {
+      "tradeName": "Vivando",
+      "registrationNumber": "3356-1"
+    },
+    {
+      "tradeName": "Vivando",
+      "registrationNumber": "3356-2"
+    },
+    {
+      "tradeName": "Voliam",
+      "registrationNumber": "2984-5"
+    },
+    {
+      "tradeName": "Voliam",
+      "registrationNumber": "2984-902"
+    },
+    {
+      "tradeName": "Vorox Unkrautfrei Direkt",
+      "registrationNumber": "2809-901"
+    },
+    {
+      "tradeName": "Vorox Unkrautfrei Express",
+      "registrationNumber": "3251-903"
+    },
+    {
+      "tradeName": "Vorox Unkrautfrei Express AF",
+      "registrationNumber": "3252-902"
+    },
+    {
+      "tradeName": "Vorox Unkrautfrei Ultra",
+      "registrationNumber": "4423-901"
+    },
+    {
+      "tradeName": "Voyager",
+      "registrationNumber": "4111-0"
+    },
+    {
+      "tradeName": "Voyager",
+      "registrationNumber": "4111-1"
+    },
+    {
+      "tradeName": "Wakil XL",
+      "registrationNumber": "3659-0"
+    },
+    {
+      "tradeName": "WAM extra rosarot Wild Abwehrmittel",
+      "registrationNumber": "2779-0"
+    },
+    {
+      "tradeName": "WAM flüssig",
+      "registrationNumber": "2469-0"
+    },
+    {
+      "tradeName": "Weddell",
+      "registrationNumber": "4418-0"
+    },
+    {
+      "tradeName": "Weintec",
+      "registrationNumber": "4270-0"
+    },
+    {
+      "tradeName": "Wikvert",
+      "registrationNumber": "4582-0"
+    },
+    {
+      "tradeName": "Winby",
+      "registrationNumber": "2528-5"
+    },
+    {
+      "tradeName": "Wing P",
+      "registrationNumber": "3397-2"
+    },
+    {
+      "tradeName": "Wing P",
+      "registrationNumber": "3397-3"
+    },
+    {
+      "tradeName": "Winner",
+      "registrationNumber": "2528-0"
+    },
+    {
+      "tradeName": "Wolf-Garten Moosvernichter + Rasendünger",
+      "registrationNumber": "3608-912"
+    },
+    {
+      "tradeName": "Wolf-Garten Unkrautvernichter plus Rasendünger",
+      "registrationNumber": "2786-914"
+    },
+    {
+      "tradeName": "Wuelfel Wühlmausköder neu",
+      "registrationNumber": "2703-904"
+    },
+    {
+      "tradeName": "Wöbra",
+      "registrationNumber": "3364-0"
+    },
+    {
+      "tradeName": "Wühlmaus-Köder",
+      "registrationNumber": "2703-903"
+    },
+    {
+      "tradeName": "Wühlmausköder",
+      "registrationNumber": "2703-0"
+    },
+    {
+      "tradeName": "Wühlmausköder Arrex",
+      "registrationNumber": "2703-901"
+    },
+    {
+      "tradeName": "Xanadu",
+      "registrationNumber": "4223-0"
+    },
+    {
+      "tradeName": "Xanadu",
+      "registrationNumber": "4223-1"
+    },
+    {
+      "tradeName": "Xenial",
+      "registrationNumber": "4480-1"
+    },
+    {
+      "tradeName": "XenTari",
+      "registrationNumber": "3431-0"
+    },
+    {
+      "tradeName": "XenTari",
+      "registrationNumber": "3431-2"
+    },
+    {
+      "tradeName": "Xentari",
+      "registrationNumber": "3431-4"
+    },
+    {
+      "tradeName": "Xentari Buchsbaumzünslerfrei",
+      "registrationNumber": "3431-903"
+    },
+    {
+      "tradeName": "Xentari Raupenfrei",
+      "registrationNumber": "3431-902"
+    },
+    {
+      "tradeName": "XenTari WG",
+      "registrationNumber": "3431-3"
+    },
+    {
+      "tradeName": "Xerton",
+      "registrationNumber": "4363-0"
+    },
+    {
+      "tradeName": "Xilivert",
+      "registrationNumber": "4345-0"
+    },
+    {
+      "tradeName": "Xilon",
+      "registrationNumber": "4201-0"
+    },
+    {
+      "tradeName": "Xiren",
+      "registrationNumber": "3196-901"
+    },
+    {
+      "tradeName": "Yukon",
+      "registrationNumber": "4402-0"
+    },
+    {
+      "tradeName": "Zaftra AZT 250 SC",
+      "registrationNumber": "2711-914"
+    },
+    {
+      "tradeName": "Zakeo 250 SC",
+      "registrationNumber": "2711-910"
+    },
+    {
+      "tradeName": "Zampro",
+      "registrationNumber": "3672-0"
+    },
+    {
+      "tradeName": "Zantara",
+      "registrationNumber": "3062-0"
+    },
+    {
+      "tradeName": "Zetaram Plus",
+      "registrationNumber": "3034-6"
+    },
+    {
+      "tradeName": "Zetrola",
+      "registrationNumber": "2928-901"
+    },
+    {
+      "tradeName": "Zignal",
+      "registrationNumber": "3185-0"
+    },
+    {
+      "tradeName": "Zignal",
+      "registrationNumber": "3185-1"
+    },
+    {
+      "tradeName": "Zignal Super",
+      "registrationNumber": "3801-0"
+    },
+    {
+      "tradeName": "Zintal Forte",
+      "registrationNumber": "4619-0"
+    },
+    {
+      "tradeName": "Zorn Glanzit Schneckenkorn",
+      "registrationNumber": "2834-1"
+    },
+    {
+      "tradeName": "Zorn Gold Schneckenkorn",
+      "registrationNumber": "3572-901"
+    },
+    {
+      "tradeName": "Zorvec Enicade",
+      "registrationNumber": "3978-0"
+    },
+    {
+      "tradeName": "Zorvec Entecta",
+      "registrationNumber": "4403-0"
+    },
+    {
+      "tradeName": "Zorvec Entecta",
+      "registrationNumber": "4403-1"
+    },
+    {
+      "tradeName": "Zorvec Entecta",
+      "registrationNumber": "4403-2"
+    },
+    {
+      "tradeName": "Zorvec Epicalthrin",
+      "registrationNumber": "3978-3"
+    },
+    {
+      "tradeName": "Zorvec Vinabel",
+      "registrationNumber": "4369-0"
+    },
+    {
+      "tradeName": "Zorvec Vinabel",
+      "registrationNumber": "4369-1"
+    },
+    {
+      "tradeName": "Zorvec Zelavin",
+      "registrationNumber": "3989-0"
+    },
+    {
+      "tradeName": "Zoxis 250 SC",
+      "registrationNumber": "4177-0"
+    },
+    {
+      "tradeName": "Zypar",
+      "registrationNumber": "3883-0"
+    },
+    {
+      "tradeName": "Zypar",
+      "registrationNumber": "3883-1"
+    }
+  ]
+}
