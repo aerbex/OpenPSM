@@ -1431,20 +1431,7 @@ function generatePDF(data) {
   const applicant = document.getElementById("applicant").value;
   const client = document.getElementById("client").value;
   const filename = generateFilename(plotName, dateStr, applicant, client) + ".pdf";
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-  if (isIOS) {
-    // iOS Safari handles PDF data URIs better via window.open
-    // than blob-based downloads. The user can then use the Share
-    // sheet to save with a custom name.
-    const dataUri = doc.output("datauristring");
-    const newWindow = window.open(dataUri, "_blank");
-    if (!newWindow) {
-      showGlobalError("PDF konnte nicht geöffnet werden. Bitte erlauben Sie Pop-ups für diese Seite.");
-    }
-  } else {
-    const pdfBlob = doc.output("blob");
-    downloadFile(pdfBlob, filename);
-  }
+  return { blob: doc.output("blob"), filename };
 }
 
 /* ==========================================================================
@@ -1576,20 +1563,7 @@ async function generateExcel(data) {
     document.getElementById("applicant").value,
     document.getElementById("client").value
   ) + ".xlsx";
-
-  const file = new File([blob], filename, { type: blob.type });
-  if (navigator.canShare && navigator.canShare({ files: [file] })) {
-    try {
-      await navigator.share({ files: [file], title: filename });
-    } catch (err) {
-      if (err.name !== "AbortError") {
-        console.warn("Share failed:", err);
-        downloadFile(blob, filename);
-      }
-    }
-  } else {
-    downloadFile(blob, filename);
-  }
+  return { blob, filename };
 }
 
 /* ==========================================================================
@@ -2063,9 +2037,14 @@ async function init() {
     const data = validateForm();
     if (!data) return;
 
+    const files = [];
+
     if (wantPdf) {
       try {
-        generatePDF(data);
+        const pdfResult = generatePDF(data);
+        if (pdfResult) {
+          files.push(new File([pdfResult.blob], pdfResult.filename, { type: pdfResult.blob.type }));
+        }
       } catch (err) {
         console.error("PDF generation failed:", err);
         showGlobalError("PDF-Erstellung fehlgeschlagen.");
@@ -2075,11 +2054,29 @@ async function init() {
     if (wantExcel) {
       if (checkExcelJs()) {
         try {
-          await generateExcel(data);
+          const excelResult = await generateExcel(data);
+          if (excelResult) {
+            files.push(new File([excelResult.blob], excelResult.filename, { type: excelResult.blob.type }));
+          }
         } catch (err) {
           console.error("Excel generation failed:", err);
           showGlobalError("Excel-Erstellung fehlgeschlagen: " + (err.message || "Unbekannter Fehler"));
         }
+      }
+    }
+
+    if (files.length > 0) {
+      if (navigator.canShare && navigator.canShare({ files })) {
+        try {
+          await navigator.share({ files });
+        } catch (err) {
+          if (err.name !== "AbortError") {
+            console.warn("Share failed:", err);
+            files.forEach((file) => downloadFile(file, file.name));
+          }
+        }
+      } else {
+        files.forEach((file) => downloadFile(file, file.name));
       }
     }
 
