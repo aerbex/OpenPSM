@@ -20,7 +20,7 @@ const STRINGS = {
   errorBbchLoad: "BBCH-Daten konnten nicht geladen werden. Die Suche ist nicht verfügbar.",
   errorPsmLoad: "PSM-Register konnte nicht geladen werden. Produktnamen und Zulassungsnummern müssen manuell eingegeben werden.",
   errorJsPdfLoad: "PDF-Bibliothek konnte nicht geladen werden. Bitte stellen Sie eine Internetverbindung her und laden Sie die Seite neu.",
-  gpsPermissionDenied: "Standortzugriff wurde verweigert. Bitte aktivieren Sie den Standortzugriff in Ihren Browsereinstellungen oder geben Sie die Koordinaten manuell ein.",
+  gpsPermissionDenied: "Standortzugriff wurde verweigert. Bitte versuchen Sie einen anderen Browser (z. B. Firefox) oder geben Sie die Koordinaten manuell ein.",
   gpsUnavailable: "Standort konnte nicht ermittelt werden. Bitte prüfen Sie Ihre GPS-Verbindung oder geben Sie die Koordinaten manuell ein.",
   gpsTimeout: "Standortermittlung hat zu lange gedauert. Bitte versuchen Sie es erneut oder geben Sie die Koordinaten manuell ein.",
   gpsLoading: "Standort wird ermittelt...",
@@ -1006,7 +1006,7 @@ function addProductRow() {
     </div>
     <div class="form-row product-amount-row">
       <div class="amount-input">
-        <label for="product-amount-${index}">Aufwandmenge <span class="required">*</span></label>
+        <label for="product-amount-${index}">Aufwandmenge pro ha <span class="required">*</span></label>
         <input type="number" id="product-amount-${index}" name="productAmount" min="0.01" step="0.01" required>
       </div>
       <div class="amount-unit">
@@ -1385,7 +1385,7 @@ function generatePDF(data) {
   doc.autoTable({
     startY: y,
     margin: { left: margin, right: margin },
-    head: [["#", "Produkt", "Zulassungsnummer", "Menge"]],
+    head: [["#", "Produkt", "Zulassungsnummer", "Menge pro ha"]],
     body: tableBody,
     theme: "grid",
     headStyles: { fillColor: [45, 90, 39], textColor: 255, fontStyle: "bold" },
@@ -1502,7 +1502,7 @@ async function generateExcel(data) {
   // Produkte
   addSectionHeader(ws, "Angewendete Produkte");
 
-  const tableHeader = ws.addRow(["#", "Produktname", "Zulassungsnummer", "Menge", "Einheit"]);
+  const tableHeader = ws.addRow(["#", "Produktname", "Zulassungsnummer", "Menge pro ha", "Einheit"]);
   tableHeader.eachCell((cell) => {
     cell.font = { bold: true, size: 11, color: { argb: "FFFFFF" } };
     cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: DARK_GREEN } };
