@@ -1285,6 +1285,46 @@ function validateForm() {
 }
 
 /* ==========================================================================
+   File Download Helper
+   ========================================================================== */
+
+function downloadFile(blob, filename) {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+  if (isIOS) {
+    // iOS Safari often ignores the download attribute for blob URLs.
+    // Converting to a data URL via FileReader has better success
+    // preserving the intended filename on some iOS versions.
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const a = document.createElement("a");
+      a.href = e.target.result;
+      a.download = filename;
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => {
+        document.body.removeChild(a);
+      }, 100);
+    };
+    reader.readAsDataURL(blob);
+    return;
+  }
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 1000);
+}
+
+/* ==========================================================================
    PDF Generator
    ========================================================================== */
 
@@ -1413,7 +1453,8 @@ function generatePDF(data) {
   const applicant = document.getElementById("applicant").value;
   const client = document.getElementById("client").value;
   const filename = generateFilename(plotName, dateStr, applicant, client) + ".pdf";
-  doc.save(filename);
+  const pdfBlob = doc.output("blob");
+  downloadFile(pdfBlob, filename);
 }
 
 /* ==========================================================================
@@ -1539,19 +1580,13 @@ async function generateExcel(data) {
   // Download
   const buffer = await workbook.xlsx.writeBuffer();
   const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = generateFilename(
+  const filename = generateFilename(
     document.getElementById("plot-name").value,
     document.getElementById("application-date").value,
     document.getElementById("applicant").value,
     document.getElementById("client").value
   ) + ".xlsx";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  downloadFile(blob, filename);
 }
 
 /* ==========================================================================
