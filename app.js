@@ -1289,28 +1289,6 @@ function validateForm() {
    ========================================================================== */
 
 function downloadFile(blob, filename) {
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-
-  if (isIOS) {
-    // iOS Safari often ignores the download attribute for blob URLs.
-    // Converting to a data URL via FileReader has better success
-    // preserving the intended filename on some iOS versions.
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      const a = document.createElement("a");
-      a.href = e.target.result;
-      a.download = filename;
-      a.style.display = "none";
-      document.body.appendChild(a);
-      a.click();
-      setTimeout(() => {
-        document.body.removeChild(a);
-      }, 100);
-    };
-    reader.readAsDataURL(blob);
-    return;
-  }
-
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
@@ -1319,7 +1297,7 @@ function downloadFile(blob, filename) {
   document.body.appendChild(a);
   a.click();
   setTimeout(() => {
-    document.body.removeChild(a);
+    if (a.parentNode) document.body.removeChild(a);
     URL.revokeObjectURL(url);
   }, 1000);
 }
@@ -1453,8 +1431,20 @@ function generatePDF(data) {
   const applicant = document.getElementById("applicant").value;
   const client = document.getElementById("client").value;
   const filename = generateFilename(plotName, dateStr, applicant, client) + ".pdf";
-  const pdfBlob = doc.output("blob");
-  downloadFile(pdfBlob, filename);
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  if (isIOS) {
+    // iOS Safari handles PDF data URIs better via window.open
+    // than blob-based downloads. The user can then use the Share
+    // sheet to save with a custom name.
+    const dataUri = doc.output("datauristring");
+    const newWindow = window.open(dataUri, "_blank");
+    if (!newWindow) {
+      showGlobalError("PDF konnte nicht geöffnet werden. Bitte erlauben Sie Pop-ups für diese Seite.");
+    }
+  } else {
+    const pdfBlob = doc.output("blob");
+    downloadFile(pdfBlob, filename);
+  }
 }
 
 /* ==========================================================================
@@ -1586,7 +1576,20 @@ async function generateExcel(data) {
     document.getElementById("applicant").value,
     document.getElementById("client").value
   ) + ".xlsx";
-  downloadFile(blob, filename);
+
+  const file = new File([blob], filename, { type: blob.type });
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file], title: filename });
+    } catch (err) {
+      if (err.name !== "AbortError") {
+        console.warn("Share failed:", err);
+        downloadFile(blob, filename);
+      }
+    }
+  } else {
+    downloadFile(blob, filename);
+  }
 }
 
 /* ==========================================================================
