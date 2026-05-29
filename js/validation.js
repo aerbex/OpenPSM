@@ -8,6 +8,7 @@ import { showError, clearAllErrors } from "./ui.js";
 import { validateEppoCode } from "./eppo.js";
 import { validateBbchCode } from "./bbch.js";
 import { getProductRowsData } from "./products.js";
+import { getPlotRowsData } from "./plots.js";
 
 export function validateForm() {
   clearAllErrors();
@@ -54,38 +55,44 @@ export function validateForm() {
     }
   }
 
-  const plotName = document.getElementById("plot-name");
-  if (!plotName.value.trim()) {
-    showError("error-plot-name", STRINGS.errorRequired);
-    if (!firstErrorElement) firstErrorElement = plotName;
+  const plots = getPlotRowsData();
+  if (plots.length === 0) {
+    showError("error-global", "Bitte geben Sie mindestens eine Fläche ein.");
     isValid = false;
   }
-
-  const location = document.getElementById("location");
-  if (!location.value.trim()) {
-    showError("error-location", STRINGS.errorRequired);
-    if (!firstErrorElement) firstErrorElement = location;
-    isValid = false;
-  } else {
-    const val = location.value.trim();
-    if (isCoordinateString(val)) {
-      // valid coordinates
-    } else if (/^-?\d/.test(val) && val.includes(".")) {
-      // looks like it tried to be coordinates but failed
-      showError("error-location", STRINGS.errorLocationFormat);
-      if (!firstErrorElement) firstErrorElement = location;
+  plots.forEach((plot, index) => {
+    if (!plot.plotName) {
+      showError(`error-plot-name-${index}`, STRINGS.errorRequired);
+      const el = document.getElementById(`plot-name-${index}`);
+      if (!firstErrorElement) firstErrorElement = el;
       isValid = false;
     }
-    // FLIK is free text, so anything else is fine
-  }
-
-  const treatedArea = document.getElementById("treated-area");
-  const areaVal = parseFloat(treatedArea.value.replace(",", "."));
-  if (!treatedArea.value || isNaN(areaVal) || areaVal <= 0) {
-    showError("error-treated-area", STRINGS.errorPositiveNumber);
-    if (!firstErrorElement) firstErrorElement = treatedArea;
-    isValid = false;
-  }
+    if (!plot.location) {
+      showError(`error-location-${index}`, STRINGS.errorRequired);
+      const el = document.getElementById(`location-${index}`);
+      if (!firstErrorElement) firstErrorElement = el;
+      isValid = false;
+    } else {
+      const val = plot.location;
+      if (isCoordinateString(val)) {
+        // valid coordinates
+      } else if (/^-?\d/.test(val) && val.includes(".")) {
+        // looks like it tried to be coordinates but failed
+        showError(`error-location-${index}`, STRINGS.errorLocationFormat);
+        const el = document.getElementById(`location-${index}`);
+        if (!firstErrorElement) firstErrorElement = el;
+        isValid = false;
+      }
+      // FLIK is free text, so anything else is fine
+    }
+    const areaVal = parseFloat(plot.treatedArea.replace(",", "."));
+    if (!plot.treatedArea || isNaN(areaVal) || areaVal <= 0) {
+      showError(`error-treated-area-${index}`, STRINGS.errorPositiveNumber);
+      const el = document.getElementById(`treated-area-${index}`);
+      if (!firstErrorElement) firstErrorElement = el;
+      isValid = false;
+    }
+  });
 
   const cropName = document.getElementById("crop-name");
   if (!cropName.value.trim()) {
@@ -167,5 +174,5 @@ export function validateForm() {
     firstErrorElement.focus();
   }
 
-  return isValid ? { eppoCode, bbchCode, products } : null;
+  return isValid ? { eppoCode, bbchCode, products, plots } : null;
 }

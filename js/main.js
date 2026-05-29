@@ -8,6 +8,7 @@ import { setTodayDefaults, downloadFile } from "./utils.js";
 import { saveFormCache, loadFormCache, clearFormCache } from "./cache.js";
 import { initConditionalFields } from "./conditional.js";
 import { initTankMix } from "./products.js";
+import { initPlotRows } from "./plots.js";
 import { initEppoSearch, loadEppoData } from "./eppo.js";
 import { initBbchSearch, loadBbchData } from "./bbch.js";
 import { initGeolocation } from "./geolocation.js";
@@ -22,6 +23,7 @@ async function init() {
   setTodayDefaults();
   initConditionalFields();
   initTankMix();
+  initPlotRows();
   initEppoSearch();
   initBbchSearch();
   loadFormCache();

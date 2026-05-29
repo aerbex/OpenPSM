@@ -71,6 +71,24 @@ export function clearForm() {
   const notes = document.getElementById("notes");
   if (notes) notes.value = "";
 
+  // Plot rows: remove all except first
+  const plotRows = document.querySelectorAll(".plot-row");
+  plotRows.forEach((row, index) => {
+    if (index === 0) {
+      row.querySelectorAll('input[type="text"], input[type="number"]').forEach((input) => {
+        input.value = "";
+      });
+      const gpsStatus = row.querySelector('.gps-status');
+      if (gpsStatus) {
+        gpsStatus.textContent = "";
+        gpsStatus.className = "gps-status";
+      }
+    } else {
+      row.remove();
+    }
+  });
+  counters.plotRowCount = 1;
+
   // Product rows: remove all except first
   const productRows = document.querySelectorAll(".product-row");
   productRows.forEach((row, index) => {
@@ -88,14 +106,14 @@ export function clearForm() {
   });
   counters.productRowCount = 1;
 
-  // GPS status
-  const gpsStatus = document.getElementById("gps-status");
+  // GPS status for first row
+  const gpsStatus = document.getElementById("gps-status-0");
   if (gpsStatus) {
     gpsStatus.textContent = "";
     gpsStatus.className = "gps-status";
   }
-  setGpsButtonState("default");
-  setInvekosButtonState("default");
+  setGpsButtonState(0, "default");
+  setInvekosButtonState(0, "default");
 
   // Clear all errors
   clearAllErrors();

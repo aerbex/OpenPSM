@@ -6,4 +6,4 @@ export let eppoData = [];
 export let bbchData = [];
 export let bbchFlatIndex = [];
 export let psmRegisterData = [];
-export const counters = { productRowCount: 1 };
+export const counters = { productRowCount: 1, plotRowCount: 1 };

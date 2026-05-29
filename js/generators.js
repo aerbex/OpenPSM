@@ -66,13 +66,15 @@ export function generatePDF(data) {
     ["Uhrzeit", document.getElementById("time-required").checked ? document.getElementById("application-time").value : null],
   ]);
 
-  addBlock("Fläche", [
-    ["Flächenbezeichnung", sanitizeInput(document.getElementById("plot-name").value)],
-    ["Schlag Nr.", sanitizeInput(document.getElementById("plot-number").value) || null],
-    ["Schlaggröße lt. INVEKOS GIS", sanitizeInput(document.getElementById("plot-size-invekos").value) ? `${document.getElementById("plot-size-invekos").value.replace(".", ",")} ha` : null],
-    ["Lage (FLIK/GPS)", sanitizeInput(document.getElementById("location").value)],
-    ["Behandelte Fläche", `${document.getElementById("treated-area").value.replace(".", ",")} ha`],
-  ]);
+  data.plots.forEach((plot, i) => {
+    addBlock(i === 0 ? "Fläche" : `Fläche ${i + 1}`, [
+      ["Flächenbezeichnung", sanitizeInput(plot.plotName)],
+      ["Schlag Nr.", sanitizeInput(plot.plotNumber) || null],
+      ["Schlaggröße lt. INVEKOS GIS", sanitizeInput(plot.plotSizeInvekos) ? `${plot.plotSizeInvekos.replace(".", ",")} ha` : null],
+      ["Lage (FLIK/GPS)", sanitizeInput(plot.location)],
+      ["Behandelte Fläche", `${plot.treatedArea.replace(".", ",")} ha`],
+    ]);
+  });
 
   const notesVal = sanitizeInput(document.getElementById("notes").value);
   if (notesVal) {
@@ -126,7 +128,7 @@ export function generatePDF(data) {
   y += footerLines.length * 4 + 4;
   doc.text("Seite 1 von 1", margin, y);
 
-  const plotName = document.getElementById("plot-name").value;
+  const plotName = data.plots[0]?.plotName || "";
   const dateStr = document.getElementById("application-date").value;
   const applicant = document.getElementById("applicant").value;
   const client = document.getElementById("client").value;
@@ -202,13 +204,15 @@ export async function generateExcel(data) {
 
   // Fläche & Lage
   addSectionHeader(ws, "Fläche & Lage");
-  addLabelValue(ws, "Flächenbezeichnung", sanitizeInput(document.getElementById("plot-name").value));
-  const plotNumberVal = sanitizeInput(document.getElementById("plot-number").value);
-  if (plotNumberVal) addLabelValue(ws, "Schlag Nr.", plotNumberVal);
-  const plotSizeInvekosVal = document.getElementById("plot-size-invekos").value;
-  if (plotSizeInvekosVal) addLabelValue(ws, "Schlaggröße lt. INVEKOS GIS", plotSizeInvekosVal.replace(".", ",") + " ha");
-  addLabelValue(ws, "Lage (FLIK/GPS)", sanitizeInput(document.getElementById("location").value));
-  addLabelValue(ws, "Behandelte Fläche", document.getElementById("treated-area").value.replace(".", ",") + " ha");
+  data.plots.forEach((plot) => {
+    addLabelValue(ws, "Flächenbezeichnung", sanitizeInput(plot.plotName));
+    const plotNumberVal = sanitizeInput(plot.plotNumber);
+    if (plotNumberVal) addLabelValue(ws, "Schlag Nr.", plotNumberVal);
+    const plotSizeInvekosVal = plot.plotSizeInvekos;
+    if (plotSizeInvekosVal) addLabelValue(ws, "Schlaggröße lt. INVEKOS GIS", plotSizeInvekosVal.replace(".", ",") + " ha");
+    addLabelValue(ws, "Lage (FLIK/GPS)", sanitizeInput(plot.location));
+    addLabelValue(ws, "Behandelte Fläche", plot.treatedArea.replace(".", ",") + " ha");
+  });
   const notesValExcel = sanitizeInput(document.getElementById("notes").value);
   if (notesValExcel) addLabelValue(ws, "Bemerkungen", notesValExcel);
   ws.addRow([]);
@@ -261,7 +265,7 @@ export async function generateExcel(data) {
   const buffer = await workbook.xlsx.writeBuffer();
   const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
   const filename = generateFilename(
-    document.getElementById("plot-name").value,
+    data.plots[0]?.plotName || "",
     document.getElementById("application-date").value,
     document.getElementById("applicant").value,
     document.getElementById("client").value

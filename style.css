@@ -404,6 +404,40 @@ select.error:focus {
   font-size: 0.8rem;
 }
 
+/* Plot rows */
+.plot-row {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.plot-row h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn-remove-plot {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: #b71c1c;
+  background-color: transparent;
+  border: 1px solid #b71c1c;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-remove-plot:hover {
+  background-color: #fdecec;
+}
+
+.plot-actions {
+  padding: 0 1.25rem 1.25rem;
+}
+
 /* Product rows */
 .product-row {
   padding: 1rem;

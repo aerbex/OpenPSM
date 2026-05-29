@@ -3,19 +3,31 @@
    ========================================================================== */
 
 import { FORM_CACHE_KEY } from "./constants.js";
+import { addPlotRow } from "./plots.js";
 
 export function saveFormCache() {
   try {
     const eppoManual = document.getElementById("eppo-manual");
+
+    // Gather plot rows
+    const plotRows = document.querySelectorAll(".plot-row");
+    const plots = [];
+    plotRows.forEach((row) => {
+      const index = row.dataset.index;
+      plots.push({
+        plotName: row.querySelector(`#plot-name-${index}`)?.value || "",
+        location: row.querySelector(`#location-${index}`)?.value || "",
+        treatedArea: row.querySelector(`#treated-area-${index}`)?.value || "",
+        plotNumber: row.querySelector(`#plot-number-${index}`)?.value || "",
+        plotSizeInvekos: row.querySelector(`#plot-size-invekos-${index}`)?.value || "",
+      });
+    });
+
     const cache = {
       applicant: document.getElementById("applicant")?.value || "",
       client: document.getElementById("client")?.value || "",
       usageType: document.getElementById("usage-type")?.value || "",
-      plotName: document.getElementById("plot-name")?.value || "",
-      plotNumber: document.getElementById("plot-number")?.value || "",
-      plotSizeInvekos: document.getElementById("plot-size-invekos")?.value || "",
-      location: document.getElementById("location")?.value || "",
-      treatedArea: document.getElementById("treated-area")?.value || "",
+      plots,
       notes: document.getElementById("notes")?.value || "",
       cropName: document.getElementById("crop-name")?.value || "",
       eppoCode: document.getElementById("eppo-code")?.value || "",
@@ -39,13 +51,44 @@ export function loadFormCache() {
     if (cache.applicant) document.getElementById("applicant").value = cache.applicant;
     if (cache.client) document.getElementById("client").value = cache.client;
     if (cache.usageType) document.getElementById("usage-type").value = cache.usageType;
-    if (cache.plotName) document.getElementById("plot-name").value = cache.plotName;
-    if (cache.plotNumber) document.getElementById("plot-number").value = cache.plotNumber;
-    if (cache.plotSizeInvekos) document.getElementById("plot-size-invekos").value = cache.plotSizeInvekos;
-    if (cache.location) document.getElementById("location").value = cache.location;
-    if (cache.treatedArea) document.getElementById("treated-area").value = cache.treatedArea;
     if (cache.notes) document.getElementById("notes").value = cache.notes;
     if (cache.cropName) document.getElementById("crop-name").value = cache.cropName;
+
+    // Plot rows
+    if (cache.plots && cache.plots.length > 0) {
+      cache.plots.forEach((plot, i) => {
+        if (i === 0) {
+          const row = document.querySelector('.plot-row[data-index="0"]');
+          if (row) {
+            const pn = row.querySelector("#plot-name-0");
+            if (pn) pn.value = plot.plotName || "";
+            const loc = row.querySelector("#location-0");
+            if (loc) loc.value = plot.location || "";
+            const ta = row.querySelector("#treated-area-0");
+            if (ta) ta.value = plot.treatedArea || "";
+            const pnum = row.querySelector("#plot-number-0");
+            if (pnum) pnum.value = plot.plotNumber || "";
+            const psi = row.querySelector("#plot-size-invekos-0");
+            if (psi) psi.value = plot.plotSizeInvekos || "";
+          }
+        } else {
+          addPlotRow();
+          const row = document.querySelector(`.plot-row[data-index="${i}"]`);
+          if (row) {
+            const pn = row.querySelector(`#plot-name-${i}`);
+            if (pn) pn.value = plot.plotName || "";
+            const loc = row.querySelector(`#location-${i}`);
+            if (loc) loc.value = plot.location || "";
+            const ta = row.querySelector(`#treated-area-${i}`);
+            if (ta) ta.value = plot.treatedArea || "";
+            const pnum = row.querySelector(`#plot-number-${i}`);
+            if (pnum) pnum.value = plot.plotNumber || "";
+            const psi = row.querySelector(`#plot-size-invekos-${i}`);
+            if (psi) psi.value = plot.plotSizeInvekos || "";
+          }
+        }
+      });
+    }
 
     // EPPO code
     if (cache.eppoCode) {

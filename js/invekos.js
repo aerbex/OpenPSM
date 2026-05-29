@@ -44,14 +44,23 @@ function getBboxCenter(bbox) {
   };
 }
 
+let currentInvekosRowIndex = 0;
+
 export function initInvekosSearch() {
-  const btn = document.getElementById("btn-invekos");
+  initInvekosSearchForRow(0);
+}
+
+export function initInvekosSearchForRow(index) {
+  const btn = document.getElementById(`btn-invekos-${index}`);
   if (!btn) return;
-  btn.addEventListener("click", openInvekosSearch);
+  btn.addEventListener("click", () => {
+    currentInvekosRowIndex = index;
+    openInvekosSearch();
+  });
 }
 
 export function openInvekosSearch() {
-  const locationInput = document.getElementById("location");
+  const locationInput = document.getElementById(`location-${currentInvekosRowIndex}`);
   let coords = null;
   if (locationInput && locationInput.value) {
     coords = parseCoordinatesFromInput(locationInput.value);
@@ -68,21 +77,21 @@ export function openInvekosSearch() {
     return;
   }
 
-  setInvekosButtonState("loading");
+  setInvekosButtonState(currentInvekosRowIndex, "loading");
   navigator.geolocation.getCurrentPosition(
     (position) => {
-      setInvekosButtonState("default");
+      setInvekosButtonState(currentInvekosRowIndex, "default");
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
       if (locationInput) {
         locationInput.value = `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
-        clearError("error-location");
+        clearError(`error-location-${currentInvekosRowIndex}`);
       }
       showInvekosModal();
       runInvekosQuery(lon, lat);
     },
     (error) => {
-      setInvekosButtonState("error");
+      setInvekosButtonState(currentInvekosRowIndex, "error");
       let message = "Standort konnte nicht ermittelt werden. Bitte geben Sie Koordinaten manuell ein.";
       if (error.code === 1) {
         message = "Standortzugriff wurde verweigert. Bitte aktivieren Sie den Standortzugriff in Ihren Browsereinstellungen oder geben Sie die Koordinaten manuell ein.";
@@ -95,8 +104,8 @@ export function openInvekosSearch() {
   );
 }
 
-export function setInvekosButtonState(state) {
-  const btn = document.getElementById("btn-invekos");
+export function setInvekosButtonState(index, state) {
+  const btn = document.getElementById(`btn-invekos-${index}`);
   if (!btn) return;
   btn.classList.remove("loading", "error");
   if (state === "loading") btn.classList.add("loading");
@@ -228,9 +237,9 @@ export function renderInvekosResults(features, userLat, userLon) {
 }
 
 export function selectInvekosField(properties, userLat, userLon) {
-  const plotSizeInvekos = document.getElementById("plot-size-invekos");
-  const treatedArea = document.getElementById("treated-area");
-  const location = document.getElementById("location");
+  const plotSizeInvekos = document.getElementById(`plot-size-invekos-${currentInvekosRowIndex}`);
+  const treatedArea = document.getElementById(`treated-area-${currentInvekosRowIndex}`);
+  const location = document.getElementById(`location-${currentInvekosRowIndex}`);
 
   if (plotSizeInvekos && properties.sl_flaeche_brutto_ha != null) {
     const num = Number(properties.sl_flaeche_brutto_ha);
@@ -243,13 +252,13 @@ export function selectInvekosField(properties, userLat, userLon) {
     const num = Number(properties.sl_flaeche_brutto_ha);
     if (Number.isFinite(num)) {
       treatedArea.value = num.toFixed(3);
-      clearError("error-treated-area");
+      clearError(`error-treated-area-${currentInvekosRowIndex}`);
     }
   }
 
   if (location && !location.value) {
     location.value = `${userLat.toFixed(6)}, ${userLon.toFixed(6)}`;
-    clearError("error-location");
+    clearError(`error-location-${currentInvekosRowIndex}`);
   }
 
   closeInvekosModal();

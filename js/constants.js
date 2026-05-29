@@ -21,11 +21,13 @@ export const STRINGS = {
   gpsSuccess: "Standort erfolgreich ermittelt.",
   pdfDisclaimer: "Dieser Nachweis wurde mit OpenPSM erstellt. Die inhaltliche Richtigkeit und Vollständigkeit obliegt dem Anwender.",
   productRemove: "Produkt entfernen",
+  plotRemove: "Fläche entfernen",
 };
 
 export const MAX_SUGGESTIONS = 10;
 export const DEBOUNCE_MS = 150;
 export const MAX_PRODUCT_ROWS = 10;
+export const MAX_PLOT_ROWS = 10;
 export const FORM_CACHE_KEY = "openpsm-form-cache";
 
 export const CULTURE_TO_BBCH_GROUP = {
