@@ -147,12 +147,19 @@ export async function generateExcel(data) {
 
   const ws = workbook.addWorksheet("Nachweis");
   ws.columns = [
-    { width: 25 },
-    { width: 40 },
-    { width: 25 },
-    { width: 15 },
-    { width: 15 },
+    { width: 26 },
+    { width: 20 },
+    { width: 14 },
+    { width: 10 },
   ];
+  ws.pageSetup = {
+    paperSize: 9, // A4
+    orientation: "portrait",
+    fitToPage: true,
+    fitToWidth: 1,
+    fitToHeight: 0,
+    margins: { left: 0.7, right: 0.7, top: 0.75, bottom: 0.75, header: 0.3, footer: 0.3 },
+  };
 
   const DARK_GREEN = "2D5A27";
   const LIGHT_GRAY = "F5F5F5";
@@ -162,7 +169,7 @@ export async function generateExcel(data) {
     const row = ws.addRow([title]);
     row.font = { bold: true, size: 12, color: { argb: "FFFFFF" } };
     row.fill = { type: "pattern", pattern: "solid", fgColor: { argb: DARK_GREEN } };
-    ws.mergeCells(`A${row.number}:E${row.number}`);
+    ws.mergeCells(`A${row.number}:D${row.number}`);
     return row;
   }
 
@@ -171,14 +178,14 @@ export async function generateExcel(data) {
     row.getCell(1).font = { bold: true, size: 11 };
     row.getCell(1).fill = { type: "pattern", pattern: "solid", fgColor: { argb: LIGHT_GRAY } };
     row.getCell(2).font = { size: 11 };
-    ws.mergeCells(`B${row.number}:E${row.number}`);
+    ws.mergeCells(`B${row.number}:D${row.number}`);
     return row;
   }
 
   // Title
   const titleRow = ws.addRow(["Pflanzenschutzmittel-Anwendungsnachweis"]);
   titleRow.font = { bold: true, size: 16, color: { argb: DARK_GREEN } };
-  ws.mergeCells("A1:E1");
+  ws.mergeCells("A1:D1");
   ws.addRow([]);
 
   // Anwender & Datum
@@ -216,7 +223,7 @@ export async function generateExcel(data) {
   // Produkte
   addSectionHeader(ws, "Angewendete Produkte");
 
-  const tableHeader = ws.addRow(["#", "Produktname", "Zulassungsnummer", "Menge pro ha", "Einheit"]);
+  const tableHeader = ws.addRow(["Produktname", "Zulassungsnummer", "Menge pro ha", "Einheit"]);
   tableHeader.eachCell((cell) => {
     cell.font = { bold: true, size: 11, color: { argb: "FFFFFF" } };
     cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: DARK_GREEN } };
@@ -230,7 +237,7 @@ export async function generateExcel(data) {
   });
 
   data.products.forEach((p, i) => {
-    const row = ws.addRow([i + 1, sanitizeInput(p.name), sanitizeInput(p.regNumber), p.amount.replace(".", ","), p.unit]);
+    const row = ws.addRow([sanitizeInput(p.name), sanitizeInput(p.regNumber), p.amount.replace(".", ","), p.unit]);
     row.eachCell((cell) => {
       cell.font = { size: 11 };
       cell.border = {
@@ -240,7 +247,7 @@ export async function generateExcel(data) {
         right: { style: "thin", color: { argb: BORDER_GRAY } },
       };
     });
-    row.getCell(1).alignment = { horizontal: "center" };
+    row.getCell(1).alignment = { horizontal: "left" };
   });
   ws.addRow([]);
 
@@ -248,7 +255,7 @@ export async function generateExcel(data) {
   const disclaimerRow = ws.addRow([STRINGS.pdfDisclaimer]);
   disclaimerRow.font = { italic: true, size: 9, color: { argb: "888888" } };
   disclaimerRow.alignment = { wrapText: true };
-  ws.mergeCells(`A${disclaimerRow.number}:E${disclaimerRow.number}`);
+  ws.mergeCells(`A${disclaimerRow.number}:D${disclaimerRow.number}`);
 
   // Download
   const buffer = await workbook.xlsx.writeBuffer();
