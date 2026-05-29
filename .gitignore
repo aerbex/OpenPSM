@@ -3,6 +3,8 @@
 
 #impressum.html
 .development
+__pycache__
+*.pyc
 
 # Specific ignore for GitHub Pages
 # GitHub Pages will always use its own deployed version of pages-gem

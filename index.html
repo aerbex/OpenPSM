@@ -95,11 +95,6 @@
       <section class="form-section">
         <h2>Kultur</h2>
         <div class="form-row">
-          <label for="crop-name">Kultur <span class="required">*</span></label>
-          <input type="text" id="crop-name" name="cropName" required>
-          <span class="error-message" id="error-crop-name"></span>
-        </div>
-        <div class="form-row">
           <label for="eppo-search">EPPO-Code <span class="required">*</span></label>
           <div class="eppo-search" id="eppo-search-wrapper">
             <input type="text" id="eppo-search" name="eppoSearch" autocomplete="off" placeholder="Kultur suchen...">
@@ -113,6 +108,11 @@
           </div>
           <input type="text" id="eppo-code-manual" name="eppoCodeManual" class="conditional-field" maxlength="20" placeholder="EPPO-Code">
           <span class="error-message" id="error-eppo-code"></span>
+        </div>
+        <div class="form-row">
+          <label for="crop-name">Kultur <span class="required">*</span></label>
+          <input type="text" id="crop-name" name="cropName" required>
+          <span class="error-message" id="error-crop-name"></span>
         </div>
         <div class="form-row checkbox-row">
           <input type="checkbox" id="bbch-required" name="bbchRequired">
