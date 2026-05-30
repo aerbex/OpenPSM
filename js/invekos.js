@@ -12,7 +12,7 @@ function getInvekosCollectionName() {
   return `i009501:invekos_schlaege_${year}_1_polygon`;
 }
 
-function parseCoordinatesFromInput(value) {
+export function parseCoordinatesFromInput(value) {
   if (!value) return null;
   const trimmed = value.trim();
   const match = trimmed.match(/^(-?\d{1,2}\.\d+)[,\s]+(-?\d{1,3}\.\d+)$/);
@@ -23,7 +23,7 @@ function parseCoordinatesFromInput(value) {
   return { lat, lon };
 }
 
-function calculateDistance(lat1, lon1, lat2, lon2) {
+export function calculateDistance(lat1, lon1, lat2, lon2) {
   const R = 6371000;
   const toRad = (deg) => (deg * Math.PI) / 180;
   const dLat = toRad(lat2 - lat1);
@@ -36,7 +36,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   return R * c;
 }
 
-function getBboxCenter(bbox) {
+export function getBboxCenter(bbox) {
   if (!Array.isArray(bbox) || bbox.length < 4) return null;
   return {
     lon: (bbox[0] + bbox[2]) / 2,
@@ -157,7 +157,7 @@ export async function runInvekosQuery(lon, lat) {
   }
 }
 
-export async function fetchInvekosFields(lon, lat) {
+export async function fetchInvekosFields(lon, lat, externalSignal) {
   const collection = getInvekosCollectionName();
   const minLon = lon - INVEKOS_BBOX_DELTA;
   const minLat = lat - INVEKOS_BBOX_DELTA;
@@ -167,6 +167,13 @@ export async function fetchInvekosFields(lon, lat) {
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), INVEKOS_FETCH_TIMEOUT_MS);
+
+  if (externalSignal) {
+    externalSignal.addEventListener("abort", () => {
+      clearTimeout(timeoutId);
+      controller.abort();
+    });
+  }
 
   try {
     const response = await fetch(url, { signal: controller.signal });

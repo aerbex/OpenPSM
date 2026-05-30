@@ -34,18 +34,18 @@ export function addProductRow() {
     </div>
     <div class="form-row">
       <label for="product-name-${index}">Produktname <span class="required">*</span></label>
-      <input type="text" id="product-name-${index}" name="productName" required>
+      <input type="text" id="product-name-${index}" name="productName" autocomplete="off" required>
       <span class="error-message" id="error-product-name-${index}"></span>
     </div>
     <div class="form-row">
       <label for="product-reg-${index}">Zulassungsnummer <span class="required">*</span></label>
-      <input type="text" id="product-reg-${index}" name="productReg" required>
+      <input type="text" id="product-reg-${index}" name="productReg" autocomplete="off" required>
       <span class="error-message" id="error-product-reg-${index}"></span>
     </div>
     <div class="form-row product-amount-row">
       <div class="amount-input">
         <label for="product-amount-${index}">Aufwandmenge pro ha <span class="required">*</span></label>
-        <input type="number" id="product-amount-${index}" name="productAmount" min="0.01" step="0.01" required>
+        <input type="number" id="product-amount-${index}" name="productAmount" autocomplete="off" min="0.01" step="0.01" required>
       </div>
       <div class="amount-unit">
         <label for="product-unit-${index}">Einheit</label>

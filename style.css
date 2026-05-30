@@ -618,6 +618,127 @@ footer a:hover {
   background-color: #fdecec;
 }
 
+.btn-map {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  flex-shrink: 0;
+}
+
+.btn-map:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-map:active {
+  background-color: #e0e0e0;
+}
+
+/* Map modal */
+#map-modal {
+  padding: 0;
+}
+
+.map-modal-content {
+  max-width: 800px;
+  max-height: 90vh;
+}
+
+.map-modal-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.map-hint {
+  margin: 0;
+  padding: 0.5rem 1.25rem 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.map-privacy-note {
+  margin: 0;
+  padding: 0.25rem 1.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: #888;
+  font-style: italic;
+}
+
+.map-container {
+  flex: 1;
+  min-height: 300px;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.map-actions {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+}
+
+.map-loading-indicator {
+  padding: 0.375rem 0.625rem;
+  font-size: 0.8rem;
+  color: #2d5a27;
+  background-color: #ffffff;
+  border: 1px solid #2d5a27;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.map-layer-toggle {
+  margin-right: 0.5rem;
+}
+
+.btn-layer-toggle {
+  padding: 0.375rem 0.625rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: #2d5a27;
+  background-color: #ffffff;
+  border: 1px solid #2d5a27;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  white-space: nowrap;
+}
+
+.btn-layer-toggle:hover {
+  background-color: #f0f7ef;
+}
+
+.invekos-map-label {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #2d5a27;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.invekos-map-label::before {
+  display: none;
+}
+
+.map-modal-error {
+  margin: 0.5rem 1.25rem 0;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #b71c1c;
+  background-color: #fdecec;
+  border: 1px solid #b71c1c;
+  border-radius: 4px;
+}
+
 /* Modal */
 .modal {
   position: fixed;

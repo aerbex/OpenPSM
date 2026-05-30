@@ -76,6 +76,7 @@
                 <input type="text" id="location-0" name="location" maxlength="100" required>
                 <button type="button" id="btn-gps-0" class="btn-gps" title="Standort ermitteln">📍</button>
                 <button type="button" id="btn-invekos-0" class="btn-invekos" title="Schlag aus INVEKOS suchen">🌾</button>
+                <button type="button" id="btn-map-0" class="btn-map" title="Position auf Karte wählen">🗺️</button>
               </div>
               <span class="gps-status" id="gps-status-0"></span>
               <span class="error-message" id="error-location-0"></span>
@@ -159,18 +160,18 @@
             </div>
             <div class="form-row">
               <label for="product-name-0">Produktname <span class="required">*</span></label>
-              <input type="text" id="product-name-0" name="productName" required>
+              <input type="text" id="product-name-0" name="productName" autocomplete="off" required>
               <span class="error-message" id="error-product-name-0"></span>
             </div>
             <div class="form-row">
               <label for="product-reg-0">Zulassungsnummer <span class="required">*</span></label>
-              <input type="text" id="product-reg-0" name="productReg" required>
+              <input type="text" id="product-reg-0" name="productReg" autocomplete="off" required>
               <span class="error-message" id="error-product-reg-0"></span>
             </div>
             <div class="form-row product-amount-row">
               <div class="amount-input">
                 <label for="product-amount-0">Aufwandmenge pro ha <span class="required">*</span></label>
-                <input type="number" id="product-amount-0" name="productAmount" min="0.01" step="0.01" required>
+                <input type="number" id="product-amount-0" name="productAmount" autocomplete="off" min="0.01" step="0.01" required>
               </div>
               <div class="amount-unit">
                 <label for="product-unit-0">Einheit</label>
@@ -226,6 +227,24 @@
       <button type="button" class="modal-close" aria-label="Schließen">&times;</button>
       <h3>Schlag auswählen</h3>
       <div id="invekos-modal-body"></div>
+    </div>
+  </div>
+
+  <div id="map-modal" class="modal" role="dialog" aria-modal="true" aria-label="Position auf Karte wählen" hidden>
+    <div class="modal-overlay" id="map-modal-overlay"></div>
+    <div class="modal-content map-modal-content">
+      <button type="button" class="modal-close" id="map-modal-close" aria-label="Schließen">&times;</button>
+      <h3>Position auf Karte wählen</h3>
+      <div class="map-modal-body">
+        <p class="map-hint">Klicken Sie auf die Karte, um die Position zu setzen. Klicken Sie auf einen eingezeichneten Schlag, um dessen Daten zu übernehmen.</p>
+        <div id="map-modal-error" class="map-modal-error" hidden></div>
+        <p class="map-privacy-note">Hinweis: Beim Öffnen der Karte wird Ihr Standort abgefragt, Kartendaten (Luftbild / Basiskarte) von mapsneu.wien.gv.at (basemap.at) und Schlagdaten von gis.lfrz.gv.at (INVEKOS) geladen.</p>
+        <div id="map-container" class="map-container"></div>
+        <div class="map-actions">
+          <button type="button" id="btn-map-confirm" class="btn-primary" disabled>Position übernehmen</button>
+          <button type="button" id="btn-map-cancel" class="btn-secondary">Abbrechen</button>
+        </div>
+      </div>
     </div>
   </div>
 

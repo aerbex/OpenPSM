@@ -13,6 +13,7 @@ import { initEppoSearch, loadEppoData } from "./eppo.js";
 import { initBbchSearch, loadBbchData } from "./bbch.js";
 import { initGeolocation } from "./geolocation.js";
 import { initInvekosSearch, initInvekosModal } from "./invekos.js";
+import { initMapPicker } from "./map-picker.js";
 import { initProductSearchForRow, loadPsmRegisterData } from "./psm-register.js";
 import { generatePDF, generateExcel, checkJsPdf, checkExcelJs } from "./generators.js";
 import { validateForm } from "./validation.js";
@@ -30,6 +31,7 @@ async function init() {
   initGeolocation();
   initInvekosSearch();
   initInvekosModal();
+  initMapPicker();
   initProductSearchForRow(0);
 
   await Promise.all([loadEppoData(), loadBbchData(), loadPsmRegisterData()]);
@@ -115,6 +117,10 @@ async function init() {
   if (clearFormBtn) {
     clearFormBtn.addEventListener("click", clearForm);
   }
+
+  window.addEventListener("beforeunload", () => {
+    saveFormCache();
+  });
 }
 
 if (document.readyState === "loading") {

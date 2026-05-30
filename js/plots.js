@@ -6,6 +6,7 @@ import { STRINGS, MAX_PLOT_ROWS } from "./constants.js";
 import { counters } from "./state.js";
 import { initGeolocationForRow } from "./geolocation.js";
 import { initInvekosSearchForRow } from "./invekos.js";
+import { initMapPickerForRow } from "./map-picker.js";
 
 export function initPlotRows() {
   const addBtn = document.getElementById("btn-add-plot");
@@ -36,6 +37,7 @@ export function addPlotRow() {
         <input type="text" id="location-${index}" name="location" maxlength="100" required>
         <button type="button" id="btn-gps-${index}" class="btn-gps" title="Standort ermitteln">📍</button>
         <button type="button" id="btn-invekos-${index}" class="btn-invekos" title="Schlag aus INVEKOS suchen">🌾</button>
+        <button type="button" id="btn-map-${index}" class="btn-map" title="Position auf Karte wählen">🗺️</button>
       </div>
       <span class="gps-status" id="gps-status-${index}"></span>
       <span class="error-message" id="error-location-${index}"></span>
@@ -60,6 +62,7 @@ export function addPlotRow() {
 
   initGeolocationForRow(index);
   initInvekosSearchForRow(index);
+  initMapPickerForRow(index);
 
   const removeBtn = row.querySelector(".btn-remove-plot");
   removeBtn.addEventListener("click", () => removePlotRow(index));
@@ -105,10 +108,19 @@ export function reindexPlotRows() {
     });
 
     row.querySelectorAll("[id^='btn-gps-']").forEach((el) => {
-      el.id = `btn-gps-${newIndex}`;
+      const clone = el.cloneNode(true);
+      clone.id = `btn-gps-${newIndex}`;
+      el.replaceWith(clone);
     });
     row.querySelectorAll("[id^='btn-invekos-']").forEach((el) => {
-      el.id = `btn-invekos-${newIndex}`;
+      const clone = el.cloneNode(true);
+      clone.id = `btn-invekos-${newIndex}`;
+      el.replaceWith(clone);
+    });
+    row.querySelectorAll("[id^='btn-map-']").forEach((el) => {
+      const clone = el.cloneNode(true);
+      clone.id = `btn-map-${newIndex}`;
+      el.replaceWith(clone);
     });
 
     row.querySelectorAll("[id^='treated-area-']").forEach((el) => {
@@ -141,6 +153,7 @@ export function reindexPlotRows() {
 
     initGeolocationForRow(newIndex);
     initInvekosSearchForRow(newIndex);
+    initMapPickerForRow(newIndex);
   });
 }
 

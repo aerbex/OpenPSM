@@ -4,6 +4,7 @@
 
 import { FORM_CACHE_KEY } from "./constants.js";
 import { addPlotRow } from "./plots.js";
+import { addProductRow } from "./products.js";
 
 export function saveFormCache() {
   try {
@@ -23,11 +24,25 @@ export function saveFormCache() {
       });
     });
 
+    // Gather product rows
+    const productRows = document.querySelectorAll(".product-row");
+    const products = [];
+    productRows.forEach((row) => {
+      const index = row.dataset.index;
+      products.push({
+        name: row.querySelector(`#product-name-${index}`)?.value || "",
+        regNumber: row.querySelector(`#product-reg-${index}`)?.value || "",
+        amount: row.querySelector(`#product-amount-${index}`)?.value || "",
+        unit: row.querySelector(`#product-unit-${index}`)?.value || "l",
+      });
+    });
+
     const cache = {
       applicant: document.getElementById("applicant")?.value || "",
       client: document.getElementById("client")?.value || "",
       usageType: document.getElementById("usage-type")?.value || "",
       plots,
+      products,
       notes: document.getElementById("notes")?.value || "",
       cropName: document.getElementById("crop-name")?.value || "",
       eppoCode: document.getElementById("eppo-code")?.value || "",
@@ -86,6 +101,32 @@ export function loadFormCache() {
             const psi = row.querySelector(`#plot-size-invekos-${i}`);
             if (psi) psi.value = plot.plotSizeInvekos || "";
           }
+        }
+      });
+    }
+
+    // Product rows
+    if (cache.products && cache.products.length > 0) {
+      cache.products.forEach((product, i) => {
+        if (i === 0) {
+          const nameInput = document.getElementById("product-name-0");
+          if (nameInput) nameInput.value = product.name || "";
+          const regInput = document.getElementById("product-reg-0");
+          if (regInput) regInput.value = product.regNumber || "";
+          const amountInput = document.getElementById("product-amount-0");
+          if (amountInput) amountInput.value = product.amount || "";
+          const unitInput = document.getElementById("product-unit-0");
+          if (unitInput) unitInput.value = product.unit || "l";
+        } else {
+          addProductRow();
+          const nameInput = document.getElementById(`product-name-${i}`);
+          if (nameInput) nameInput.value = product.name || "";
+          const regInput = document.getElementById(`product-reg-${i}`);
+          if (regInput) regInput.value = product.regNumber || "";
+          const amountInput = document.getElementById(`product-amount-${i}`);
+          if (amountInput) amountInput.value = product.amount || "";
+          const unitInput = document.getElementById(`product-unit-${i}`);
+          if (unitInput) unitInput.value = product.unit || "l";
         }
       });
     }
