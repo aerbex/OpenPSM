@@ -14,7 +14,7 @@ export function initTankMix() {
 }
 
 export function addProductRow() {
-  if (counters.productRowCount >= MAX_PRODUCT_ROWS) return;
+  if (counters.productRowCount >= MAX_PRODUCT_ROWS) return null;
   const container = document.getElementById("product-rows");
   const index = counters.productRowCount;
   counters.productRowCount++;
@@ -67,6 +67,8 @@ export function addProductRow() {
 
   const removeBtn = row.querySelector(".btn-remove-product");
   removeBtn.addEventListener("click", () => removeProductRow(index));
+
+  return index;
 }
 
 export function removeProductRow(index) {

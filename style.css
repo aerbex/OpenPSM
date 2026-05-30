@@ -488,6 +488,9 @@ select.error:focus {
 
 .product-actions {
   padding: 0 1.25rem 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 /* Buttons */
@@ -895,4 +898,115 @@ footer a:hover {
   background-color: #fdecec;
   border-color: #b71c1c;
   color: #b71c1c;
+}
+
+/* Combipack modal */
+.combipack-modal-content {
+  max-width: 560px;
+}
+
+.combipack-modal-body {
+  padding: 0.75rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.combipack-hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+  font-style: italic;
+}
+
+.combipack-search-input {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.combipack-search-input:focus {
+  outline: none;
+  border-color: #2d5a27;
+  box-shadow: 0 0 0 2px rgba(45, 90, 39, 0.2);
+}
+
+.combipack-list {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: 50vh;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.combipack-item {
+  padding: 0.625rem 0.75rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.12s;
+  border: 1px solid transparent;
+}
+
+.combipack-item:last-child {
+  margin-bottom: 0;
+}
+
+.combipack-item:hover {
+  background-color: #f0f7ef;
+}
+
+.combipack-item.selected {
+  background-color: #e8f5e9;
+  border-color: #2d5a27;
+}
+
+.combipack-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.combipack-products {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+}
+
+.combipack-product {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.combipack-reg {
+  color: #2d5a27;
+  font-weight: 500;
+}
+
+.combipack-no-results {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.combipack-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.combipack-modal-actions .btn-primary,
+.combipack-modal-actions .btn-secondary {
+  flex: 1;
 }

@@ -15,6 +15,7 @@ import { initGeolocation } from "./geolocation.js";
 import { initInvekosSearch, initInvekosModal } from "./invekos.js";
 import { initMapPicker } from "./map-picker.js";
 import { initProductSearchForRow, loadPsmRegisterData } from "./psm-register.js";
+import { initCombipacks, loadCombipacksData } from "./combipacks.js";
 import { generatePDF, generateExcel, checkJsPdf, checkExcelJs } from "./generators.js";
 import { validateForm } from "./validation.js";
 import { clearForm } from "./form.js";
@@ -33,8 +34,9 @@ async function init() {
   initInvekosModal();
   initMapPicker();
   initProductSearchForRow(0);
+  initCombipacks();
 
-  await Promise.all([loadEppoData(), loadBbchData(), loadPsmRegisterData()]);
+  await Promise.all([loadEppoData(), loadBbchData(), loadPsmRegisterData(), loadCombipacksData()]);
 
   // jsPDF may still be loading from CDN
   setTimeout(checkJsPdf, 500);

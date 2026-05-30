@@ -188,6 +188,7 @@
         </div>
         <div class="product-actions">
           <button type="button" id="btn-add-product" class="btn-secondary">+ Produkt hinzufügen</button>
+          <button type="button" id="btn-add-combipack" class="btn-secondary">+ Kombipack hinzufügen</button>
         </div>
       </section>
 
@@ -227,6 +228,23 @@
       <button type="button" class="modal-close" aria-label="Schließen">&times;</button>
       <h3>Schlag auswählen</h3>
       <div id="invekos-modal-body"></div>
+    </div>
+  </div>
+
+  <div id="combipack-modal" class="modal" role="dialog" aria-modal="true" aria-label="Kombipack auswählen" hidden>
+    <div class="modal-overlay"></div>
+    <div class="modal-content combipack-modal-content">
+      <button type="button" class="modal-close" aria-label="Schließen">&times;</button>
+      <h3>Kombipack auswählen</h3>
+      <div class="combipack-modal-body">
+        <p class="combipack-hint">Die Aufwandmenge pro ha muss für jedes Produkt manuell eingetragen werden.</p>
+        <input type="text" id="combipack-search" class="combipack-search-input" autocomplete="off" placeholder="Kombipack suchen...">
+        <div id="combipack-list" class="combipack-list"></div>
+        <div class="combipack-modal-actions">
+          <button type="button" id="btn-combipack-confirm" class="btn-primary" disabled>Hinzufügen</button>
+          <button type="button" id="btn-combipack-cancel" class="btn-secondary">Abbrechen</button>
+        </div>
+      </div>
     </div>
   </div>
 
