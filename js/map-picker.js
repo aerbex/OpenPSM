@@ -26,6 +26,8 @@ let baseLayer = null;
 let orthoLayer = null;
 let isOrthoActive = true;
 let selectedFieldData = null;
+let lastMapView = null;
+let geoSession = 0;
 
 const AUSTRIA_CENTER = [47.5162, 14.5501];
 const AUSTRIA_ZOOM = 7;
@@ -139,6 +141,9 @@ export async function openMapPicker() {
     if (!map || !isModalOpen) return;
     map.invalidateSize();
 
+    // Bump session so any stale geolocation callbacks from prior opens are ignored
+    geoSession++;
+
     // Determine initial centre only after size is valid
     const locationInput = document.getElementById(`location-${currentMapRowIndex}`);
     const existingCoords = parseCoordinatesFromInput(locationInput?.value);
@@ -147,10 +152,17 @@ export async function openMapPicker() {
       map.setView([existingCoords.lat, existingCoords.lon], FIELD_ZOOM);
       setMarker(existingCoords.lat, existingCoords.lon);
       loadInvekosOverlays(existingCoords.lon, existingCoords.lat);
+    } else if (lastMapView) {
+      map.setView(lastMapView.center, lastMapView.zoom);
+      if (lastMapView.lat != null && lastMapView.lon != null) {
+        setMarker(lastMapView.lat, lastMapView.lon);
+        loadInvekosOverlays(lastMapView.lon, lastMapView.lat);
+      }
     } else if (navigator.geolocation) {
+      const session = geoSession;
       navigator.geolocation.getCurrentPosition(
         (pos) => {
-          if (!isModalOpen) return;
+          if (!isModalOpen || session !== geoSession) return;
           const lat = pos.coords.latitude;
           const lon = pos.coords.longitude;
           map.setView([lat, lon], FIELD_ZOOM);
@@ -158,7 +170,7 @@ export async function openMapPicker() {
           loadInvekosOverlays(lon, lat);
         },
         () => {
-          if (!isModalOpen) return;
+          if (!isModalOpen || session !== geoSession) return;
           map.setView(AUSTRIA_CENTER, AUSTRIA_ZOOM);
         },
         { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
@@ -191,6 +203,14 @@ export function closeMapPicker() {
 
 export function confirmMapPicker() {
   if (selectedFieldData) {
+    if (map) {
+      lastMapView = {
+        center: [map.getCenter().lat, map.getCenter().lng],
+        zoom: map.getZoom(),
+        lat: selectedFieldData.lat,
+        lon: selectedFieldData.lon,
+      };
+    }
     selectFieldFromMap(selectedFieldData.properties, selectedFieldData.lat, selectedFieldData.lon);
     return;
   }
@@ -201,6 +221,14 @@ export function confirmMapPicker() {
     return;
   }
   const latLng = marker.getLatLng();
+  if (map) {
+    lastMapView = {
+      center: [map.getCenter().lat, map.getCenter().lng],
+      zoom: map.getZoom(),
+      lat: latLng.lat,
+      lon: latLng.lng,
+    };
+  }
   input.value = `${latLng.lat.toFixed(6)}, ${latLng.lng.toFixed(6)}`;
   clearError(`error-location-${currentMapRowIndex}`);
   closeMapPicker();
