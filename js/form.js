@@ -75,7 +75,7 @@ export function clearForm() {
   const plotRows = document.querySelectorAll(".plot-row");
   plotRows.forEach((row, index) => {
     if (index === 0) {
-      row.querySelectorAll('input[type="text"], input[type="number"]').forEach((input) => {
+      row.querySelectorAll('input[type="text"], input[type="number"], input[type="hidden"]').forEach((input) => {
         input.value = "";
       });
       const gpsStatus = row.querySelector('.gps-status');

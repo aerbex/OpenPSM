@@ -65,7 +65,7 @@ async function init() {
 
     if (wantPdf) {
       try {
-        const pdfResult = generatePDF(data);
+        const pdfResult = await generatePDF(data);
         if (pdfResult) {
           files.push(new File([pdfResult.blob], pdfResult.filename, { type: pdfResult.blob.type }));
         }

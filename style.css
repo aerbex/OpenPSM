@@ -111,6 +111,21 @@ form {
   margin-bottom: 0;
 }
 
+.form-row-split {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.form-row-col {
+  flex: 1;
+  min-width: 12rem;
+}
+
+.form-row-col input {
+  width: 100%;
+}
+
 label {
   display: block;
   margin-bottom: 0.25rem;

@@ -43,6 +43,13 @@ export function handleLocationSuccess(position) {
   const lon = position.coords.longitude.toFixed(6);
   const input = document.getElementById(`location-${currentGpsRowIndex}`);
   if (input) input.value = `${lat}, ${lon}`;
+  // Clear stale map-picker polygon (GPS coords aren't a field selection)
+  const polygonInput = document.getElementById(`plot-map-polygon-${currentGpsRowIndex}`);
+  const zoomInput = document.getElementById(`plot-map-zoom-${currentGpsRowIndex}`);
+  const fieldNameInput = document.getElementById(`plot-map-field-name-${currentGpsRowIndex}`);
+  if (polygonInput) polygonInput.value = "";
+  if (zoomInput) zoomInput.value = "";
+  if (fieldNameInput) fieldNameInput.value = "";
   setGpsButtonState(currentGpsRowIndex, "success");
   const status = document.getElementById(`gps-status-${currentGpsRowIndex}`);
   if (status) {

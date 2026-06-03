@@ -21,6 +21,9 @@ export function saveFormCache() {
         treatedArea: row.querySelector(`#treated-area-${index}`)?.value || "",
         plotNumber: row.querySelector(`#plot-number-${index}`)?.value || "",
         plotSizeInvekos: row.querySelector(`#plot-size-invekos-${index}`)?.value || "",
+        mapZoom: row.querySelector(`#plot-map-zoom-${index}`)?.value || "",
+        mapPolygon: row.querySelector(`#plot-map-polygon-${index}`)?.value || "",
+        mapFieldName: row.querySelector(`#plot-map-field-name-${index}`)?.value || "",
       });
     });
 
@@ -40,6 +43,7 @@ export function saveFormCache() {
     const cache = {
       applicant: document.getElementById("applicant")?.value || "",
       client: document.getElementById("client")?.value || "",
+      betriebsnummer: document.getElementById("betriebsnummer")?.value || "",
       usageType: document.getElementById("usage-type")?.value || "",
       plots,
       products,
@@ -65,6 +69,7 @@ export function loadFormCache() {
 
     if (cache.applicant) document.getElementById("applicant").value = cache.applicant;
     if (cache.client) document.getElementById("client").value = cache.client;
+    if (cache.betriebsnummer) document.getElementById("betriebsnummer").value = cache.betriebsnummer;
     if (cache.usageType) document.getElementById("usage-type").value = cache.usageType;
     if (cache.notes) document.getElementById("notes").value = cache.notes;
     if (cache.cropName) document.getElementById("crop-name").value = cache.cropName;
@@ -85,6 +90,12 @@ export function loadFormCache() {
             if (pnum) pnum.value = plot.plotNumber || "";
             const psi = row.querySelector("#plot-size-invekos-0");
             if (psi) psi.value = plot.plotSizeInvekos || "";
+            const mz = row.querySelector("#plot-map-zoom-0");
+            if (mz) mz.value = plot.mapZoom || "";
+            const mp = row.querySelector("#plot-map-polygon-0");
+            if (mp) mp.value = plot.mapPolygon || "";
+            const mf = row.querySelector("#plot-map-field-name-0");
+            if (mf) mf.value = plot.mapFieldName || "";
           }
         } else {
           addPlotRow();
@@ -100,6 +111,12 @@ export function loadFormCache() {
             if (pnum) pnum.value = plot.plotNumber || "";
             const psi = row.querySelector(`#plot-size-invekos-${i}`);
             if (psi) psi.value = plot.plotSizeInvekos || "";
+            const mz = row.querySelector(`#plot-map-zoom-${i}`);
+            if (mz) mz.value = plot.mapZoom || "";
+            const mp = row.querySelector(`#plot-map-polygon-${i}`);
+            if (mp) mp.value = plot.mapPolygon || "";
+            const mf = row.querySelector(`#plot-map-field-name-${i}`);
+            if (mf) mf.value = plot.mapFieldName || "";
           }
         }
       });

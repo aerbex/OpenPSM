@@ -87,6 +87,13 @@ export function openInvekosSearch() {
         locationInput.value = `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
         clearError(`error-location-${currentInvekosRowIndex}`);
       }
+      // GPS coords are not a map field selection, so clear any stale polygon
+      const polygonInput = document.getElementById(`plot-map-polygon-${currentInvekosRowIndex}`);
+      const zoomInput = document.getElementById(`plot-map-zoom-${currentInvekosRowIndex}`);
+      const fieldNameInput = document.getElementById(`plot-map-field-name-${currentInvekosRowIndex}`);
+      if (polygonInput) polygonInput.value = "";
+      if (zoomInput) zoomInput.value = "";
+      if (fieldNameInput) fieldNameInput.value = "";
       showInvekosModal();
       runInvekosQuery(lon, lat);
     },

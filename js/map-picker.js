@@ -211,6 +211,11 @@ export function confirmMapPicker() {
         lon: selectedFieldData.lon,
       };
     }
+    storePlotMapState(
+      map ? map.getZoom() : null,
+      selectedFieldData.geometry,
+      selectedFieldData.properties?.snar_bezeichnung || null
+    );
     selectFieldFromMap(selectedFieldData.properties, selectedFieldData.lat, selectedFieldData.lon);
     return;
   }
@@ -229,9 +234,19 @@ export function confirmMapPicker() {
       lon: latLng.lng,
     };
   }
+  storePlotMapState(map ? map.getZoom() : null, null, null);
   input.value = `${latLng.lat.toFixed(6)}, ${latLng.lng.toFixed(6)}`;
   clearError(`error-location-${currentMapRowIndex}`);
   closeMapPicker();
+}
+
+function storePlotMapState(zoom, geometry, fieldName) {
+  const zoomInput = document.getElementById(`plot-map-zoom-${currentMapRowIndex}`);
+  const polygonInput = document.getElementById(`plot-map-polygon-${currentMapRowIndex}`);
+  const fieldNameInput = document.getElementById(`plot-map-field-name-${currentMapRowIndex}`);
+  if (zoomInput) zoomInput.value = zoom != null ? String(zoom) : "";
+  if (polygonInput) polygonInput.value = geometry ? JSON.stringify(geometry) : "";
+  if (fieldNameInput) fieldNameInput.value = fieldName || "";
 }
 
 function initMap() {
@@ -384,7 +399,7 @@ async function loadInvekosOverlays(lon, lat) {
             const center = getBboxCenter(feature.bbox);
             const fieldLat = center ? center.lat : lat;
             const fieldLon = center ? center.lon : lon;
-            selectFieldOnMap(props, fieldLat, fieldLon, layer);
+            selectFieldOnMap(props, fieldLat, fieldLon, layer, feature.geometry);
           });
         },
       }
@@ -430,7 +445,7 @@ function resetFieldStyle(layer) {
   });
 }
 
-function selectFieldOnMap(properties, fieldLat, fieldLon, layer) {
+function selectFieldOnMap(properties, fieldLat, fieldLon, layer, geometry) {
   if (selectedFieldLayer === layer) {
     deselectField();
     return;
@@ -438,7 +453,7 @@ function selectFieldOnMap(properties, fieldLat, fieldLon, layer) {
   if (selectedFieldLayer) {
     deselectField();
   }
-  selectedFieldData = { properties, lat: fieldLat, lon: fieldLon };
+  selectedFieldData = { properties, lat: fieldLat, lon: fieldLon, geometry };
   highlightFieldLayer(layer);
   if (invekosLayer) {
     invekosLayer.eachLayer((l) => {

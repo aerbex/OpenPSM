@@ -5,8 +5,10 @@
 import { STRINGS } from "./constants.js";
 import { formatDateDe, sanitizeInput, generateFilename } from "./utils.js";
 import { showGlobalError } from "./ui.js";
+import { parseCoordinatesFromInput } from "./invekos.js";
+import { renderPlotMapImage } from "./map-image.js";
 
-export function generatePDF(data) {
+export async function generatePDF(data) {
   const { jsPDF } = window.jspdf;
   if (!jsPDF) {
     showGlobalError(STRINGS.errorJsPdfLoad);
@@ -37,6 +39,11 @@ export function generatePDF(data) {
   y += 10;
   doc.setTextColor(0);
 
+  const PAGE_HEIGHT = 297;
+  const LINE_HEIGHT = 5;
+  const PLOT_IMAGE_SIZE = LINE_HEIGHT * 4; // 4 lines of text
+  const PLOT_IMAGE_GUTTER = 5;
+
   // Helper for blocks
   function addBlock(title, rows) {
     doc.setFont("helvetica", "bold");
@@ -58,22 +65,99 @@ export function generatePDF(data) {
     y += 4;
   }
 
+  function addPlotBlock(title, rows, imageDataUrl) {
+    const titleHeight = 6;
+    const textHeight = rows.filter(([, v]) => v).length * LINE_HEIGHT;
+    const blockHeight = imageDataUrl ? Math.max(PLOT_IMAGE_SIZE, textHeight) : textHeight;
+    if (y + titleHeight + blockHeight > PAGE_HEIGHT - margin) {
+      doc.addPage();
+      y = margin;
+    }
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(title, margin, y);
+    y += titleHeight;
+
+    const blockStartY = y;
+    const textX = imageDataUrl ? margin + PLOT_IMAGE_SIZE + PLOT_IMAGE_GUTTER : margin;
+
+    // jsPDF text() draws at the baseline, so the visual top of a text line
+    // sits ~ascender height above the baseline. Shift the image up by the
+    // ascender so its top aligns with the top of the first text line.
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    const ascender = (doc.getFontSize() * 25.4) / 72 * 0.72;
+    const imageY = blockStartY - ascender;
+
+    if (imageDataUrl) {
+      try {
+        doc.addImage(imageDataUrl, "PNG", margin, imageY, PLOT_IMAGE_SIZE, PLOT_IMAGE_SIZE);
+      } catch (err) {
+        console.warn("addImage failed:", err);
+      }
+    }
+
+    let textY = blockStartY;
+    rows.forEach(([label, value]) => {
+      if (value) {
+        doc.setFont("helvetica", "bold");
+        doc.text(`${label}:`, textX, textY);
+        const labelWidth = doc.getTextWidth(`${label}:`);
+        doc.setFont("helvetica", "normal");
+        doc.text(String(value), textX + labelWidth + 2, textY);
+        textY += LINE_HEIGHT;
+      }
+    });
+
+    const imageEndY = imageDataUrl ? imageY + PLOT_IMAGE_SIZE : blockStartY;
+    y = Math.max(textY, imageEndY) + 4;
+  }
+
+  const includeMapImages = document.getElementById("include-map-image")?.checked ?? true;
+  const plotImageResults = includeMapImages
+    ? await Promise.all(
+        data.plots.map(async (plot) => {
+          const coords = parseCoordinatesFromInput(plot.location);
+          if (!coords) return { dataUrl: null, hadCoords: false };
+          const labelSource = plot.mapFieldName || (plot.mapPolygon ? plot.plotName : "");
+          const dataUrl = await renderPlotMapImage({
+            lat: coords.lat,
+            lon: coords.lon,
+            zoom: plot.mapZoom,
+            polygon: plot.mapPolygon,
+            fieldName: sanitizeInput(labelSource) || null,
+          });
+          return { dataUrl, hadCoords: true };
+        })
+      )
+    : data.plots.map(() => ({ dataUrl: null, hadCoords: false }));
+  const plotImages = plotImageResults.map((r) => r.dataUrl);
+  const failedImageCount = plotImageResults.filter(
+    (r) => r.hadCoords && r.dataUrl === null
+  ).length;
+
   addBlock("Anwender", [
     ["Anwender", sanitizeInput(document.getElementById("applicant").value)],
     ["Auftraggeber/Landwirt", sanitizeInput(document.getElementById("client").value) || null],
+    ["Betriebsnummer", sanitizeInput(document.getElementById("betriebsnummer")?.value) || null],
     ["Art der Verwendung", document.getElementById("usage-type").value],
     ["Datum", formatDateDe(document.getElementById("application-date").value)],
     ["Uhrzeit", document.getElementById("time-required").checked ? document.getElementById("application-time").value : null],
   ]);
 
   data.plots.forEach((plot, i) => {
-    addBlock(i === 0 ? "Fläche" : `Fläche ${i + 1}`, [
-      ["Flächenbezeichnung", sanitizeInput(plot.plotName)],
-      ["Schlag Nr.", sanitizeInput(plot.plotNumber) || null],
-      ["Schlaggröße lt. INVEKOS GIS", sanitizeInput(plot.plotSizeInvekos) ? `${plot.plotSizeInvekos.replace(".", ",")} ha` : null],
-      ["Lage (FLIK/GPS)", sanitizeInput(plot.location)],
-      ["Behandelte Fläche", `${plot.treatedArea.replace(".", ",")} ha`],
-    ]);
+    addPlotBlock(
+      i === 0 ? "Fläche" : `Fläche ${i + 1}`,
+      [
+        ["Flächenbezeichnung", sanitizeInput(plot.plotName)],
+        ["Schlag Nr.", sanitizeInput(plot.plotNumber) || null],
+        ["Schlaggröße lt. INVEKOS GIS", sanitizeInput(plot.plotSizeInvekos) ? `${plot.plotSizeInvekos.replace(".", ",")} ha` : null],
+        ["Lage (FLIK/GPS)", sanitizeInput(plot.location)],
+        ["Behandelte Fläche", `${plot.treatedArea.replace(".", ",")} ha`],
+      ],
+      plotImages[i]
+    );
   });
 
   const notesVal = sanitizeInput(document.getElementById("notes").value);
@@ -126,13 +210,21 @@ export function generatePDF(data) {
   const footerLines = doc.splitTextToSize(STRINGS.pdfDisclaimer, 170);
   doc.text(footerLines, margin, y);
   y += footerLines.length * 4 + 4;
-  doc.text("Seite 1 von 1", margin, y);
+  const totalPages = doc.getNumberOfPages();
+  const currentPage = doc.internal.getCurrentPageInfo().pageNumber;
+  doc.text(`Seite ${currentPage} von ${totalPages}`, margin, y);
 
   const plotName = data.plots[0]?.plotName || "";
   const dateStr = document.getElementById("application-date").value;
   const applicant = document.getElementById("applicant").value;
   const client = document.getElementById("client").value;
   const filename = generateFilename(plotName, dateStr, applicant, client) + ".pdf";
+
+  if (failedImageCount > 0) {
+    showGlobalError(
+      `Hinweis: ${failedImageCount} Kartenbild${failedImageCount === 1 ? "" : "er"} konnte${failedImageCount === 1 ? "" : "n"} nicht geladen werden (z. B. wegen fehlender Internetverbindung). Die betroffenen Flächen erscheinen ohne Karte im PDF.`
+    );
+  }
   return { blob: doc.output("blob"), filename };
 }
 
@@ -195,6 +287,8 @@ export async function generateExcel(data) {
   addLabelValue(ws, "Anwender", sanitizeInput(document.getElementById("applicant").value));
   const clientVal = sanitizeInput(document.getElementById("client").value);
   if (clientVal) addLabelValue(ws, "Auftraggeber/Landwirt", clientVal);
+  const betriebsnummerVal = sanitizeInput(document.getElementById("betriebsnummer")?.value);
+  if (betriebsnummerVal) addLabelValue(ws, "Betriebsnummer", betriebsnummerVal);
   addLabelValue(ws, "Art der Verwendung", document.getElementById("usage-type").value);
   addLabelValue(ws, "Datum", formatDateDe(document.getElementById("application-date").value));
   if (document.getElementById("time-required").checked) {

@@ -9,6 +9,24 @@ import { initInvekosSearchForRow } from "./invekos.js";
 import { initMapPickerForRow } from "./map-picker.js";
 
 export function initPlotRows() {
+  // Manual edits to a location input invalidate any stored map polygon/zoom
+  const plotContainer = document.getElementById("plot-rows");
+  if (plotContainer) {
+    plotContainer.addEventListener("input", (e) => {
+      const target = e.target;
+      if (!(target instanceof HTMLInputElement)) return;
+      const match = target.id.match(/^location-(.+)$/);
+      if (!match) return;
+      const idx = match[1];
+      const polygonInput = document.getElementById(`plot-map-polygon-${idx}`);
+      const zoomInput = document.getElementById(`plot-map-zoom-${idx}`);
+      const fieldNameInput = document.getElementById(`plot-map-field-name-${idx}`);
+      if (polygonInput) polygonInput.value = "";
+      if (zoomInput) zoomInput.value = "";
+      if (fieldNameInput) fieldNameInput.value = "";
+    });
+  }
+
   const addBtn = document.getElementById("btn-add-plot");
   if (addBtn) {
     addBtn.addEventListener("click", addPlotRow);
@@ -55,6 +73,9 @@ export function addPlotRow() {
       <label for="plot-size-invekos-${index}">Schlaggröße lt. INVEKOS GIS (ha)</label>
       <input type="number" id="plot-size-invekos-${index}" name="plotSizeInvekos" min="0.001" step="0.001">
     </div>
+    <input type="hidden" id="plot-map-zoom-${index}" name="plotMapZoom">
+    <input type="hidden" id="plot-map-polygon-${index}" name="plotMapPolygon">
+    <input type="hidden" id="plot-map-field-name-${index}" name="plotMapFieldName">
     <button type="button" class="btn-remove-plot" data-index="${index}">${STRINGS.plotRemove}</button>
   `;
 
@@ -144,6 +165,16 @@ export function reindexPlotRows() {
       if (label) label.setAttribute("for", `plot-size-invekos-${newIndex}`);
     });
 
+    row.querySelectorAll("[id^='plot-map-zoom-']").forEach((el) => {
+      el.id = `plot-map-zoom-${newIndex}`;
+    });
+    row.querySelectorAll("[id^='plot-map-polygon-']").forEach((el) => {
+      el.id = `plot-map-polygon-${newIndex}`;
+    });
+    row.querySelectorAll("[id^='plot-map-field-name-']").forEach((el) => {
+      el.id = `plot-map-field-name-${newIndex}`;
+    });
+
     const removeBtn = row.querySelector(".btn-remove-plot");
     if (removeBtn) {
       removeBtn.dataset.index = newIndex;
@@ -162,12 +193,25 @@ export function getPlotRowsData() {
   const plots = [];
   rows.forEach((row) => {
     const index = row.dataset.index;
+    const zoomRaw = row.querySelector(`#plot-map-zoom-${index}`)?.value?.trim() || "";
+    const polygonRaw = row.querySelector(`#plot-map-polygon-${index}`)?.value?.trim() || "";
+    let mapPolygon = null;
+    if (polygonRaw) {
+      try {
+        mapPolygon = JSON.parse(polygonRaw);
+      } catch (err) {
+        mapPolygon = null;
+      }
+    }
     plots.push({
       plotName: row.querySelector(`#plot-name-${index}`)?.value?.trim() || "",
       location: row.querySelector(`#location-${index}`)?.value?.trim() || "",
       treatedArea: row.querySelector(`#treated-area-${index}`)?.value?.trim() || "",
       plotNumber: row.querySelector(`#plot-number-${index}`)?.value?.trim() || "",
       plotSizeInvekos: row.querySelector(`#plot-size-invekos-${index}`)?.value?.trim() || "",
+      mapZoom: zoomRaw ? Number(zoomRaw) : null,
+      mapPolygon,
+      mapFieldName: row.querySelector(`#plot-map-field-name-${index}`)?.value?.trim() || "",
     });
   });
   return plots;
