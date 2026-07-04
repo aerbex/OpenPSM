@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-03T00:07:33",
+  "lastUpdate": "2026-07-04T00:06:44",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -408,6 +408,10 @@
     {
       "tradeName": "Arvalin Phos",
       "registrationNumber": "4101-0"
+    },
+    {
+      "tradeName": "Arvalin VoleStop",
+      "registrationNumber": "2703-0"
     },
     {
       "tradeName": "Ascra Xpro",
@@ -2750,6 +2754,10 @@
       "registrationNumber": "4067-0"
     },
     {
+      "tradeName": "Foresight",
+      "registrationNumber": "4659-0"
+    },
+    {
       "tradeName": "Forester",
       "registrationNumber": "4664-0"
     },
@@ -3920,6 +3928,10 @@
     {
       "tradeName": "Mateno Duo",
       "registrationNumber": "4616-0"
+    },
+    {
+      "tradeName": "Mateno Duo",
+      "registrationNumber": "4616-1"
     },
     {
       "tradeName": "Matox",
@@ -7400,10 +7412,6 @@
     {
       "tradeName": "Wühlmaus-Köder",
       "registrationNumber": "2703-903"
-    },
-    {
-      "tradeName": "Wühlmausköder",
-      "registrationNumber": "2703-0"
     },
     {
       "tradeName": "Wühlmausköder Arrex",
