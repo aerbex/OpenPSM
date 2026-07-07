@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-06T00:08:39",
+  "lastUpdate": "2026-07-07T00:11:10",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -1886,6 +1886,10 @@
       "registrationNumber": "4500-0"
     },
     {
+      "tradeName": "Danzig",
+      "registrationNumber": "4500-1"
+    },
+    {
       "tradeName": "Darby",
       "registrationNumber": "2759-901"
     },
@@ -3224,6 +3228,10 @@
     {
       "tradeName": "Infinito",
       "registrationNumber": "3111-1"
+    },
+    {
+      "tradeName": "Infinito 687,5 SC",
+      "registrationNumber": "3111-2"
     },
     {
       "tradeName": "Input",
