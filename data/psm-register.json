@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-22T00:07:13",
+  "lastUpdate": "2026-07-23T00:09:40",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -308,6 +308,10 @@
     {
       "tradeName": "Aphipar-M",
       "registrationNumber": "4633-0"
+    },
+    {
+      "tradeName": "Aphiscout",
+      "registrationNumber": "4683-0"
     },
     {
       "tradeName": "Applaud 25 SC",
@@ -1812,6 +1816,10 @@
     {
       "tradeName": "Curamat AZ Universal-Pilzfrei",
       "registrationNumber": "2711-920"
+    },
+    {
+      "tradeName": "Curamat Mehltaufrei AF",
+      "registrationNumber": "4311-905"
     },
     {
       "tradeName": "Curamat Rosen-Pilzfrei",
