@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-31T00:08:36",
+  "lastUpdate": "2026-08-01T00:10:22",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -2128,10 +2128,6 @@
     {
       "tradeName": "Diglyphus-System",
       "registrationNumber": "2886-0"
-    },
-    {
-      "tradeName": "Dimethofin",
-      "registrationNumber": "3995-0"
     },
     {
       "tradeName": "Diniro",
@@ -5078,6 +5074,10 @@
       "registrationNumber": "3797-1"
     },
     {
+      "tradeName": "Porafam",
+      "registrationNumber": "4669-0"
+    },
+    {
       "tradeName": "Porafam Titan",
       "registrationNumber": "4670-0"
     },
@@ -6846,10 +6846,6 @@
       "registrationNumber": "3847-0"
     },
     {
-      "tradeName": "Tessior",
-      "registrationNumber": "4258-0"
-    },
-    {
       "tradeName": "Thiopron",
       "registrationNumber": "3997-0"
     },
@@ -7296,10 +7292,6 @@
     {
       "tradeName": "Vidia",
       "registrationNumber": "3630-1"
-    },
-    {
-      "tradeName": "VinoStar",
-      "registrationNumber": "3269-0"
     },
     {
       "tradeName": "Vintec",
