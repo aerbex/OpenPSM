@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-12T00:08:06",
+  "lastUpdate": "2026-08-13T00:09:51",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -160,6 +160,10 @@
     {
       "tradeName": "Alar 85 SG",
       "registrationNumber": "3359-0"
+    },
+    {
+      "tradeName": "Alcoban",
+      "registrationNumber": "4625-0"
     },
     {
       "tradeName": "Alcoban 700 WG",
@@ -5428,10 +5432,6 @@
     {
       "tradeName": "Quantum",
       "registrationNumber": "2881-901"
-    },
-    {
-      "tradeName": "Quassol",
-      "registrationNumber": "4494-0"
     },
     {
       "tradeName": "Quassol",
