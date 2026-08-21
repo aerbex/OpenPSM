@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-20T00:06:23",
+  "lastUpdate": "2026-08-21T00:06:30",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -1952,6 +1952,10 @@
     {
       "tradeName": "Dedevap plus",
       "registrationNumber": "3525-902"
+    },
+    {
+      "tradeName": "Dedevap plus",
+      "registrationNumber": "3525-903"
     },
     {
       "tradeName": "Degenerans-System",
@@ -3974,6 +3978,10 @@
       "registrationNumber": "4543-0"
     },
     {
+      "tradeName": "Matricariae-System",
+      "registrationNumber": "4667-0"
+    },
+    {
       "tradeName": "Mavita 250 SC",
       "registrationNumber": "3255-901"
     },
@@ -4680,6 +4688,10 @@
     {
       "tradeName": "Oblix",
       "registrationNumber": "3421-1"
+    },
+    {
+      "tradeName": "Observer",
+      "registrationNumber": "4685-0"
     },
     {
       "tradeName": "Oceal",
@@ -6542,6 +6554,10 @@
       "registrationNumber": "2879-0"
     },
     {
+      "tradeName": "Starinta",
+      "registrationNumber": "4671-0"
+    },
+    {
       "tradeName": "Starship",
       "registrationNumber": "4612-0"
     },
@@ -6826,6 +6842,10 @@
       "registrationNumber": "4387-904"
     },
     {
+      "tradeName": "Telaron Boost",
+      "registrationNumber": "4687-0"
+    },
+    {
       "tradeName": "Telaron Supra",
       "registrationNumber": "4672-0"
     },
@@ -6932,6 +6952,10 @@
     {
       "tradeName": "Toprex",
       "registrationNumber": "3130-1"
+    },
+    {
+      "tradeName": "Toprex",
+      "registrationNumber": "3130-2"
     },
     {
       "tradeName": "Touchdown Quattro",
@@ -7420,6 +7444,10 @@
     {
       "tradeName": "Winner",
       "registrationNumber": "2528-0"
+    },
+    {
+      "tradeName": "Wizard",
+      "registrationNumber": "4675-0"
     },
     {
       "tradeName": "Wolf-Garten Moosvernichter + Rasendünger",
