@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-02T00:09:46",
+  "lastUpdate": "2026-09-03T00:09:20",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -360,6 +360,10 @@
     {
       "tradeName": "Arinex 30",
       "registrationNumber": "4141-0"
+    },
+    {
+      "tradeName": "Armatus",
+      "registrationNumber": "4691-0"
     },
     {
       "tradeName": "Armicarb Spray",
@@ -3994,6 +3998,10 @@
       "registrationNumber": "3255-901"
     },
     {
+      "tradeName": "Mavrik Smart",
+      "registrationNumber": "3214-2"
+    },
+    {
       "tradeName": "Mavrik Vita",
       "registrationNumber": "3214-0"
     },
@@ -6800,6 +6808,10 @@
     {
       "tradeName": "Tandus",
       "registrationNumber": "4331-1"
+    },
+    {
+      "tradeName": "Tandus",
+      "registrationNumber": "4331-2"
     },
     {
       "tradeName": "Targa Super",
