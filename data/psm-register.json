@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-04T00:14:27",
+  "lastUpdate": "2026-09-05T00:06:08",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -252,6 +252,10 @@
     {
       "tradeName": "Ampexio",
       "registrationNumber": "3711-2"
+    },
+    {
+      "tradeName": "Ampexio",
+      "registrationNumber": "3711-3"
     },
     {
       "tradeName": "Amylo-X WG",
@@ -5054,6 +5058,10 @@
       "registrationNumber": "3756-2"
     },
     {
+      "tradeName": "Pixxaro EC",
+      "registrationNumber": "3756-3"
+    },
+    {
       "tradeName": "Planet",
       "registrationNumber": "4618-0"
     },
@@ -5668,6 +5676,10 @@
     {
       "tradeName": "Reboot",
       "registrationNumber": "3640-0"
+    },
+    {
+      "tradeName": "Reboot",
+      "registrationNumber": "3640-2"
     },
     {
       "tradeName": "Rebwachs Pro",
