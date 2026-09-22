@@ -22,6 +22,7 @@ import { clearForm } from "./form.js";
 import { showGlobalError, clearGlobalError } from "./ui.js";
 
 async function init() {
+  let ready = false;
   setTodayDefaults();
   initConditionalFields();
   initTankMix();
@@ -36,14 +37,10 @@ async function init() {
   initProductSearchForRow(0);
   initCombipacks();
 
-  await Promise.all([loadEppoData(), loadBbchData(), loadPsmRegisterData(), loadCombipacksData()]);
-
-  // jsPDF may still be loading from CDN
-  setTimeout(checkJsPdf, 500);
-
   const form = document.getElementById("psm-form");
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    if (!ready) return;
     clearGlobalError();
 
     const generatePdfCheckbox = document.getElementById("generate-pdf");
@@ -56,14 +53,12 @@ async function init() {
       return;
     }
 
-    if (wantPdf && !checkJsPdf()) return;
-
     const data = validateForm();
     if (!data) return;
 
     const files = [];
 
-    if (wantPdf) {
+    if (wantPdf && checkJsPdf()) {
       try {
         const pdfResult = await generatePDF(data);
         if (pdfResult) {
@@ -110,6 +105,7 @@ async function init() {
   const clearCacheBtn = document.getElementById("btn-clear-cache");
   if (clearCacheBtn) {
     clearCacheBtn.addEventListener("click", () => {
+      window.removeEventListener("beforeunload", saveFormCache);
       clearFormCache();
       window.location.reload();
     });
@@ -120,9 +116,11 @@ async function init() {
     clearFormBtn.addEventListener("click", clearForm);
   }
 
-  window.addEventListener("beforeunload", () => {
-    saveFormCache();
-  });
+  window.addEventListener("beforeunload", saveFormCache);
+
+  await Promise.all([loadEppoData(), loadBbchData(), loadPsmRegisterData(), loadCombipacksData()]);
+  ready = true;
+  document.getElementById("btn-generate").disabled = false;
 }
 
 if (document.readyState === "loading") {

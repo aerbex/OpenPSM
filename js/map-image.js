@@ -8,9 +8,10 @@ const TILE_SIZE = 256;
 const CANVAS_SIZE = 480;
 const BASEMAP_URL = "https://mapsneu.wien.gv.at/basemap/geolandbasemap/normal/google3857";
 const MAX_ZOOM = 19;
+const TILE_LOAD_TIMEOUT_MS = 10000;
 
 export async function renderPlotMapImage({ lat, lon, zoom, polygon, fieldName }) {
-  if (typeof lat !== "number" || typeof lon !== "number") return null;
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
   if (lat < -85 || lat > 85 || lon < -180 || lon > 180) return null;
 
   const z = clampZoom(zoom);
@@ -38,6 +39,7 @@ export async function renderPlotMapImage({ lat, lon, zoom, polygon, fieldName })
     console.warn("Map image tile fetch failed:", err);
     return null;
   }
+  if (tiles.every(({ img }) => !img)) return null;
 
   const canvas = document.createElement("canvas");
   canvas.width = CANVAS_SIZE;
@@ -96,11 +98,21 @@ function loadTile(z, tx, ty) {
   }
   const wrappedX = ((tx % n) + n) % n;
   const url = `${BASEMAP_URL}/${z}/${ty}/${wrappedX}.png`;
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const img = new Image();
+    const finish = (loadedImage) => {
+      clearTimeout(timeoutId);
+      img.onload = null;
+      img.onerror = null;
+      resolve({ img: loadedImage, tx, ty });
+    };
+    const timeoutId = setTimeout(() => {
+      finish(null);
+      img.removeAttribute("src");
+    }, TILE_LOAD_TIMEOUT_MS);
     img.crossOrigin = "anonymous";
-    img.onload = () => resolve({ img, tx, ty });
-    img.onerror = () => resolve({ img: null, tx, ty });
+    img.onload = () => finish(img);
+    img.onerror = () => finish(null);
     img.src = url;
   });
 }

@@ -3,7 +3,7 @@
    ========================================================================== */
 
 import { STRINGS } from "./constants.js";
-import { isCoordinateString } from "./utils.js";
+import { parseCoordinatesFromInput } from "./invekos.js";
 import { showError, clearAllErrors } from "./ui.js";
 import { validateEppoCode } from "./eppo.js";
 import { validateBbchCode } from "./bbch.js";
@@ -74,7 +74,7 @@ export function validateForm() {
       isValid = false;
     } else {
       const val = plot.location;
-      if (isCoordinateString(val)) {
+      if (parseCoordinatesFromInput(val)) {
         // valid coordinates
       } else if (/^-?\d/.test(val) && val.includes(".")) {
         // looks like it tried to be coordinates but failed

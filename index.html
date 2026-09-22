@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenPSM — Pflanzenschutzmittel-Anwendungsnachweis</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 </head>
 <body>
   <header>
@@ -224,7 +224,7 @@
           <label for="include-map-image">Miniaturkarte in PDF einfügen</label>
         </div>
         <div class="submit-actions">
-          <button type="submit" id="btn-generate" class="btn-primary">Bericht erstellen</button>
+          <button type="submit" id="btn-generate" class="btn-primary" disabled>Bericht erstellen</button>
           <button type="button" id="btn-clear-form" class="btn-secondary btn-clear">Formular leeren</button>
         </div>
         <span class="error-message" id="error-global"></span>

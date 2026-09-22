@@ -43,10 +43,6 @@ export function debounce(fn, delay) {
   };
 }
 
-export function isCoordinateString(value) {
-  return /^-?\d{1,2}\.\d+,\s*-?\d{1,3}\.\d+$/.test(value.trim());
-}
-
 export function setTodayDefaults() {
   const now = new Date();
   const yyyy = now.getFullYear();

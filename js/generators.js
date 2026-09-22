@@ -9,7 +9,7 @@ import { parseCoordinatesFromInput } from "./invekos.js";
 import { renderPlotMapImage } from "./map-image.js";
 
 export async function generatePDF(data) {
-  const { jsPDF } = window.jspdf;
+  const { jsPDF } = window.jspdf || {};
   if (!jsPDF) {
     showGlobalError(STRINGS.errorJsPdfLoad);
     return;
@@ -40,39 +40,33 @@ export async function generatePDF(data) {
   doc.setTextColor(0);
 
   const PAGE_HEIGHT = 297;
+  const PAGE_WIDTH = 210;
   const LINE_HEIGHT = 5;
   const PLOT_IMAGE_SIZE = LINE_HEIGHT * 4; // 4 lines of text
   const PLOT_IMAGE_GUTTER = 5;
 
-  // Helper for blocks
-  function addBlock(title, rows) {
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(12);
-    doc.text(title, margin, y);
-    y += 6;
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(10);
-    rows.forEach(([label, value]) => {
-      if (value) {
-        doc.setFont("helvetica", "bold");
-        doc.text(`${label}:`, margin, y);
-        const labelWidth = doc.getTextWidth(`${label}:`);
-        doc.setFont("helvetica", "normal");
-        doc.text(String(value), margin + labelWidth + 2, y);
-        y += 5;
-      }
-    });
-    y += 4;
-  }
-
-  function addPlotBlock(title, rows, imageDataUrl) {
-    const titleHeight = 6;
-    const textHeight = rows.filter(([, v]) => v).length * LINE_HEIGHT;
-    const blockHeight = imageDataUrl ? Math.max(PLOT_IMAGE_SIZE, textHeight) : textHeight;
-    if (y + titleHeight + blockHeight > PAGE_HEIGHT - margin) {
+  function ensureSpace(height) {
+    if (y + height > PAGE_HEIGHT - margin) {
       doc.addPage();
       y = margin;
     }
+  }
+
+  function addBlock(title, rows, imageDataUrl = null) {
+    const titleHeight = 6;
+    const textX = imageDataUrl ? margin + PLOT_IMAGE_SIZE + PLOT_IMAGE_GUTTER : margin;
+    doc.setFontSize(10);
+    const wrappedRows = rows.filter(([, value]) => value).map(([label, value]) => {
+      doc.setFont("helvetica", "bold");
+      const valueX = textX + doc.getTextWidth(`${label}:`) + 2;
+      doc.setFont("helvetica", "normal");
+      const lines = doc.splitTextToSize(String(value), PAGE_WIDTH - margin - valueX);
+      return { label, valueX, lines };
+    });
+    const textHeight = wrappedRows.reduce((height, row) => height + row.lines.length * LINE_HEIGHT, 0);
+    const blockHeight = Math.max(imageDataUrl ? PLOT_IMAGE_SIZE : 0, textHeight);
+    // Keep ordinary blocks together; unusually long values may span pages.
+    ensureSpace(titleHeight + Math.min(blockHeight, PAGE_HEIGHT - 2 * margin - titleHeight));
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(12);
@@ -80,7 +74,7 @@ export async function generatePDF(data) {
     y += titleHeight;
 
     const blockStartY = y;
-    const textX = imageDataUrl ? margin + PLOT_IMAGE_SIZE + PLOT_IMAGE_GUTTER : margin;
+    const blockPage = doc.getNumberOfPages();
 
     // jsPDF text() draws at the baseline, so the visual top of a text line
     // sits ~ascender height above the baseline. Shift the image up by the
@@ -98,20 +92,23 @@ export async function generatePDF(data) {
       }
     }
 
-    let textY = blockStartY;
-    rows.forEach(([label, value]) => {
-      if (value) {
-        doc.setFont("helvetica", "bold");
-        doc.text(`${label}:`, textX, textY);
-        const labelWidth = doc.getTextWidth(`${label}:`);
+    wrappedRows.forEach(({ label, valueX, lines }) => {
+      lines.forEach((line, index) => {
+        ensureSpace(LINE_HEIGHT);
+        if (index === 0) {
+          doc.setFont("helvetica", "bold");
+          doc.text(`${label}:`, textX, y);
+        }
         doc.setFont("helvetica", "normal");
-        doc.text(String(value), textX + labelWidth + 2, textY);
-        textY += LINE_HEIGHT;
-      }
+        doc.text(line, valueX, y);
+        y += LINE_HEIGHT;
+      });
     });
 
-    const imageEndY = imageDataUrl ? imageY + PLOT_IMAGE_SIZE : blockStartY;
-    y = Math.max(textY, imageEndY) + 4;
+    if (imageDataUrl && doc.getNumberOfPages() === blockPage) {
+      y = Math.max(y, imageY + PLOT_IMAGE_SIZE);
+    }
+    y += 4;
   }
 
   const includeMapImages = document.getElementById("include-map-image")?.checked ?? true;
@@ -147,7 +144,7 @@ export async function generatePDF(data) {
   ]);
 
   data.plots.forEach((plot, i) => {
-    addPlotBlock(
+    addBlock(
       i === 0 ? "Fläche" : `Fläche ${i + 1}`,
       [
         ["Flächenbezeichnung", sanitizeInput(plot.plotName)],
@@ -174,6 +171,7 @@ export async function generatePDF(data) {
   ]);
 
   // Products table
+  ensureSpace(25);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(12);
   doc.text("Angewendete Produkte", margin, y);
@@ -188,7 +186,7 @@ export async function generatePDF(data) {
 
   doc.autoTable({
     startY: y,
-    margin: { left: margin, right: margin },
+    margin: { top: margin, bottom: margin, left: margin, right: margin },
     head: [["#", "Produkt", "Zulassungsnummer", "Menge pro ha"]],
     body: tableBody,
     theme: "grid",
@@ -208,11 +206,13 @@ export async function generatePDF(data) {
   doc.setFontSize(9);
   doc.setTextColor(120);
   const footerLines = doc.splitTextToSize(STRINGS.pdfDisclaimer, 170);
+  ensureSpace(footerLines.length * 4);
   doc.text(footerLines, margin, y);
-  y += footerLines.length * 4 + 4;
   const totalPages = doc.getNumberOfPages();
-  const currentPage = doc.internal.getCurrentPageInfo().pageNumber;
-  doc.text(`Seite ${currentPage} von ${totalPages}`, margin, y);
+  for (let page = 1; page <= totalPages; page++) {
+    doc.setPage(page);
+    doc.text(`Seite ${page} von ${totalPages}`, margin, PAGE_HEIGHT - 10);
+  }
 
   const plotName = data.plots[0]?.plotName || "";
   const dateStr = document.getElementById("application-date").value;
@@ -368,16 +368,10 @@ export async function generateExcel(data) {
 }
 
 export function checkJsPdf() {
-  const btn = document.getElementById("btn-generate");
-  if (!window.jspdf || !window.jspdf.jsPDF) {
-    if (btn) {
-      btn.disabled = true;
-      btn.textContent = "PDF nicht verfügbar";
-    }
+  if (!window.jspdf?.jsPDF?.API?.autoTable) {
     showGlobalError(STRINGS.errorJsPdfLoad);
     return false;
   }
-  if (btn) btn.disabled = false;
   return true;
 }
 
