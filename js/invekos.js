@@ -6,10 +6,24 @@ import { INVEKOS_API_BASE, INVEKOS_BBOX_DELTA, INVEKOS_FETCH_TIMEOUT_MS, INVEKOS
 import { escapeHtml } from "./utils.js";
 import { clearError } from "./ui.js";
 
-function getInvekosCollectionName() {
-  const now = new Date();
-  const year = now.getFullYear();
-  return `i009501:invekos_schlaege_${year}_1_polygon`;
+let invekosCollectionName = null;
+
+async function getInvekosCollectionName(signal) {
+  if (invekosCollectionName) return invekosCollectionName;
+
+  const response = await fetch(`${INVEKOS_API_BASE}?f=json`, { signal });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const data = await response.json();
+  const collection = (data.collections || [])
+    .map((entry) => entry.id)
+    .filter((id) => /^i009501:invekos_schlaege_\d{4}_\d+_polygon$/.test(id))
+    .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }))[0];
+
+  if (!collection) throw new Error("Kein INVEKOS-Schlagdatenbestand verfügbar.");
+
+  // Reuse the latest available year and revision until the page is reloaded.
+  invekosCollectionName = collection;
+  return collection;
 }
 
 export function parseCoordinatesFromInput(value) {
@@ -165,34 +179,31 @@ export async function runInvekosQuery(lon, lat) {
 }
 
 export async function fetchInvekosFields(lon, lat, externalSignal) {
-  const collection = getInvekosCollectionName();
   const minLon = lon - INVEKOS_BBOX_DELTA;
   const minLat = lat - INVEKOS_BBOX_DELTA;
   const maxLon = lon + INVEKOS_BBOX_DELTA;
   const maxLat = lat + INVEKOS_BBOX_DELTA;
-  const url = `${INVEKOS_API_BASE}/${collection}/items?bbox=${minLon},${minLat},${maxLon},${maxLat}&limit=${INVEKOS_RESULT_LIMIT}&f=json`;
-
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), INVEKOS_FETCH_TIMEOUT_MS);
+  const abort = () => controller.abort();
 
   if (externalSignal) {
-    externalSignal.addEventListener("abort", () => {
-      clearTimeout(timeoutId);
-      controller.abort();
-    });
+    if (externalSignal.aborted) controller.abort();
+    else externalSignal.addEventListener("abort", abort, { once: true });
   }
 
   try {
+    const collection = await getInvekosCollectionName(controller.signal);
+    const url = `${INVEKOS_API_BASE}/${collection}/items?bbox=${minLon},${minLat},${maxLon},${maxLat}&limit=${INVEKOS_RESULT_LIMIT}&f=json`;
     const response = await fetch(url, { signal: controller.signal });
-    clearTimeout(timeoutId);
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
     const data = await response.json();
     return data.features || [];
-  } catch (err) {
+  } finally {
     clearTimeout(timeoutId);
-    throw err;
+    externalSignal?.removeEventListener("abort", abort);
   }
 }
 
