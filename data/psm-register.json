@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-22T00:09:15",
+  "lastUpdate": "2026-09-23T00:07:18",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -3118,6 +3118,10 @@
       "registrationNumber": "4131-905"
     },
     {
+      "tradeName": "Impelos",
+      "registrationNumber": "4481-901"
+    },
+    {
       "tradeName": "Imprus",
       "registrationNumber": "4593-0"
     },
@@ -4242,6 +4246,10 @@
       "registrationNumber": "4139-1"
     },
     {
+      "tradeName": "Napramid 450",
+      "registrationNumber": "4139-2"
+    },
+    {
       "tradeName": "Naprop 450",
       "registrationNumber": "4139-0"
     },
@@ -4776,6 +4784,10 @@
     {
       "tradeName": "Pioli",
       "registrationNumber": "3152-901"
+    },
+    {
+      "tradeName": "Piotrol",
+      "registrationNumber": "4481-902"
     },
     {
       "tradeName": "Piramax EC",
