@@ -5,6 +5,7 @@ import json
 import random
 import string
 import time
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import requests
@@ -12,29 +13,48 @@ import requests
 BASE_URL = "https://psmregister-neu.baes.gv.at/apipsm/api/v1/psm"
 OUTPUT_PATH = Path(__file__).parent.parent / "data" / "psm-register.json"
 SEARCH_CHARS = string.ascii_lowercase + string.digits + "äöü"
-REQUEST_DELAY = 1.2  # seconds between requests
-MAX_RETRIES = 3
+REQUEST_DELAY = 10  # seconds before each product query, including the first
+MAX_RETRIES = 5
 RETRY_BACKOFF = 3  # seconds
+RATE_LIMIT_BACKOFF = 30  # seconds, doubled for each HTTP 429 retry
 
 session = requests.Session()
 
 
+def retry_after_seconds(value):
+    """Parse a Retry-After header containing seconds or an HTTP date."""
+    if not value:
+        return 0
+    try:
+        return max(0, int(value))
+    except ValueError:
+        try:
+            return max(0, parsedate_to_datetime(value).timestamp() - time.time())
+        except (TypeError, ValueError, OverflowError):
+            return 0
+
+
 def fetch_with_retry(method, url, **kwargs):
-    """Make a request with exponential backoff retry on connection errors."""
-    last_exception = None
+    """Retry connection errors and rate limits with exponential backoff."""
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             r = session.request(method, url, **kwargs)
             r.raise_for_status()
             return r
-        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-            last_exception = e
-            print(f"  Request failed (attempt {attempt}/{MAX_RETRIES}): {e}")
-            if attempt < MAX_RETRIES:
-                sleep_time = RETRY_BACKOFF * attempt
-                print(f"  Retrying in {sleep_time}s...")
-                time.sleep(sleep_time)
-    raise last_exception
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout,
+                requests.exceptions.HTTPError) as e:
+            rate_limited = e.response is not None and e.response.status_code == 429
+            if isinstance(e, requests.exceptions.HTTPError) and not rate_limited:
+                raise
+            print(f"  Request failed (attempt {attempt}/{MAX_RETRIES}): {e}", flush=True)
+            if attempt == MAX_RETRIES:
+                raise
+            backoff = RATE_LIMIT_BACKOFF if rate_limited else RETRY_BACKOFF
+            sleep_time = backoff * 2 ** (attempt - 1)
+            if rate_limited:
+                sleep_time = max(sleep_time, retry_after_seconds(e.response.headers.get("Retry-After")))
+            print(f"  Retrying in {sleep_time:g}s...", flush=True)
+            time.sleep(sleep_time)
 
 
 def fetch_last_update():
@@ -55,12 +75,12 @@ def fetch_products_for_char(char):
 def fetch_all_products():
     seen = {}
     for char in SEARCH_CHARS:
+        time.sleep(REQUEST_DELAY + random.uniform(0, 0.5))
         items = fetch_products_for_char(char)
         for item in items:
             reg_nr = item["registrationNumber"]
             if reg_nr not in seen:
                 seen[reg_nr] = item["tradeName"]
-        time.sleep(REQUEST_DELAY + random.uniform(0, 0.5))
     return [
         {"tradeName": name, "registrationNumber": reg_nr}
         for reg_nr, name in sorted(seen.items(), key=lambda x: x[1].lower())

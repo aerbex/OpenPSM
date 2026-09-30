@@ -11,7 +11,8 @@ let invekosCollectionName = null;
 async function getInvekosCollectionName(signal) {
   if (invekosCollectionName) return invekosCollectionName;
 
-  const response = await fetch(`${INVEKOS_API_BASE}?f=json`, { signal });
+  // The catalog endpoint only sends CORS headers with a trailing slash.
+  const response = await fetch(`${INVEKOS_API_BASE}/?f=json`, { signal });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
   const collection = (data.collections || [])
