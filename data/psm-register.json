@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-28T00:06:13",
+  "lastUpdate": "2026-10-01T00:16:56",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -8,10 +8,6 @@
     {
       "tradeName": "1,4Sight",
       "registrationNumber": "3713-1"
-    },
-    {
-      "tradeName": "3in1 Komplett-Rasendünger Gegen Unkraut & Moos",
-      "registrationNumber": "3778-0"
     },
     {
       "tradeName": "Abran 250",
@@ -2350,10 +2346,6 @@
       "registrationNumber": "4194-2"
     },
     {
-      "tradeName": "Exigon OD",
-      "registrationNumber": "4639-0"
-    },
-    {
       "tradeName": "Exilis",
       "registrationNumber": "3335-0"
     },
@@ -2664,6 +2656,10 @@
     {
       "tradeName": "Folpetis WG",
       "registrationNumber": "4470-901"
+    },
+    {
+      "tradeName": "Forapro",
+      "registrationNumber": "4663-0"
     },
     {
       "tradeName": "Force 20 CS",
@@ -3324,18 +3320,6 @@
     {
       "tradeName": "Karate Zeon Forst",
       "registrationNumber": "3061-901"
-    },
-    {
-      "tradeName": "Karathane Gold",
-      "registrationNumber": "2981-0"
-    },
-    {
-      "tradeName": "Karathane Gold 350 EC",
-      "registrationNumber": "2981-3"
-    },
-    {
-      "tradeName": "Karathane Star",
-      "registrationNumber": "2981-4"
     },
     {
       "tradeName": "Karma SG",
@@ -4130,6 +4114,14 @@
       "registrationNumber": "4057-0"
     },
     {
+      "tradeName": "Mister C",
+      "registrationNumber": "4690-0"
+    },
+    {
+      "tradeName": "Mister C LR",
+      "registrationNumber": "4695-0"
+    },
+    {
       "tradeName": "Mitroquin",
       "registrationNumber": "3886-1"
     },
@@ -4436,10 +4428,6 @@
     {
       "tradeName": "Neudosan Obst- u. Gemüse SchädlingsFrei",
       "registrationNumber": "2622-901"
-    },
-    {
-      "tradeName": "Nexide",
-      "registrationNumber": "4052-0"
     },
     {
       "tradeName": "Next",
@@ -5372,6 +5360,10 @@
     {
       "tradeName": "Rasendünger plus Unkrautvernichter",
       "registrationNumber": "3379-0"
+    },
+    {
+      "tradeName": "Rasendünger Premium 3 in 1 Komplett",
+      "registrationNumber": "3778-0"
     },
     {
       "tradeName": "Rasenpflege UV-RD",
