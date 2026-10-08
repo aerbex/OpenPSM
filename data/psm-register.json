@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-07T00:06:31",
+  "lastUpdate": "2026-10-08T00:10:28",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -1004,6 +1004,10 @@
     {
       "tradeName": "Carpovirusine Evo 2",
       "registrationNumber": "3851-0"
+    },
+    {
+      "tradeName": "Carpovirusine Max",
+      "registrationNumber": "4699-0"
     },
     {
       "tradeName": "Carpovirusine Ultra",
@@ -3272,6 +3276,10 @@
     {
       "tradeName": "Joust",
       "registrationNumber": "4523-0"
+    },
+    {
+      "tradeName": "Joust Pro",
+      "registrationNumber": "4676-0"
     },
     {
       "tradeName": "Joystick",
