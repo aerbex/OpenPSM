@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-14T00:06:13",
+  "lastUpdate": "2026-10-15T00:06:12",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -104,10 +104,6 @@
     {
       "tradeName": "Agil-S",
       "registrationNumber": "2928-0"
-    },
-    {
-      "tradeName": "Agro Isoxaben",
-      "registrationNumber": "2691-2"
     },
     {
       "tradeName": "Agro MCPA",
@@ -2520,6 +2516,10 @@
     {
       "tradeName": "Flexidor",
       "registrationNumber": "2691-0"
+    },
+    {
+      "tradeName": "Flexixaben",
+      "registrationNumber": "2691-2"
     },
     {
       "tradeName": "Flint",
