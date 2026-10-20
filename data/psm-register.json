@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-19T00:08:40",
+  "lastUpdate": "2026-10-20T00:08:51",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -4070,6 +4070,10 @@
       "registrationNumber": "3701-1"
     },
     {
+      "tradeName": "Microthiol WG",
+      "registrationNumber": "3701-2"
+    },
+    {
       "tradeName": "Micula",
       "registrationNumber": "2568-902"
     },
@@ -6402,6 +6406,10 @@
       "registrationNumber": "3436-901"
     },
     {
+      "tradeName": "SulfGuard",
+      "registrationNumber": "4709-0"
+    },
+    {
       "tradeName": "Sultan Top 500 SC",
       "registrationNumber": "3352-1"
     },
@@ -6668,6 +6676,10 @@
     {
       "tradeName": "Tern",
       "registrationNumber": "4149-0"
+    },
+    {
+      "tradeName": "Thio-Gold",
+      "registrationNumber": "3701-3"
     },
     {
       "tradeName": "Thiopron",
