@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-06T00:05:50",
+  "lastUpdate": "2026-11-07T00:08:09",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -2442,10 +2442,6 @@
       "registrationNumber": "4051-0"
     },
     {
-      "tradeName": "Ferrocious",
-      "registrationNumber": "4564-0"
-    },
-    {
       "tradeName": "Finalsan AF Unkrautfrei",
       "registrationNumber": "3050-0"
     },
@@ -3032,10 +3028,6 @@
     {
       "tradeName": "Herold",
       "registrationNumber": "4264-0"
-    },
-    {
-      "tradeName": "Hierro",
-      "registrationNumber": "4568-0"
     },
     {
       "tradeName": "Hingios",
@@ -5742,6 +5734,14 @@
       "registrationNumber": "3134-0"
     },
     {
+      "tradeName": "Schneckenkorn Gold 10",
+      "registrationNumber": "4568-0"
+    },
+    {
+      "tradeName": "Schneckenkorn Gold 30",
+      "registrationNumber": "4564-0"
+    },
+    {
       "tradeName": "Schneckenkorn Limex",
       "registrationNumber": "3220-902"
     },
@@ -5752,6 +5752,10 @@
     {
       "tradeName": "Schneckenkorn Limex Ultra",
       "registrationNumber": "4444-0"
+    },
+    {
+      "tradeName": "Schneckenkorn Super",
+      "registrationNumber": "4613-0"
     },
     {
       "tradeName": "Schädlingsfrei Careo",
@@ -6452,10 +6456,6 @@
     {
       "tradeName": "Sunfire",
       "registrationNumber": "4070-0"
-    },
-    {
-      "tradeName": "Super",
-      "registrationNumber": "4613-0"
     },
     {
       "tradeName": "Suprax",
