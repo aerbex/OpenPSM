@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-20T00:07:06",
+  "lastUpdate": "2026-11-21T00:05:51",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -124,10 +124,6 @@
     {
       "tradeName": "Akris SE",
       "registrationNumber": "3461-2"
-    },
-    {
-      "tradeName": "Aktuan 3S",
-      "registrationNumber": "3290-3"
     },
     {
       "tradeName": "Aktuan 3S",
@@ -4534,6 +4530,10 @@
       "registrationNumber": "4685-0"
     },
     {
+      "tradeName": "Observer Pro",
+      "registrationNumber": "4706-0"
+    },
+    {
       "tradeName": "Oceal",
       "registrationNumber": "3835-0"
     },
@@ -4748,6 +4748,10 @@
     {
       "tradeName": "Permaclean Spray",
       "registrationNumber": "4391-0"
+    },
+    {
+      "tradeName": "Peroan",
+      "registrationNumber": "3290-3"
     },
     {
       "tradeName": "Phostoxin Bag",
@@ -7328,6 +7332,10 @@
     {
       "tradeName": "Xiren",
       "registrationNumber": "3196-901"
+    },
+    {
+      "tradeName": "Yazu",
+      "registrationNumber": "4712-0"
     },
     {
       "tradeName": "Yukon",
