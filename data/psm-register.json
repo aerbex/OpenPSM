@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-23T00:05:53",
+  "lastUpdate": "2026-11-24T00:06:07",
   "products": [
     {
       "tradeName": "1,4Sight",
@@ -304,6 +304,10 @@
     {
       "tradeName": "Aptrell 60",
       "registrationNumber": "2653-901"
+    },
+    {
+      "tradeName": "Aquicine Duo",
+      "registrationNumber": "4709-901"
     },
     {
       "tradeName": "Architect",
@@ -1036,6 +1040,10 @@
     {
       "tradeName": "Celest extra 050 FS",
       "registrationNumber": "2578-0"
+    },
+    {
+      "tradeName": "Celest Next",
+      "registrationNumber": "4668-0"
     },
     {
       "tradeName": "Celest trio",
